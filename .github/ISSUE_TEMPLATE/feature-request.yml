@@ -1,5 +1,5 @@
 name: 💡 General Feature Request
-description: Have a new idea/feature for <project-name>? Please suggest!
+description: Have a new idea/feature for Nike? Please suggest!
 labels: ["⭐ goal: addition", "good first issue", "🤩 Up for the grab", "help wanted", "enhancement"]
 title: "[FEATURE] <description>"
 body:
@@ -26,7 +26,7 @@ body:
       description: Is there anything else we should know about this idea?
       value: |
         
-        ## **Make sure to read the [CONTRIBUTING](https://github.com/warmachine028/<project-name>/blob/main/CONTRIBUTING.md) and [SETUP](https://github.com/warmachine028/<project-name>/tree/main/rules) docs before proceeding**
+        ## **Make sure to read the [CONTRIBUTING](https://github.com/warmachine028/nike/blob/main/CONTRIBUTING.md) and [SETUP](https://github.com/warmachine028/nike/tree/main/rules) docs before proceeding**
         ## Happy contributing. 💐
         Star my other Repositories [here](https://github.com/warmachine028)
     validations:
@@ -34,7 +34,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        ## **Make sure to read the [CONTRIBUTING](https://github.com/warmachine028/<project-name>/blob/main/CONTRIBUTING.md) and [SETUP](https://github.com/warmachine028/<project-name>/tree/main/rules) docs before proceeding**
+        ## **Make sure to read the [CONTRIBUTING](https://github.com/warmachine028/nike/blob/main/CONTRIBUTING.md) and [SETUP](https://github.com/warmachine028/nike/tree/main/rules) docs before proceeding**
         ## Happy contributing. 💐
         Star my other Repositories [here](https://github.com/warmachine028?tab=repositories)
 
