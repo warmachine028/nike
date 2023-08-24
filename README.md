@@ -1,7 +1,7 @@
     updated on: 24th August 2023, Thursday
 
 <div align=center>
-    <a href="https://github.com/warmachine028/nike">
+    <a href="https://niike.vercel.app">
         <img width="200" src="https://github.com/warmachine028/nike/assets/75939390/13f332c1-d94b-4a53-88d3-6b06eb85ee34" alt="Nike">
     </a>
     <p style="font-family: roboto, calibri; font-size:12pt; font-style:italic"> Just Do it! </p>
