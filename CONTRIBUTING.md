@@ -49,10 +49,18 @@ We will then take care of the issue as soon as possible.
 
 ## I Want To Contribute
 
+- [Optional] You must create an Issue to contribute
+- Else you can also get assigned to existing issues on First Come First Serve basis.
+- You can not create a Pull request directly without consulting the maintainers or getting assigned to an issue first.
+- You will be given standard ample amount of time to work on the issue.
+- If you are unable to solve it or are unresponsive, you will be unassigned from that issue.
+
 > ### Legal Notice <!-- omit in toc -->
 > When contributing to this project, you must agree that you have authored 100% of the content, that you have the necessary rights to the content and that the content you contribute may be provided under the project license.
 
 ### Reporting Bugs
+
+- Create an Issue under Bug Bounty Hunter
 
 #### Before Submitting a Bug Report
 
@@ -75,7 +83,7 @@ A good bug report shouldn't leave others needing to chase you up for more inform
 
 We use GitHub issues to track bugs and errors. If you run into an issue with the project:
 
-- Open an [Issue](https://github.com/warmachine028/nike/issues/new). (Since we can't be sure at this point whether it is a bug or not, we ask you not to talk about a bug yet and not to label the issue.)
+- Open an [Issue](https://github.com/warmachine028/nike/issues/choose). (Since we can't be sure at this point whether it is a bug or not, we ask you not to talk about a bug yet and not to label the issue.)
 - Explain the behavior you would expect and the actual behavior.
 - Please provide as much context as possible and describe the *reproduction steps* that someone else can follow to recreate the issue on their own. This usually includes your code. For good bug reports you should isolate the problem and create a reduced test case.
 - Provide the information you collected in the previous section.
