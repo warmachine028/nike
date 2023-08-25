@@ -20,7 +20,6 @@ const Button = ({
 
     }
   `;
-  console.log("borderColor", borderColor);
   return (
     <>
       <button
