@@ -6,26 +6,10 @@ const Button = ({
   fullWidth,
   icon,
 }) => {
-  const styles = `
-    .button {
-      background-color: "coral-red";
-      border-color: "coral-red";
-      color: "white";
-    }
-
-    .button:hover {
-      background-color: #ffff;
-      border-color: #FF6452;
-      color: #FF6452;
-
-    }
-  `;
   return (
     <>
       <button
-        className={`flex button ${
-          styles.className
-        } justify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full ${
+        className={`flex buttonjustify-center items-center gap-2 px-7 py-4 border font-montserrat text-lg leading-none rounded-full hover:bg-white hover:text-coral-red hover:border-coral-red ${
           backgroundColor
             ? `${backgroundColor} ${borderColor} ${textColor}`
             : "bg-coral-red  border-coral-red text-white"
@@ -42,7 +26,6 @@ const Button = ({
           />
         )}
       </button>
-      <style>{styles}</style>
     </>
   );
 };
