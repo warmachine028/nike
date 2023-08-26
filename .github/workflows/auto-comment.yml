@@ -10,12 +10,10 @@ jobs:
           issuesOpenedReactions: 'hooray, +1'
           issuesOpenedComment: |
             # 👋 @{{ author }}. It's great having you contribute to Nike!
-            
             Thank you for raising an issue. Maintainer will soon investigate into the matter and get back to you as soon as possible.  
             Meanwhile feel free to support star the repo and share it with your friends. 🤓 🚀
           
           pullRequestOpened: |
             # Hey @{{ author }}. Thank you for raising your pull request!
-            
             Please make sure you have filled the PR template properly and followed our contributing guidelines. 
             The maintainer will review it as soon as possible.
