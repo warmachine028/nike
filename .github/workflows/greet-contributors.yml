@@ -19,12 +19,12 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: |
             ### Hello @${{ github.actor }}, thank you for raising the issue.
-            
+            <br></br>
             Thank you for raising an issue. Maintainer will soon investigate into the matter and get back to you as soon as possible.  
             Meanwhile feel free to support star the repo and share it with your friends. 🤓 🚀
             
           pr-message: |
             ### Hello @${{ github.actor }}, thank you for raising a pull request.
-            
+            <br></br>
             Please make sure you have filled the PR template properly and followed our contributing guidelines. 
             The maintainer will review it as soon as possible.
