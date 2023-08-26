@@ -13,10 +13,10 @@ jobs:
   welcome:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@main
       - uses: EddieHubCommunity/gh-action-community/src/welcome@main
         with:
-          github-token: ${{ secrets.PAT }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           issue-message: |
             ### Hello @${{ github.actor }}, thank you for raising the issue.
             <br></br>
