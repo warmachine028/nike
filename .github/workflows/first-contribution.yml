@@ -1,4 +1,4 @@
-name: 🙏 Welcome First Contributors
+name: 🙏 Welcome First Time Contributors
 
 on: [pull_request_target, issues]
 jobs:
