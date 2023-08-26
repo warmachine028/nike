@@ -64,8 +64,8 @@
 ## Best Contributors
 
 <div align="center">
-    <a  href="https://github.com/warmachine028/memories/graphs/nike">
-        <img src="https://contrib.rocks/image?repo=warmachine028/nike" />
+    <a  href="https://github.com/warmachine028/nike/graphs/contributors">
+        <img src="https://contrib.rocks/image?repo=warmachine028/nike&anon=1" />
     </a>
 </div>
 
