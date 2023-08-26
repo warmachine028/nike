@@ -5,7 +5,7 @@ const updateLabel = label => {
 			flag = true
 			element.querySelector(".js-edit-label").click()
 			element.querySelector(".js-new-label-name-input").value = label.name
-			element.querySelector(".js-new-label-description-input").value = label.description
+			element.querySelector(".js-new-label-description-input").value = label.description ? label.description : ''
 			element.querySelector(".js-new-label-color-input").value = `#${label.color}`
 			element.querySelector(".js-edit-label-cancel ~ .btn-primary").click()
 		}
@@ -15,7 +15,7 @@ const updateLabel = label => {
 
 const addNewLabel = label => {
 	document.querySelector(".js-new-label-name-input").value = label.name
-	document.querySelector(".js-new-label-description-input").value = label.description
+	document.querySelector(".js-new-label-description-input").value = label.description ? label.description : ''
 	document.querySelector(".js-new-label-color-input").value = `#${label.color}`
 	document.querySelector(".js-details-target ~ .btn-primary").disabled = false
 	document.querySelector(".js-details-target ~ .btn-primary").click()
@@ -31,7 +31,13 @@ const addLabel = label => {
 const labels = [
 	{
 		name: "good first issue",
-		color: "7f0799",
+		description: "The issue is to encourage first time contributors",
+		color: "7f0799"
+	},
+	{
+		name: "🤩 Up for the grab",
+		description: "The issue is ready to be assigned to a contributor",
+		color: "6C049F"
 	},
 	{
 		name: "help wanted",
@@ -159,10 +165,12 @@ const labels = [
 	},
 	{
 		name: "hacktoberfest",
+		description: "This issue/pull request is specially marked for hacktoberfest",
 		color: "eb06b0",
 	},
 	{
 		name: "hacktoberfest-accepted",
+		description: "The contribution was accepted for hactoberfest",
 		color: "0f8b16",
 	},
 ]
