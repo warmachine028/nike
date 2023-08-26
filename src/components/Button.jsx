@@ -1,10 +1,15 @@
 const Button = ({ children, backgroundColor, borderColor, textColor, fullWidth, icon }) => {
+	console.log(`hover:text-${textColor?.slice(5)}`)
 	return (
 		<button
 			className={`flex justify-center items-center gap-2 px-7 py-4 
 				border font-montserrat text-lg leading-none rounded-full 
-				hover:bg-white
-				${backgroundColor ? `${backgroundColor} ${borderColor} ${textColor}` : "bg-coral-red border-coral-red text-white  hover:text-coral-red hover:border-coral-red "}
+				
+				${
+					backgroundColor
+						? `${backgroundColor} ${borderColor} ${textColor} hover:text-${backgroundColor?.slice(3)} hover:bg-${borderColor?.slice(7)}`
+						: "bg-coral-red border-coral-red text-white  hover:text-coral-red hover:border-coral-red hover:bg-white"
+				}
 			${fullWidth && "w-full"}
 		 `}
 		>
