@@ -14,7 +14,7 @@ jobs:
       pull-requests: write
     steps:
     - uses: actions/first-interaction@v1
-      if: ${{ github.event.sender.login != github.repository_owner }}
+      # if: ${{ github.event.sender.login != github.repository_owner }}
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: |
