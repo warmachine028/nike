@@ -16,20 +16,20 @@ const Footer = () => {
 						</p>
 						<div className="flex items-center gap-5 mt-8">
 							{socialMedia.map(icon => (
-								<div key={icon.alt} className="flex w-12 h-12 justify-center items-center bg-white rounded-full">
+								<div key={icon.alt} className="flex w-12 h-12 justify-center items-center bg-white rounded-full hover:scale-110 transition duration-300 ease-in-out">
 									<img src={icon.src} alt={icon.alt} width={24} height={24} />
 								</div>
 							))}
 						</div>
 					</div>
-					<div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap">
+					<div className="flex flex-1 justify-between lg:gap-10 gap-20 flex-wrap relative">
 						{footerLinks.map(section => (
 							<div key={section.title}>
 								<h4 className="text-white font-montserrat text-2xl leading-normal font-bold mb-6">{section.title}</h4>
-								<ul>
+								<ul className="relative">
 									{section.links.map(link => (
-										<li key={link.name} className="mt-3 text-white-400 font-montserrat text-base leading-normal hover:text-slate-gray">
-											<a href="">{link.name}</a>
+										<li key={link.name} className="mt-3 text-white-400 font-montserrat text-base leading-normal">
+											<a className='hoverUnderline' href="">{link.name}</a>
 										</li>
 									))}
 								</ul>
