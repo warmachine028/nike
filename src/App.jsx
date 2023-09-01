@@ -2,7 +2,7 @@ import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffers
 import Navbar from "./components/Navbar"
 
 const App = () => (
-	<main className="relative">
+	<main className="relative scroll-smooth">
 		<Navbar />
 		<section>
 			<Hero />

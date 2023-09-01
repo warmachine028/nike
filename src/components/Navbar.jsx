@@ -18,7 +18,7 @@ const Navbar = () => {
 						</li>
 					))}
 				</ul>
-				<div className="hidden max-lg:block">
+				<div className="md:hidden lg:hidden max-lg:block">
 					<img src={hamburger} alt="hamburger" height="25" width="25" />
 				</div>
 			</nav>

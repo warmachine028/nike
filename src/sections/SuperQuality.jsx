@@ -17,7 +17,7 @@ const SuperQuality = () => {
 						Ensuring premium comfort and style, out meticulously crafted footwear is designed to elevate your experience, providing you with unmatched quality, innovation, and a touch of
 						elegance.
 					</p>
-					<p className="mt-6 lg:max-w-lg info-text">Our dedication to detail and excellance ensures your satisfaction</p>
+					<p className="mt-6 lg:max-w-lg info-text">Our dedication to detail and excellence ensures your satisfaction</p>
 					<div className="mt-11">
 						<Button>View Details</Button>
 					</div>
