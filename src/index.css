@@ -9,7 +9,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 @layer components {
@@ -20,6 +19,30 @@
 
   .input {
     @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+  }
+
+  .hoverUnderline {
+  /* display: inline-block; */
+  position: relative;
+  }
+
+  .hoverUnderline::after {
+  @apply bg-slate-gray;
+  content: '';
+  position: absolute;
+  bottom: -4px; 
+  left: 0;
+  width: 100%;
+  height: 2px;
+  border-radius: 2px;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.35s cubic-bezier(0.465, 0.183, 0.153, 0.946); 
+  }
+
+  .hoverUnderline:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
   }
 }
 
