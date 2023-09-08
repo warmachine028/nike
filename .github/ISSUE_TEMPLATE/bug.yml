@@ -1,7 +1,7 @@
 name: 🐛 Bug Bounty Hunter
 description: Report an bug in Nike and help improve the project!
 labels: ["🛠 goal: fix", "good first issue", "🤩 Up for the grab", "help wanted", "enhancement", "bug"]
-title: "[BUG] <description>"
+title: "[BUG 🐞] <description>"
 body:
   - type: textarea
     id: description
