@@ -1,27 +1,12 @@
 /** @format */
 
-import {
-	CustomerReviews,
-	Footer,
-	Hero,
-	PopularProducts,
-	Services,
-	SpecialOffers,
-	Subscribe,
-	SuperQuality,
-} from './sections';
-import Navbar from './components/Navbar';
-import { ThemeProvider } from 'next-themes';
+import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffers, Subscribe, SuperQuality } from "./sections"
+import Navbar from "./components/Navbar"
+import { ThemeProvider } from "next-themes"
 
 const App = () => (
-	<main className='relative scroll-smooth'>
-		<ThemeProvider
-			attribute='class'
-			enableSystem={true}
-			defaultTheme='system'
-			themes={['light', 'dark']}
-			transitionDuration={300}
-			disableTransitionOnChange>
+	<main className="relative scroll-smooth">
+		<ThemeProvider attribute="class" enableSystem={true} defaultTheme="system" themes={["light", "dark"]} transitionDuration={300} disableTransitionOnChange>
 			<Navbar />
 			<section>
 				<Hero />
@@ -35,6 +20,6 @@ const App = () => (
 		</ThemeProvider>
 		<Footer />
 	</main>
-);
+)
 
-export default App;
+export default App
