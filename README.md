@@ -8,6 +8,9 @@
     <a src="https://github.com/warmachine028/nike/forks">
         <img alt="GitHub forks" src="https://img.shields.io/github/forks/warmachine028/nike?color=orange">
     </a>
+    <a src="https://github.com/warmachine028/nike/stargazers">
+        <img alt="GitHub forks" src="https://img.shields.io/github/stars/warmachine028/nike">
+    </a>
 </div>
 
 # [Nike](https://niike.vercel.app)
