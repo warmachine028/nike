@@ -2,36 +2,28 @@
 
 import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffers, Subscribe, SuperQuality } from './sections'
 import Navbar from './components/Navbar'
-import { ThemeProvider } from 'next-themes'
-import { MenuProvider } from './contexts/MenuContext'
+import { useMenuContext } from './contexts/MenuContext'
 import Menu from './components/Menu'
 
-const App = () => (
-  <main className="relative scroll-smooth">
-    <ThemeProvider
-      attribute="class"
-      enableSystem={true}
-      defaultTheme="system"
-      themes={['light', 'dark']}
-      transitionDuration={300}
-      disableTransitionOnChange
-    >
-      <MenuProvider>
-        <Navbar />
-        <Menu />
-        <section>
-          <Hero />
-          <PopularProducts />
-          <SuperQuality />
-          <Services />
-          <SpecialOffers />
-          <CustomerReviews />
-          <Subscribe />
-        </section>
-      </MenuProvider>
-    </ThemeProvider>
-    <Footer />
-  </main>
-)
+const App = () => {
+  const showMenu = useMenuContext()
+  return (
+    <main className={'relative scroll-smooth ' + (showMenu ? 'h-screen overflow-hidden' : '')}>
+      <div className={showMenu ? 'w-full h-full fixed top-0 left-0 z-40' : 'hidden'}></div>
+      <Navbar />
+      <Menu />
+      <section>
+        <Hero />
+        <PopularProducts />
+        <SuperQuality />
+        <Services />
+        <SpecialOffers />
+        <CustomerReviews />
+        <Subscribe />
+      </section>
+      <Footer />
+    </main>
+  )
+}
 
 export default App
