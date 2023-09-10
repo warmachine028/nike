@@ -1,4 +1,4 @@
-    updated on: 09th September 2023, Saturday
+    updated on: 10th September 2023, Sunday
 
 <div align=center>
     <a href="https://niike.vercel.app">
@@ -88,4 +88,4 @@
 [License]: https://github.com/warmachine028/nike/blob/main/LICENSE
 [badges]: https://github.com/Ileriayo/markdown-badges
 
-<!-- 09/09/23 -->
+<!-- 10/09/23 -->
