@@ -21,6 +21,7 @@
 ::-webkit-scrollbar-thumb {
 	background: #ff6452;
 }
+
 img {
     user-select: none;
    -moz-user-select: none;
@@ -28,6 +29,12 @@ img {
    -webkit-user-select: none;
    -ms-user-select: none;
 }
+
+::selection {
+	background-color:#504099;
+	color: #FFFFFF;
+  }
+
 @layer base {
 	body {
 		@apply dark:bg-[#1c1c1c] bg-white dark:duration-300 dark:ease-[cubic-beizer(0.465,0.183,0.153,0.946)] duration-300 ease-[cubic-beizer(0.465,0.183,0.153,0.946)];
