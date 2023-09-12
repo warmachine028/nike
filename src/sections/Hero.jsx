@@ -5,10 +5,53 @@ import { arrowRight } from "../assets/icons"
 import { shoes, statistics } from "../constants"
 import { bigShoe1 } from "../assets/images"
 import ShoeCard from "../components/ShoeCard"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+
+const formatNumber = (number) => {
+  if (number < 1000) {
+    return number;
+  } else {
+    return Math.floor(number / 1000) + "k";
+  }
+};
 
 const Hero = () => {
 	const [bigShoeImg, setBigShoeImg] = useState(bigShoe1)
+	const [animatedStatistics, setAnimatedStatistics] = useState({
+	    brands: 0,
+	    shops: 0,
+	    customers: 0,
+ 	});
+	  useEffect(() => {
+    	const animationDuration = 2500; 
+    	const targetStatistics = {
+	    brands: 1000,
+	    shops: 500,
+	    customers: 250000,
+    };
+    
+    const stepDuration = animationDuration / 100; 
+
+    const updateStatistics = (currentStep) => {
+      if (currentStep >= 100) {
+        setAnimatedStatistics(targetStatistics);
+      } else {
+        setTimeout(() => {
+          const percentage = (currentStep + 1) / 100;
+          setAnimatedStatistics({
+            brands: Math.floor(percentage * targetStatistics.brands),
+            shops: Math.floor(percentage * targetStatistics.shops),
+            customers: Math.floor(percentage * targetStatistics.customers),
+          });
+          updateStatistics(currentStep + 1);
+        }, stepDuration);
+      }
+    };
+
+    updateStatistics(0);
+
+  }, []);
+
 	return (
 		<section className="xl:padding-l wide:padding-r padding-b">
 			<div id="home" className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container">
@@ -23,7 +66,7 @@ const Hero = () => {
 					<div className="flex justify-start flex-wrap items-start w-full mt-20 gap-16">
 						{statistics.map(stat => (
 							<div key={stat.label}>
-								<p className="text-4xl font-palanquin font-bold">{stat.value}</p>
+								<p className="text-4xl font-palanquin font-bold">{formatNumber(animatedStatistics[stat.label.toLowerCase()])}+</p>
 								<p className="leading-7 font-montserrat text-slate-gray">{stat.label}</p>
 							</div>
 						))}
