@@ -1,6 +1,6 @@
 # Issue #<issue number> 📐
 
-- I [your name here](your github profile link) have worked for <issue number>
+- I [your name here](your github profile link) have worked for #<issue number>
 
 ## Guidelines 🔐
 
