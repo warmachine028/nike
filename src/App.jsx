@@ -15,6 +15,7 @@ const App = () => {
       <section>
         <Hero />
         <PopularProducts />
+        <ScrollToTopButton />
         <SuperQuality />
         <Services />
         <SpecialOffers />
