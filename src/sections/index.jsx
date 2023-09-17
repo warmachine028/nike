@@ -6,5 +6,6 @@ import Services from "./Services"
 import SpecialOffers from "./SpecialOffers"
 import Subscribe from "./Subscribe"
 import SuperQuality from "./SuperQuality"
+import ScrollToTopButton from "./ScrollToTopButton"
 
-export { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffers, Subscribe, SuperQuality }
+export { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffers, Subscribe, SuperQuality, ScrollToTopButton }
