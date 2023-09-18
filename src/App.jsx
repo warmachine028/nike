@@ -1,15 +1,34 @@
 /** @format */
 
-import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffers, Subscribe, SuperQuality, ScrollToTopButton } from './sections'
-import Navbar from './components/Navbar'
-import { useMenuContext } from './contexts/MenuContext'
-import Menu from './components/Menu'
+import {
+  CustomerReviews,
+  Footer,
+  Hero,
+  PopularProducts,
+  Services,
+  SpecialOffers,
+  Subscribe,
+  SuperQuality,
+  ScrollToTopButton,
+} from "./sections";
+import Navbar from "./components/Navbar";
+import { useMenuContext } from "./contexts/MenuContext";
+import Menu from "./components/Menu";
 
 const App = () => {
-  const showMenu = useMenuContext()
+  const showMenu = useMenuContext();
   return (
-    <main className={'relative scroll-smooth ' + (showMenu ? 'h-screen overflow-hidden' : '')}>
-      <div className={showMenu ? 'w-full h-full fixed top-0 left-0 z-40' : 'hidden'}></div>
+    <main
+      className={
+        "relative scroll-smooth  overflow-hidden " +
+        (showMenu ? "h-screen overflow-hidden" : "")
+      }
+    >
+      <div
+        className={
+          showMenu ? "w-full h-full fixed top-0 left-0 z-40" : "hidden"
+        }
+      ></div>
       <Navbar />
       <Menu />
       <section>
@@ -24,7 +43,7 @@ const App = () => {
       </section>
       <Footer />
     </main>
-  )
-}
+  );
+};
 
-export default App
+export default App;
