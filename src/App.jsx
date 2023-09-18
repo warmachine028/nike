@@ -1,6 +1,6 @@
 /** @format */
 
-import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffers, Subscribe, SuperQuality } from './sections'
+import { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffers, Subscribe, SuperQuality, ScrollToTopButton } from './sections'
 import Navbar from './components/Navbar'
 import { useMenuContext } from './contexts/MenuContext'
 import Menu from './components/Menu'
@@ -15,6 +15,7 @@ const App = () => {
       <section>
         <Hero />
         <PopularProducts />
+        <ScrollToTopButton />
         <SuperQuality />
         <Services />
         <SpecialOffers />
