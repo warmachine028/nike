@@ -16,8 +16,8 @@ const ShoeDetails = () => {
               <div>Basketball Shoes </div>
             </div>
             <div id={'shoe_container'} className={'w-full h-full flex justify-center flex-row flex-wrap gap-5 mt-10'} >
-              <div id={'imageContainer'} className={'flex justify-center align-center flex-col m-8 mt-2 gap-10'}>
-                  <div id={'mainImage'} className={'flex justify-center w-full'}>
+              <div id={'imageContainer'} className={'flex justify-center align-center flex-col m-8 mt-0 gap-10 w-1/2 max-lg:w-2/3 max-md:w-9/12 max-sm:w-10/12'}>
+                  <div id={'mainImage'} className={'flex justify-center w-full mt-14'}>
                       <img src={ua3shoe} alt={'ua curry 3'} width={"500"} />
                   </div>
                   <div id={'imageSlider'} className={'flex justify-center flex-row overflow-auto w-full h-24 p-1'}>
@@ -28,7 +28,7 @@ const ShoeDetails = () => {
                       <img src={ua3shoe3} alt={'ua curry 3'} className={'border border-solid-grey'}/>
                   </div>
               </div>
-              <div id={'descriptionContainer'} className={'flex justify-center flex-col align-center mt-5 lg:p-4 max-lg:w-1/2 max-md:p-0 max-md:w-9/12 max-sm:w-10/12'}>
+              <div id={'descriptionContainer'} className={'flex justify-center flex-col align-center mt-2 lg:p-4 max-lg:w-1/2 max-md:p-0 max-md:w-9/12 max-sm:w-10/12'}>
                   <div  className={'flex justify-center flex-col align-center'}>
                       <div className={'flex justify-center flex-col align-start'}>
                           <p className={'text-3xl font-bold max-sm:w-full'} >UA CURRY 3</p>
@@ -48,7 +48,7 @@ const ShoeDetails = () => {
                               brilliant player. Stephen Curry.
                           </p>
                       </div>
-                      <div className={'flex justify-between align-start flex-row max-sm:flex-col max-sm:gap-5'}>
+                      <div className={'flex justify-between align-start flex-row gap-4 max-lg:gap-10 max-md:gap-2 max-sm:flex-col max-sm:gap-5'}>
                           <div className={'w-full flex align-start flex-row gap-3 max-lg:w-1/2'}>
                               <div className={'w-5 h-5 bg-blue-600 mt-2 hover:bg-blue-500 hover:cursor-pointer'}/>
                               <div className={'w-5 h-5 bg-lime-400 mt-2 hover:bg-lime-300 hover:cursor-pointer'}/>
@@ -57,7 +57,7 @@ const ShoeDetails = () => {
                               <div className={'w-5 h-5 bg-yellow-400 mt-2 hover:bg-yellow-300 hover:cursor-pointer'}/>
                           </div>
 
-                          <div className={'flex flex-row justify-start gap-3 w-full '}>
+                          <div className={'flex flex-row justify-start gap-2 w-full '}>
                               <div className={'flex justify-center align-center border rounded-full bg-amber-400 p-1 hover:cursor-pointer'}>
                                   <svg xmlns="http://www.w3.org/2000/svg" fill={"rgb(255,255,255)"} color={'white'} viewBox="0 0 24 24" strokeWidth="1.5"
                                        stroke="currentColor" className="w-5 h-5">
@@ -75,7 +75,7 @@ const ShoeDetails = () => {
                           </div>
                       </div>
                       <div className={'flex justify-center align-start flex-col mt-6'}>
-                          <p className={'font-semibold mb-1'}>Select Size</p>
+                          <p className={'font-semibold mb-2'}>Select Size</p>
                           <div className={'flex align-start flex-row gap-3'}>
                               <div className={'flex justify-center align-center w-7 h-7 border-2 border-gray-300 text-gray-400 hover:cursor-pointer'}>7</div>
                               <div  className={'flex justify-center align-center w-7 h-7 border-2 border-gray-300 text-gray-400 hover:cursor-pointer'}>8</div>
@@ -96,8 +96,8 @@ const ShoeDetails = () => {
 
               </div>
           </div>
-          <div className={'flex justify-center align-center mt-20 max-md:justify-start bg-slate-100'}>
-              <div id="products" className="m-12 mb-20 max-container max-sm:mt-12">
+          <div className={'flex justify-center align-center mt-12 bg-pale-blue dark:text-gray-900'}>
+              <div id="products" className=" m-12 mb-20 max-container max-sm:mt-12">
 				<div className="flex flex-col justify-start gap-5">
 					<h2 className="text-2xl font-palanquin font-bold">
 						Similar Products You Might Enjoy
