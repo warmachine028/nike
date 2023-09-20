@@ -8,7 +8,7 @@ import { useMenuUpdateContext } from "../contexts/MenuContext";
 const Navbar = () => {
   const toggleShowMenu = useMenuUpdateContext();
   return (
-    <header className="padding-x py-8 absolute z-10 w-full">
+    <header className="bg-[#1C1C1C] dark:bg-white padding-x py-6 lg:py-8 absolute z-10 w-full shadow-2xl">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img src={headerLogo} alt="logo" width="130" height="29" />
