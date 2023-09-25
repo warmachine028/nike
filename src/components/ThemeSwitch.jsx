@@ -10,7 +10,7 @@ const ThemeSwitch = () => {
   return (
     <div className="inline-flex items-center">
       <SunIcon
-        className={`mr-3 h-6 w-6 transition duration-300 cursor-pointer ${currentTheme === 'dark' ? 'text-coral-red' : 'text-slate-gray'}`}
+        className={`lg:mr-3 h-6 w-6 transition duration-300 cursor-pointer ${currentTheme === 'dark' ? 'text-coral-red' : 'text-slate-gray'}`}
         onClick={() => (theme == 'dark' ? setTheme('light') : setTheme('dark'))}
       />
     </div>
