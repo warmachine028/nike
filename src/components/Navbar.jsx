@@ -9,7 +9,7 @@ import { useMenuUpdateContext } from "../contexts/MenuContext";
 const Navbar = () => {
   const toggleShowMenu = useMenuUpdateContext();
   return (
-    <header className="bg-[#1C1C1C] dark:bg-white padding-x py-1 sm:py-4 lg:py-8 absolute z-10 w-full shadow-2xl">
+    <header className="bg-[#1C1C1C] dark:bg-white padding-x py-1 sm:py-6 lg:py-8 absolute z-10 w-full shadow-2xl">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img src={headerLogo} alt="logo" width="100" height="22" className="hidden sm:block" />
