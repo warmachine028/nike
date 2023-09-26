@@ -5,8 +5,12 @@ import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
 import ThemeSwitch from "./ThemeSwitch";
 import { useMenuUpdateContext } from "../contexts/MenuContext";
+import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
+  const { systemTheme, theme } = useTheme();
+  const currentTheme = theme === "system" ? systemTheme : theme;
   const toggleShowMenu = useMenuUpdateContext();
   return (
     <header className="bg-[#1C1C1C] dark:bg-white padding-x py-1 sm:py-6 lg:py-8 absolute z-10 w-full shadow-2xl">
@@ -27,12 +31,6 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <ThemeSwitch />
-        <div
-          className="lg:hidden max-lg:block dark:invert"
-          onClick={toggleShowMenu}
-        >
-          <img src={hamburger} alt="hamburger" height="20" width="20" />
         </div>
       </nav>
     </header>
