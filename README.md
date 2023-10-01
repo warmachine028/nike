@@ -1,9 +1,10 @@
     updated on: 02nd October 2023, Sunday
-<div align="center">
+<div align="center" style="position: relative;">
     <a href="https://niike.vercel.app">
         <img width="200" alt="Nike" src="https://github.com/warmachine028/nike/assets/75939390/13f332c1-d94b-4a53-88d3-6b06eb85ee34">
+    <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: transparent;"></div>
     </a>
-    <p style="font-family: roboto, calibri; font-size: 12pt; font-style: italic">Just Do it!</p>
+    <p style="font-family: Roboto, Calibri; font-size: 12pt; font-style: italic">Just Do it!</p>
     <a href="https://github.com/warmachine028/nike/forks">
         <img alt="GitHub forks" src="https://img.shields.io/github/forks/warmachine028/nike?color=orange">
     </a>
@@ -19,7 +20,7 @@
 ## Table of Contents
 
 - [Introduction](#introduction)
-- [Developement](#developement)
+- [Development](#development)
 - [Tech Stack Used](#tech-stack-used)
 - [Preview](#preview)
 - [Best Contributors](#best-contributors)
@@ -36,7 +37,7 @@
 
 ![line]
 
-## Developement
+## Development
 
 ```sh
 > npm install
@@ -49,7 +50,7 @@
 
 - React: Frontend Development
 - TailwindCSS: Styling
-- Vite: Build optimiser
+- Vite: Build optimizer
 - Git & Github: Version Control
 - Vercel: Hosting
 
