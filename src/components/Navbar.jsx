@@ -1,5 +1,6 @@
 /** @format */
 import { headerLogo } from "../assets/images";
+import { nikeLogo } from "../assets/images"
 import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
 import ThemeSwitch from "./ThemeSwitch";
@@ -15,7 +16,8 @@ const Navbar = () => {
     <header className="bg-[#1C1C1C] dark:bg-white padding-x py-6 lg:py-8 absolute z-10 w-full shadow-2xl">
       <nav className="flex justify-between items-center max-container">
         <a href="/">
-          <img src={headerLogo} alt="logo" width="130" height="29" />
+          <img src={headerLogo} className="hidden lg:block" alt="logo" width="130" height="29" />
+          <img src={nikeLogo}  className="lg:hidden h-[40px]" alt="logo"/>
         </a>
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
