@@ -173,5 +173,10 @@ const labels = [
 		description: "The contribution was accepted for hactoberfest",
 		color: "0f8b16",
 	},
+	{
+		name: "feature",
+		description: "This issue/PR has will be a new feature",
+		color: "0f8b16",
+	},
 ]
 labels.forEach(label => addLabel(label))
