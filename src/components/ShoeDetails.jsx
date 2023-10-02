@@ -8,7 +8,7 @@ import ProductCard from "./ProductCard.jsx";
 
 const ShoeDetails = () => {
     return (
-        <>
+        <div className="pt-20">
             <div id={'category'} className={'flex justify-start mt-8 ml-5 gap-3 text-sm text-gray-400'}>
               <div>Men /</div>
               <div>Shoes /</div>
@@ -56,7 +56,6 @@ const ShoeDetails = () => {
                               <div className={'w-5 h-5 bg-orange-400 mt-2 hover:bg-orange-300 hover:cursor-pointer'}/>
                               <div className={'w-5 h-5 bg-yellow-400 mt-2 hover:bg-yellow-300 hover:cursor-pointer'}/>
                           </div>
-
                           <div className={'flex flex-row justify-start gap-2 w-full '}>
                               <div className={'flex justify-center align-center border rounded-full bg-amber-400 p-1 hover:cursor-pointer'}>
                                   <svg xmlns="http://www.w3.org/2000/svg" fill={"rgb(255,255,255)"} color={'white'} viewBox="0 0 24 24" strokeWidth="1.5"
@@ -90,10 +89,7 @@ const ShoeDetails = () => {
                       <div className={'flex justify-center align-start flex-col'}>
                           <button className={'border-none rounded-md w-64 h-12 bg-orange-500 text-white text-xl max-md:w-full'}>Buy</button>
                       </div>
-
                   </div>
-
-
               </div>
           </div>
           <div className={'flex justify-center align-center mt-12 bg-pale-blue dark:text-gray-900'}>
@@ -109,9 +105,8 @@ const ShoeDetails = () => {
 					))}
 				</div>
 			</div>
-
           </div>
-        </>
+        </div>
     );
 };
 

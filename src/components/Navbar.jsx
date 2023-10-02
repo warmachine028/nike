@@ -1,6 +1,6 @@
 /** @format */
 import { headerLogo } from "../assets/images";
-import { nikeLogo } from "../assets/images"
+import { nikeLogo } from "../assets/images";
 import { hamburger } from "../assets/icons";
 import { navLinks } from "../constants";
 import ThemeSwitch from "./ThemeSwitch";
