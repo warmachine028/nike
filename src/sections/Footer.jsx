@@ -19,12 +19,14 @@ const Footer = () => {
 						</p>
 						<div className="flex items-center gap-5 mt-8">
 							{socialMedia.map(icon => (
-								<div
+								<a
 									key={icon.alt}
-									className="flex w-12 h-12 justify-center items-center bg-white rounded-full hover:scale-110 hover:border-black hover:border-[1px] hover:invert duration-300 ease-in-out"
+									href={icon?.link}
+									target="_blank"
+									className="flex w-12 h-12 justify-center items-center bg-white rounded-full hover:scale-110 hover:border-black hover:border-[1px] hover:invert duration-300 ease-in-out cursor-pointer" rel="noreferrer"
 								>
 									<img src={icon.src} alt={icon.alt} width={24} height={24} />
-								</div>
+								</a>
 							))}
 						</div>
 					</div>
