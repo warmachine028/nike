@@ -1,6 +1,6 @@
     updated on: 02nd October 2023, Sunday
 <div align="center" style="position: relative;">
-    <a href="https://niike.vercel.app"  rel="noopener" target="_blank">
+    <a href="https://niike.vercel.app">
         <img width="200" alt="Nike" src="https://github-production-user-asset-6210df.s3.amazonaws.com/75939390/263081983-13f332c1-d94b-4a53-88d3-6b06eb85ee34.png">
     <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: transparent;"></div>
     </a>
