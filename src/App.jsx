@@ -21,6 +21,7 @@ const App = () => {
   const showMenu = useMenuContext();
   return (
     <Router>
+      <Navbar />
       <Routes>
         <Route path={'/'} element={
           <main
@@ -34,7 +35,6 @@ const App = () => {
                 showMenu ? "w-full h-full fixed top-0 left-0 z-40" : "hidden"
               }
             ></div>
-            <Navbar />
             <Menu />
             <section>
               <Hero />
