@@ -1,13 +1,13 @@
 /** @format */
-import { useFormik } from "formik";
-import Button from "../components/Button";
+import { useFormik } from 'formik';
+import Button from '../components/Button';
 
 const validate = (values) => {
   const errors = {};
   if (!values.email) {
-    errors.email = "Required";
+    errors.email = 'Required';
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    errors.email = "Invalid email address";
+    errors.email = 'Invalid email address';
   }
 
   return errors;
@@ -16,12 +16,12 @@ const validate = (values) => {
 const Subscribe = () => {
   const formik = useFormik({
     initialValues: {
-      email: "",
+      email: ''
     },
     validate,
     onSubmit: (values) => {
       alert(JSON.stringify(values, null, 2));
-    },
+    }
   });
   return (
     <section id="contact-us" className="padding-x sm:py-32 py-16 w-full">
@@ -42,9 +42,7 @@ const Subscribe = () => {
             value={formik.values.email}
             className="input bg-none bg-inherit focus:outline-none focus:border-coral-red"
           />
-          {formik.touched.email && formik.errors.email ? (
-            <span>{formik.errors.email}</span>
-          ) : null}
+          {formik.touched.email && formik.errors.email ? <span>{formik.errors.email}</span> : null}
           <div className="flex max-sm:justify-end items-center max-sm:w-full">
             <Button fullWidth onSubmit={formik.handleSubmit}>
               Sign Up

@@ -1,27 +1,27 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
 
-const MenuContext = React.createContext()
-const MenuUpdateContext = React.createContext()
-const MenuCloseContext = React.createContext()
+const MenuContext = React.createContext();
+const MenuUpdateContext = React.createContext();
+const MenuCloseContext = React.createContext();
 
 export const useMenuContext = () => {
-  return useContext(MenuContext)
-}
+  return useContext(MenuContext);
+};
 
 export const useMenuUpdateContext = () => {
-  return useContext(MenuUpdateContext)
-}
+  return useContext(MenuUpdateContext);
+};
 
 export const useMenuCloseContext = () => {
-  return useContext(MenuCloseContext)
-}
+  return useContext(MenuCloseContext);
+};
 
 export function MenuProvider({ children }) {
-  const [showMenu, setShowMenu] = React.useState(false)
+  const [showMenu, setShowMenu] = React.useState(false);
 
-  const toggleShowMenu = () => setShowMenu((prevState) => !prevState)
+  const toggleShowMenu = () => setShowMenu((prevState) => !prevState);
 
-  const dontShowMenu = () => setShowMenu(false)
+  const dontShowMenu = () => setShowMenu(false);
 
   return (
     <MenuContext.Provider value={showMenu}>
@@ -29,5 +29,5 @@ export function MenuProvider({ children }) {
         <MenuCloseContext.Provider value={dontShowMenu}>{children}</MenuCloseContext.Provider>
       </MenuUpdateContext.Provider>
     </MenuContext.Provider>
-  )
+  );
 }
