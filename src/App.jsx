@@ -45,12 +45,13 @@ const App = () => {
               <SpecialOffers />
               <CustomerReviews />
               <Subscribe />
+              <Footer />
             </section>
           </main>}
         />
         <Route path={'/shoe_details'} element={<ShoeDetails/>}/>
       </Routes>
-      <Footer />
+      
 
     </Router>
   );
