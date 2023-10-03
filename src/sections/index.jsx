@@ -1,3 +1,4 @@
+import Cart from "./Cart"
 import CustomerReviews from "./CustomerReviews"
 import Footer from "./Footer"
 import Hero from "./Hero"
@@ -8,4 +9,4 @@ import Subscribe from "./Subscribe"
 import SuperQuality from "./SuperQuality"
 import ScrollToTopButton from "./ScrollToTopButton"
 
-export { CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffers, Subscribe, SuperQuality, ScrollToTopButton }
+export { Cart, CustomerReviews, Footer, Hero, PopularProducts, Services, SpecialOffers, Subscribe, SuperQuality, ScrollToTopButton }

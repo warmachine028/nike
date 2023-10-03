@@ -1,6 +1,6 @@
 /** @format */
-
 import {
+  Cart,
   CustomerReviews,
   Footer,
   Hero,
@@ -13,7 +13,7 @@ import {
 } from "./sections";
 import Navbar from "./components/Navbar";
 import { useMenuContext } from "./contexts/MenuContext";
-import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Menu from "./components/Menu";
 import ShoeDetails from "./components/ShoeDetails.jsx";
 
@@ -21,38 +21,39 @@ const App = () => {
   const showMenu = useMenuContext();
   return (
     <Router>
-      <Navbar />
-      <Routes>
-        <Route path={'/'} element={
-          <main
-            className={
-              "relative scroll-smooth  overflow-hidden " +
-              (showMenu ? "h-screen overflow-hidden" : "")
+      <main
+        className={
+          "scroll-smooth" +
+          (showMenu
+            ? "fixed z-40 h-screen overflow-hidden touch-none"
+            : "relative")
+        }
+      >
+        <Navbar />
+        <Routes>
+          <Route
+            path={"/"}
+            element={
+              <>
+                <Menu />
+                <section>
+                  <Hero />
+                  <PopularProducts />
+                  <ScrollToTopButton />
+                  <SuperQuality />
+                  <Services />
+                  <SpecialOffers />
+                  <CustomerReviews />
+                  <Subscribe />
+                </section>
+              </>
             }
-          >
-            <div
-              className={
-                showMenu ? "w-full h-full fixed top-0 left-0 z-40" : "hidden"
-              }
-            ></div>
-            <Menu />
-            <section>
-              <Hero />
-              <PopularProducts />
-              <ScrollToTopButton />
-              <SuperQuality />
-              <Services />
-              <SpecialOffers />
-              <CustomerReviews />
-              <Subscribe />
-              <Footer />
-            </section>
-          </main>}
-        />
-        <Route path={'/shoe_details'} element={<ShoeDetails/>}/>
-      </Routes>
-      
-
+          />
+          <Route path={"/cart"} element={<Cart />} />
+          <Route path={"/shoe_details"} element={<ShoeDetails />} />
+        </Routes>
+        <Footer />
+      </main>
     </Router>
   );
 };
