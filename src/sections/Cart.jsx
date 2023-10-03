@@ -1,4 +1,4 @@
-import Menu from "../components/Menu";
+import Menu from '../components/Menu';
 
 const Cart = () => {
   return (
@@ -8,9 +8,7 @@ const Cart = () => {
         <section className="h-screen py-12 sm:py-16 lg:py-20 mb-5">
           <div className="mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-center">
-              <h1 className="text-2xl font-semibold text-gray-900">
-                Your Cart
-              </h1>
+              <h1 className="text-2xl font-semibold text-gray-900">Your Cart</h1>
             </div>
             <div className="mx-auto mt-8 max-w-md md:mt-12">
               <div className="rounded-3xl bg-white shadow-lg">
@@ -31,12 +29,8 @@ const Cart = () => {
                         <div className="relative flex flex-1 flex-col justify-between">
                           <div className="sm:col-gap-5 sm:grid sm:grid-cols-2">
                             <div className="pr-8 sm:pr-5">
-                              <p className="text-base font-semibold text-gray-900">
-                                Nike Air Max 2019
-                              </p>
-                              <p className="mx-0 mt-1 mb-0 text-sm text-gray-400">
-                                36EU - 4US
-                              </p>
+                              <p className="text-base font-semibold text-gray-900">Nike Air Max 2019</p>
+                              <p className="mx-0 mt-1 mb-0 text-sm text-gray-400">36EU - 4US</p>
                             </div>
 
                             <div className="mt-4 flex items-end justify-between sm:mt-0 sm:items-start sm:justify-end">
@@ -83,12 +77,8 @@ const Cart = () => {
                         <div className="relative flex flex-1 flex-col justify-between">
                           <div className="sm:col-gap-5 sm:grid sm:grid-cols-2">
                             <div className="pr-8 sm:pr-5">
-                              <p className="text-base font-semibold text-gray-900">
-                                Nike Air Max 2019
-                              </p>
-                              <p className="mx-0 mt-1 mb-0 text-sm text-gray-400">
-                                36EU - 4US
-                              </p>
+                              <p className="text-base font-semibold text-gray-900">Nike Air Max 2019</p>
+                              <p className="mx-0 mt-1 mb-0 text-sm text-gray-400">36EU - 4US</p>
                             </div>
                             <div className="mt-4 flex items-end justify-between sm:mt-0 sm:items-start sm:justify-end">
                               <p className="shrink-0 w-20 text-base font-semibold text-gray-900 sm:order-2 sm:ml-8 sm:text-right">
@@ -125,24 +115,17 @@ const Cart = () => {
                   <div className="mt-6 space-y-3 border-t border-b py-8">
                     <div className="flex items-center justify-between">
                       <p className="text-gray-400">Subtotal</p>
-                      <p className="text-lg font-semibold text-gray-900">
-                        $2399.00
-                      </p>
+                      <p className="text-lg font-semibold text-gray-900">$2399.00</p>
                     </div>
                     <div className="flex items-center justify-between">
                       <p className="text-gray-400">Shipping</p>
-                      <p className="text-lg font-semibold text-gray-900">
-                        $8.00
-                      </p>
+                      <p className="text-lg font-semibold text-gray-900">$8.00</p>
                     </div>
                   </div>
                   <div className="mt-6 flex items-center justify-between">
                     <p className="text-sm font-medium text-gray-900">Total</p>
                     <p className="text-2xl font-semibold text-gray-900">
-                      <span className="text-xs font-normal text-gray-400">
-                        USD
-                      </span>{" "}
-                      2499.00
+                      <span className="text-xs font-normal text-gray-400">USD</span> 2499.00
                     </p>
                   </div>
                   <div className="mt-6 text-center">
@@ -159,11 +142,7 @@ const Cart = () => {
                         stroke="currentColor"
                         strokeWidth="2"
                       >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          d="M13 7l5 5m0 0l-5 5m5-5H6"
-                        />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
                       </svg>
                     </button>
                   </div>
