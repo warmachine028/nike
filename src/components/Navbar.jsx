@@ -7,6 +7,7 @@ import ThemeSwitch from "./ThemeSwitch";
 import { useMenuUpdateContext } from "../contexts/MenuContext";
 import { MagnifyingGlassIcon } from "@heroicons/react/20/solid";
 import { useTheme } from "next-themes";
+import Menu from './Menu'
 
 const Navbar = () => {
   const { systemTheme, theme } = useTheme();
@@ -42,7 +43,7 @@ const Navbar = () => {
           </div>
           <ThemeSwitch />
           <div
-            className="lg:hidden max-lg:block dark:invert"
+            className="lg:hidden dark:invert"
             onClick={toggleShowMenu}
           >
             <img src={hamburger} alt="hamburger" height="25" width="25" />
