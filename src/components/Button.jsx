@@ -1,5 +1,6 @@
 /** @format */
-import {useNavigate} from "react-router-dom";
+import {redirect, useNavigate} from "react-router-dom";
+import Menu from "./Menu";
 
 const Button = ({children, backgroundColor, borderColor, textColor, fullWidth, icon}) => {
     const history = useNavigate();
@@ -10,8 +11,8 @@ const Button = ({children, backgroundColor, borderColor, textColor, fullWidth, i
                 console.log(children)
                 break;
             case "View Details":
-                console.log(children)
                 history('/shoe_details')
+                console.log(children)
                 break;
             case "Learn More":
                 console.log(children)

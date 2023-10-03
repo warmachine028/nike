@@ -48,7 +48,6 @@ const App = () => {
             </section>
           </main>}
         />
-
         <Route path={'/shoe_details'} element={<ShoeDetails/>}/>
       </Routes>
       <Footer />

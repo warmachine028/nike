@@ -5,16 +5,20 @@ import ua3shoe4 from '../assets/images/UACurry3.2.png'
 import Rating from "./Rating.jsx";
 import {products} from "../constants/index.js";
 import ProductCard from "./ProductCard.jsx";
+import Navbar from './Navbar';
+import Menu from './Menu';
 
 const ShoeDetails = () => {
     return (
+        <>
+        <Menu/>
         <div className="pt-20">
-            <div id={'category'} className={'flex justify-start mt-8 ml-5 gap-3 text-sm text-gray-400'}>
+        <div id={'category'} className={'flex justify-start mt-8 ml-5 gap-3 text-sm text-gray-400'}>
               <div>Men /</div>
               <div>Shoes /</div>
               <div>Sneakers /</div>
               <div>Basketball Shoes </div>
-            </div>
+        </div>
             <div id={'shoe_container'} className={'w-full h-full flex justify-center flex-row flex-wrap gap-5 mt-10'} >
               <div id={'imageContainer'} className={'flex justify-center align-center flex-col m-8 mt-0 gap-10 w-1/2 max-lg:w-2/3 max-md:w-9/12 max-sm:w-10/12'}>
                   <div id={'mainImage'} className={'flex justify-center w-full mt-14'}>
@@ -107,6 +111,7 @@ const ShoeDetails = () => {
 			</div>
           </div>
         </div>
+        </>
     );
 };
 
