@@ -8,7 +8,7 @@ const Menu = () => {
   return showMenu ? (
     <aside
       onClick={toggleShowMenu}
-      className={`z-50 absolute ${
+      className={`z-50 absolute cursor-pointer ${
         showMenu ? 'right-0' : 'right-[-100%]'
       } w-full flex flex-col items-center justify-evenly bg-transparent dark:bg-transparent bg- h-screen transition-all duration-500 ease-in-out backdrop-blur-md`}
     >

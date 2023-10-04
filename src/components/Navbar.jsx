@@ -45,7 +45,7 @@ const Navbar = () => {
             />
           </div>
           <ThemeSwitch />
-          <div className="lg:hidden dark:invert" onClick={toggleShowMenu}>
+          <div className="lg:hidden dark:invert cursor-pointer" onClick={toggleShowMenu}>
             <img src={hamburger} alt="hamburger" height="25" width="25" />
           </div>
         </div>
