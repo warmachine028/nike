@@ -7,7 +7,7 @@ import ThemeSwitch from './ThemeSwitch';
 import { useMenuUpdateContext } from '../contexts/MenuContext';
 import { MagnifyingGlassIcon } from '@heroicons/react/20/solid';
 import { useTheme } from 'next-themes';
-
+import SmoothScroll from '../helper/SmoothScroll';
 const Navbar = () => {
   const { systemTheme, theme } = useTheme();
   const currentTheme = theme === 'system' ? systemTheme : theme;
@@ -22,12 +22,12 @@ const Navbar = () => {
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
-              <a
-                href={item.href}
+              <SmoothScroll
+                target={item.href}
                 className="font-montserrat leading-normal text-lg text-slate-gray hoverUnderline dark:mix-blend-difference"
               >
                 {item.label}
-              </a>
+              </SmoothScroll>
             </li>
           ))}
         </ul>
