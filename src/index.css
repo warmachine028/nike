@@ -12,6 +12,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 ::-webkit-scrollbar {
   width: 5px;
 }
@@ -59,7 +62,7 @@ html {
   }
 
   .hoverUnderline::after {
-    @apply bg-slate-gray;
+    @apply bg-slate-gray dark:bg-slate-100;
     content: '';
     position: absolute;
     bottom: -4px;

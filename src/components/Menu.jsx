@@ -10,7 +10,7 @@ const Menu = () => {
       onClick={toggleShowMenu}
       className={`z-50 absolute cursor-pointer ${
         showMenu ? 'right-0' : 'right-[-100%]'
-      } w-full flex flex-col items-center justify-evenly bg-transparent dark:bg-transparent bg- h-screen transition-all duration-500 ease-in-out backdrop-blur-md`}
+      } w-full flex flex-col items-center justify-evenly bg-transparent dark:bg-transparent h-screen transition-all duration-500 ease-in-out backdrop-blur-md`}
     >
       <div
         className="aside__content bg-white dark:bg-black w-10/12 ml-auto h-screen flex flex-col"
