@@ -139,3 +139,22 @@ export const socialMedia = [
     link: 'https://github.com/warmachine028/nike'
   }
 ];
+
+export const cartItems = [
+  {
+    id: 1,
+    name: 'Nike Air Max 2019',
+    size: '36EU - 4US',
+    price: 1259.0,
+    quantity: 1,
+    image: 'https://images.unsplash.com/photo-1588484628369-dd7a85bfdc38?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=60'
+  },
+  {
+    id: 2,
+    name: 'Nike Air Max 2019',
+    size: '36EU - 4US',
+    price: 1259.0,
+    quantity: 1,
+    image: 'https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?ixlib=rb-1.2.1&auto=format&fit=crop&w=150&q=60'
+  }
+];

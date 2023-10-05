@@ -32,7 +32,7 @@ const Button = ({ children, backgroundColor, borderColor, textColor, fullWidth, 
 				${
           backgroundColor
             ? `${backgroundColor} ${borderColor} ${textColor} hover:text-white hover:bg-slate-gray transition duration-[300ms] ease-in-out dark:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900 dark:hover:border-gray-100 dark:transition`
-            : 'bg-coral-red border-coral-red text-white  hover:text-coral-red hover:border-coral-red hover:bg-white transition duration-[300ms] ease-in-out dark:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900 dark:hover:border-gray-100'
+            : 'bg-coral-red border-coral-red text-white  hover:text-coral-red hover:border-coral-red hover:bg-transparent transition duration-[300ms] ease-in-out dark:text-gray-100 dark:hover:border-gray-100'
         }
 			${fullWidth && 'w-full'}
 		 `}
