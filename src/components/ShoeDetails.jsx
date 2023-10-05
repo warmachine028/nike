@@ -165,7 +165,7 @@ const ShoeDetails = () => {
           <div className="flex flex-col justify-start gap-5">
             <h2 className="text-2xl font-palanquin font-bold dark:text-slate-200">Similar Products You Might Enjoy</h2>
           </div>
-          <div className="mt-5 grid grid-cols-1 lg:grid-cols-4 md:grid-cols-3 sm-grid-cols-2 gap-14 sm:gap-4">
+          <div className="mt-5 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
             {products.map((product) => (
               <ProductCard key={product.name} {...product} />
             ))}
