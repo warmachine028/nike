@@ -2,30 +2,30 @@
 'use client';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from 'next-themes';
-import { SunIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
+import { SunIcon, ShoppingCartIcon, MoonIcon } from '@heroicons/react/24/outline';
 
 const ThemeSwitch = () => {
   const navigate = useNavigate();
-  const { systemTheme, theme, setTheme } = useTheme();
-  const currentTheme = theme === 'system' ? systemTheme : theme;
+  const { theme, setTheme } = useTheme();
 
-  const navigateToCart = () => {
-    navigate('/cart');
-  };
+  const toggleTheme = () => (theme === 'dark' ? setTheme('light') : setTheme('dark'));
 
   return (
     <div className="inline-flex items-center">
-      <SunIcon
-        className={`mr-3 h-6 w-6 transition duration-300 cursor-pointer ${
-          currentTheme === 'dark' ? 'text-coral-red' : 'text-slate-gray'
-        }`}
-        onClick={() => (theme == 'dark' ? setTheme('light') : setTheme('dark'))}
-      />
+      {theme === 'dark' ? (
+        <SunIcon
+          className="mr-3 h-6 w-6 transition duration-300 cursor-pointer text-slate-gray dark:text-coral-red"
+          onClick={toggleTheme}
+        />
+      ) : (
+        <MoonIcon
+          className="mr-3 h-6 w-6 transition duration-300 cursor-pointer text-slate-gray dark:text-coral-red"
+          onClick={toggleTheme}
+        />
+      )}
       <ShoppingCartIcon
-        onClick={navigateToCart}
-        className={`mr-3 h-6 w-6 transition duration-300 cursor-pointer ${
-          currentTheme === 'dark' ? 'text-coral-red' : 'text-slate-gray'
-        }`}
+        onClick={() => navigate('/cart')}
+        className="mr-3 h-6 w-6 transition duration-300 cursor-pointer text-slate-gray dark:text-coral-red"
       />
     </div>
   );

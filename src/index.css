@@ -58,7 +58,7 @@ img {
   }
 
   .hoverUnderline::after {
-    @apply bg-slate-gray;
+    @apply bg-slate-gray dark:bg-slate-100;
     content: '';
     position: absolute;
     bottom: -4px;

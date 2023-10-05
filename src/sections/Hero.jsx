@@ -62,7 +62,7 @@ const Hero = () => {
             <br />
             <span className="text-coral-red inline-block mt-6">Nike </span> Shoes
           </h1>
-          <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
+          <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm dark:text-gray-400">
             Discover stylish Nike arrivals, quality comfort, and innovation for your active life.
           </p>
           <Button icon={arrowRight}>Shop now</Button>
@@ -72,7 +72,7 @@ const Hero = () => {
                 <p className="text-4xl font-palanquin font-bold">
                   {formatNumber(animatedStatistics[stat.label.toLowerCase()])}+
                 </p>
-                <p className="leading-7 font-montserrat text-slate-gray">{stat.label}</p>
+                <p className="leading-7 font-montserrat text-slate-gray dark:text-gray-400">{stat.label}</p>
               </div>
             ))}
           </div>
