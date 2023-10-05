@@ -36,9 +36,8 @@ const Navbar = () => {
             />
           </div>
           <ThemeSwitch />
-          <div className="lg:hidden" onClick={toggleShowMenu}>
+          <div className="lg:hidden dark:invert cursor-pointer" onClick={toggleShowMenu}>
             <Bars3Icon height={25} width={25} className="dark:text-coral-red" />
-            {/* <img  src={hamburger} alt="hamburger" height="25" width="25" /> */}
           </div>
         </div>
       </nav>
