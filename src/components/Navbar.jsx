@@ -4,11 +4,18 @@ import { navLinks } from '../constants';
 import ThemeSwitch from './ThemeSwitch';
 import { useMenuUpdateContext } from '../contexts/MenuContext';
 import { MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/20/solid';
+import useScroll from '../../helpers/useScroll';
 
 const Navbar = () => {
   const toggleShowMenu = useMenuUpdateContext();
+  const isScrolled = useScroll();
+
   return (
-    <header className="dark:bg-[#1C1C1C] bg-white padding-x py-6 lg:py-8 z-10 w-full shadow-2xl">
+    <header
+      className={`dark:bg-[#1C1C1C] bg-white padding-x py-6 lg:py-8 z-10 w-full shadow-2xl ${
+        isScrolled ? 'fixed z-20 transition-transform duration-1000 transform' : '' // main logic where the transition is applied
+      }`}
+    >
       <nav className="flex justify-between items-center max-container">
         <a href="/">
           <img src={headerLogo} className="hidden lg:block" alt="logo" width="130" height="29" />
