@@ -16,11 +16,9 @@ import { useMenuContext } from './contexts/MenuContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import ShoeDetails from './components/ShoeDetails.jsx';
-import useScroll from '../helpers/useScroll';
 
 const App = () => {
   const showMenu = useMenuContext();
-  const isScrolled = useScroll();
 
   return (
     <Router>
@@ -33,7 +31,7 @@ const App = () => {
               <>
                 <Menu />
                 <section>
-                  <div className={`padding-x py-6 lg:py-8 z-10 w-full ${isScrolled ? '' : 'hidden'}`} />{' '}
+                  <div className={`padding-x py-6 lg:py-8 z-10 w-full`} />{' '}
                   {/* This is a hack to prevent the navbar from jumping when the user scrolls to the top of the page */}
                   <Hero />
                   <PopularProducts />

@@ -1,23 +1,34 @@
-import { useEffect, useState } from 'react';
-
-const scrollOffset = 100; // threshold to pass
+import { useState, useEffect } from 'react';
 
 const useScroll = () => {
-  const [scrolled, setScrolled] = useState(false); // stores if scrolled value passes scrolled offset
+  const [isScrollingUp, setIsScrollingUp] = useState(false);
+  const [isScrollingDown, setIsScrollingDown] = useState(false);
 
   useEffect(() => {
+    let prevScrollY = window.scrollY;
+
     const handleScroll = () => {
-      if (window.scrollY > scrollOffset) {
-        // if scrolled value passes scrolled offset
-        setScrolled(true);
-      } else {
-        setScrolled(false);
+      const currentScrollY = window.scrollY;
+
+      if (currentScrollY < prevScrollY) {
+        setIsScrollingUp(true);
+        setIsScrollingDown(false);
+      } else if (currentScrollY > prevScrollY) {
+        setIsScrollingUp(false);
+        setIsScrollingDown(true);
       }
+
+      prevScrollY = currentScrollY;
     };
+
     window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  });
-  return scrolled;
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  return [isScrollingUp, isScrollingDown];
 };
 
 export default useScroll;
