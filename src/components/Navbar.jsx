@@ -4,15 +4,23 @@ import { navLinks } from '../constants';
 import ThemeSwitch from './ThemeSwitch';
 import { useMenuUpdateContext } from '../contexts/MenuContext';
 import { MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/20/solid';
+import useScroll from '../../helpers/useScroll';
 
 const Navbar = () => {
   const toggleShowMenu = useMenuUpdateContext();
+
+  const [isScrollingUp, isScrollingDown] = useScroll();
+
   return (
-    <header className="dark:bg-[#1C1C1C] bg-white padding-x py-6 lg:py-8 z-10 w-full shadow-2xl">
+    <header
+      className={`dark:bg-[#1C1C1C] bg-white padding-x py-6 lg:py-6 z-10 w-full shadow-2xl fixed z-20 transition-transform duration-700 transform ${
+        isScrollingDown ? '-translate-y-full' : ''
+      }${isScrollingUp ? 'translate-y-0' : ''}`}
+    >
       <nav className="flex justify-between items-center max-container">
         <a href="/">
-          <img src={headerLogo} className="hidden lg:block" alt="logo" width="130" height="29" />
-          <img src={nikeLogo} className="lg:hidden h-[40px]" alt="logo" />
+          <img src={headerLogo} className="hidden lg:block" alt="logo" width="200" height="29" />
+          <img src={nikeLogo} className="lg:hidden h-[50px]" alt="logo" />
         </a>
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (

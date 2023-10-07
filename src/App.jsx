@@ -19,6 +19,7 @@ import ShoeDetails from './components/ShoeDetails.jsx';
 
 const App = () => {
   const showMenu = useMenuContext();
+
   return (
     <Router>
       <main className={'scroll-smooth' + (showMenu ? 'fixed z-40 h-screen overflow-hidden touch-none' : 'relative')}>
@@ -30,6 +31,8 @@ const App = () => {
               <>
                 <Menu />
                 <section>
+                  <div className={`padding-x py-6 lg:py-8 z-10 w-full`} />{' '}
+                  {/* This is a hack to prevent the navbar from jumping when the user scrolls to the top of the page */}
                   <Hero />
                   <PopularProducts />
                   <ScrollToTopButton />
