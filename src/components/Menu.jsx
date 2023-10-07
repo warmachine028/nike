@@ -5,7 +5,7 @@ const Menu = () => {
   const showMenu = useMenuContext();
   const toggleShowMenu = useMenuUpdateContext();
 
-  return showMenu ? (
+  return (
     <aside
       onClick={toggleShowMenu}
       className={`z-50 absolute cursor-pointer ${
@@ -76,7 +76,7 @@ const Menu = () => {
         </div>
       </div>
     </aside>
-  ) : null;
+  );
 };
 
 export default Menu;
