@@ -12,17 +12,14 @@ import {
   ScrollToTopButton
 } from './sections';
 import Navbar from './components/Navbar';
-import { useMenuContext } from './contexts/MenuContext';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import ShoeDetails from './components/ShoeDetails.jsx';
 
 const App = () => {
-  const showMenu = useMenuContext();
-
   return (
     <Router>
-      <main className={'scroll-smooth' + (showMenu ? 'fixed z-40 h-screen overflow-hidden touch-none' : 'relative')}>
+      <main className={'scroll-smooth z-40 h-fit overflow-hidden touch-none relative'}>
         <Navbar />
         <Routes>
           <Route
