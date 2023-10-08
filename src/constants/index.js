@@ -5,6 +5,8 @@ import {
   bigShoe3,
   customer1,
   customer2,
+  customer3,
+  customer4,
   shoe4,
   shoe5,
   shoe6,
@@ -95,6 +97,19 @@ export const reviews = [
     customerName: 'Lota Mongeskar',
     rating: 4.5,
     feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+  },
+  {
+    imgURL: customer3,
+    customerName: 'Ramesh Aggarwal',
+    rating: 4.3,
+    feedback: "The product not only met but exceeded my expectations. I'll definitely be a returning customer!"
+  },
+  {
+    imgURL: customer4,
+    customerName: 'Christina Yu',
+    rating: 4.3,
+    feedback:
+      'I got a pair of boots from nike and I’m very satisfied. They are high-quality and worth the money. The store also offered free shipping at that price so that’s a plus!'
   }
 ];
 
