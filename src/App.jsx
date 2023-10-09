@@ -19,7 +19,7 @@ import ShoeDetails from './components/ShoeDetails.jsx';
 const App = () => {
   return (
     <Router>
-      <main className={'scroll-smooth z-40 h-fit overflow-hidden touch-none relative'}>
+      <main className={'scroll-smooth z-40 h-fit overflow-hidden relative'}>
         <Navbar />
         <Routes>
           <Route
