@@ -6,16 +6,39 @@ const Cart = () => {
   const [itemTotal, setItemTotal] = useState(0);
   const [shipping, setShipping] = useState(0);
 
-  useEffect(() => {
-    const cartData = JSON.parse(localStorage.getItem('cart'));
+  const updateCartTotals = (cartData) => {
     const total = Object.keys(cartData).reduce((acc, itemId) => {
       return acc + cartData[itemId].price * cartData[itemId].quantity;
     }, 0);
     const shippingCost = 8 * Object.keys(cartData).length;
 
-    setCartItems(cartData);
     setItemTotal(total);
     setShipping(shippingCost);
+  };
+
+  const removeItem = (itemId) => {
+    const updatedCartItems = { ...cartItems };
+    delete updatedCartItems[itemId];
+    setCartItems(updatedCartItems);
+    updateCartTotals(updatedCartItems);
+    localStorage.setItem('cart', JSON.stringify(updatedCartItems));
+  };
+
+  const reduceQuantity = (itemId) => {
+    const updatedCartItems = { ...cartItems };
+    updatedCartItems[itemId].quantity -= 1;
+    if (updatedCartItems[itemId].quantity <= 0) {
+      delete updatedCartItems[itemId];
+    }
+    setCartItems(updatedCartItems);
+    updateCartTotals(updatedCartItems);
+    localStorage.setItem('cart', JSON.stringify(updatedCartItems));
+  };
+
+  useEffect(() => {
+    const cartData = JSON.parse(localStorage.getItem('cart'));
+    updateCartTotals(cartData);
+    setCartItems(cartData);
   }, []);
 
   const total = itemTotal + shipping;
@@ -61,8 +84,30 @@ const Cart = () => {
                           </p>
                         </div>
                       </div>
-                      <div className="absolute top-0 right-0 flex sm:bottom-0 sm:top-auto">
+                      <div className="absolute top-0 right-0 flex sm:bottom-5 sm:top-auto">
                         <button
+                          onClick={() => reduceQuantity(item)}
+                          type="button"
+                          className="flex rounded p-2 text-center text-gray-500 transition-all duration-200 ease-in-out focus:shadow hover:text-gray-900 dark:hover:text-gray-300"
+                        >
+                          <svg
+                            className="h-5 w-5"
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="2"
+                              d="M6 12H18"
+                              className=""
+                            ></path>
+                          </svg>
+                        </button>
+                        <button
+                          onClick={() => removeItem(item)}
                           type="button"
                           className="flex rounded p-2 text-center text-gray-500 transition-all duration-200 ease-in-out focus:shadow hover:text-gray-900 dark:hover:text-gray-300"
                         >
@@ -90,7 +135,7 @@ const Cart = () => {
               <div className="mt-6 space-y-3 border-t border-b py-8">
                 <div className="flex items-center justify-between">
                   <p className=" text-gray-800 dark:text-gray-400">Subtotal</p>
-                  <p className="text-lg font-semibold text-gray-900 dark:text-gray-300">${itemTotal}</p>
+                  <p className="text-lg font-semibold text-gray-900 dark:text-gray-300">${itemTotal.toFixed(2)}</p>
                 </div>
                 <div className="flex items-center justify-between">
                   <p className=" text-gray-800 dark:text-gray-400">Shipping</p>
