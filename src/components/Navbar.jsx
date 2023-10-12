@@ -6,7 +6,7 @@ import { useMenuUpdateContext } from '../contexts/MenuContext';
 import { MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/20/solid';
 import useScroll from '../../helpers/useScroll';
 
-const Navbar = () => {
+const Navbar = ({ handleClick }) => {
   const toggleShowMenu = useMenuUpdateContext();
 
   const [isScrollingUp, isScrollingDown] = useScroll();
@@ -43,7 +43,7 @@ const Navbar = () => {
               className="bg-transparent hidden sm:block text-slate-gray outline-0 focus:outline-0 placeholder:font-semibold dark:placeholder-slate-400"
             />
           </div>
-          <ThemeSwitch />
+          <ThemeSwitch handleClick={handleClick} />
           <div className="lg:hidden dark:invert cursor-pointer" onClick={toggleShowMenu}>
             <Bars3Icon height={25} width={25} className="dark:text-coral-red" />
           </div>
