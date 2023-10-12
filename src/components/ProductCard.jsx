@@ -1,8 +1,33 @@
 import { star } from '../assets/icons';
+import { ShoppingCartIcon } from '@heroicons/react/24/outline';
 
-const ProductCard = ({ imgURL, name, price }) => {
+const ProductCard = ({ productId, imgURL, name, price }) => {
+  const addToCart = () => {
+    // Check if there is already a cart in local storage
+    const existingCart = localStorage.getItem('cart');
+    const currentTotal = Number(localStorage.getItem('total'));
+
+    // Parse the existing cart or create an empty object if it doesn't exist
+    const cart = existingCart ? JSON.parse(existingCart) : {};
+
+    if (cart[productId] && cart[productId].quantity > 0) {
+      cart[productId].quantity++;
+    } else {
+      cart[productId] = { name, price, imgURL, quantity: 1 };
+    }
+    const total = currentTotal ? currentTotal + price : price;
+
+    // Store the updated cart back in local storage
+    localStorage.setItem('cart', JSON.stringify(cart));
+    localStorage.setItem('total', total);
+    alert('Added to cart successfully');
+  };
+
   return (
-    <div className="flex flex-col w-full max-sm:w-full hover:scale-105 duration-300 ease-in-out rounded-lg p-4 shadow-lg dark:bg-slate-800">
+    <div
+      id={productId}
+      className="relative flex flex-col w-full max-sm:w-full hover:scale-105 duration-300 ease-in-out rounded-lg p-4 shadow-lg dark:bg-slate-800"
+    >
       <img src={imgURL} alt={`${name}-product`} height={282} className="rounded-lg text-center" />
 
       <div className="mt-4 flex items-center">
@@ -12,7 +37,12 @@ const ProductCard = ({ imgURL, name, price }) => {
 
       <h3 className="mt-2 text-xl sm:text-2xl leading-normal font-semibold font-palanquin">{name}</h3>
 
-      <p className="mt-2 sm:text-xl leading-normal font-semibold font-montserrat text-coral-red">{price}</p>
+      <p className="mt-2 sm:text-xl leading-normal font-semibold font-montserrat text-coral-red">${price.toFixed(2)}</p>
+
+      <ShoppingCartIcon
+        onClick={addToCart}
+        className="mr-3 h-11 w-11 absolute bottom-10 right-5 transition duration-300 cursor-pointer text-slate-gray dark:text-coral-red hover:scale-125"
+      />
     </div>
   );
 };

@@ -1,7 +1,25 @@
 import Menu from '../components/Menu';
-import { cartItems } from '../constants';
+import { useEffect, useState } from 'react';
 
 const Cart = () => {
+  const [cartItems, setCartItems] = useState({});
+  const [itemTotal, setItemTotal] = useState(0);
+  const [shipping, setShipping] = useState(0);
+
+  useEffect(() => {
+    const cartData = JSON.parse(localStorage.getItem('cart'));
+    const total = Object.keys(cartData).reduce((acc, itemId) => {
+      return acc + cartData[itemId].price * cartData[itemId].quantity;
+    }, 0);
+    const shippingCost = 8 * Object.keys(cartData).length;
+
+    setCartItems(cartData);
+    setItemTotal(total);
+    setShipping(shippingCost);
+  }, []);
+
+  const total = itemTotal + shipping;
+
   return (
     <>
       <Menu />
@@ -13,27 +31,33 @@ const Cart = () => {
           <div className="mx-auto mt-8 max-w-xl md:mt-12 rounded-3xl bg-white dark:text-gray-400 dark:bg-gray-900 overflow-hidden shadow-lg">
             <div className="px-4 py-6 sm:px-8 sm:py-10">
               <ul className="-my-8">
-                {cartItems.map((item) => (
+                {Object.keys(cartItems).map((item) => (
                   <li
-                    key={item.id}
+                    key={item}
                     className="flex flex-col space-y-3 py-6 text-left sm:flex-row sm:space-x-5 sm:space-y-0"
                   >
                     <div className="shrink-0 relative">
                       <span className="absolute top-1 left-1 flex h-6 w-6 items-center justify-center rounded-full bg-white dark:bg-gray-700 dark:text-gray-300 text-sm font-medium text-gray-500 shadow sm:-top-2 sm:-right-2">
-                        {item.quantity}
+                        {cartItems[item].quantity}
                       </span>
-                      <img className="h-24 w-24 max-w-full rounded-lg object-cover" src={item.image} alt="" />
+                      <img
+                        className="h-24 w-24 max-w-full rounded-lg object-cover"
+                        src={cartItems[item].imgURL}
+                        alt=""
+                      />
                     </div>
                     <div className="relative flex flex-1 flex-col justify-between">
                       <div className="sm:col-gap-5 sm:grid sm:grid-cols-2">
                         <div className="pr-8 sm:pr-5">
-                          <p className="text-base font-semibold text-gray-900 dark:text-gray-300">{item.name}</p>
-                          <p className="mx-0 mt-1 mb-0 text-sm text-gray-400">{item.size}</p>
+                          <p className="text-base font-semibold text-gray-900 dark:text-gray-300">
+                            {cartItems[item].name}
+                          </p>
+                          <p className="mx-0 mt-1 mb-0 text-sm text-gray-400">36EU - 4US</p>
                         </div>
 
                         <div className="mt-4 flex items-end justify-between sm:mt-0 sm:items-start sm:justify-end">
                           <p className="shrink-0 w-20 text-base font-semibold text-gray-900 dark:text-gray-300 sm:text-right">
-                            ${item.price},00
+                            ${cartItems[item].price.toFixed(2)}
                           </p>
                         </div>
                       </div>
@@ -66,17 +90,17 @@ const Cart = () => {
               <div className="mt-6 space-y-3 border-t border-b py-8">
                 <div className="flex items-center justify-between">
                   <p className=" text-gray-800 dark:text-gray-400">Subtotal</p>
-                  <p className="text-lg font-semibold text-gray-900 dark:text-gray-300">$2399.00</p>
+                  <p className="text-lg font-semibold text-gray-900 dark:text-gray-300">${itemTotal}</p>
                 </div>
                 <div className="flex items-center justify-between">
                   <p className=" text-gray-800 dark:text-gray-400">Shipping</p>
-                  <p className="text-lg font-semibold text-gray-900 dark:text-gray-300">$8.00</p>
+                  <p className="text-lg font-semibold text-gray-900 dark:text-gray-300">${shipping}.00</p>
                 </div>
               </div>
               <div className="mt-6 flex items-center justify-between">
                 <p className="text-sm font-medium text-gray-900 dark:text-gray-400">Total</p>
                 <p className="text-2xl font-semibold text-gray-900 dark:text-gray-300">
-                  <span className="text-xs font-normal text-gray-400">USD</span> 2499.00
+                  <span className="text-xs font-normal text-gray-400">USD</span> {total.toFixed(2)}
                 </p>
               </div>
               <div className="mt-6 text-center">
