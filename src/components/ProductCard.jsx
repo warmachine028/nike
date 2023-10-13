@@ -5,7 +5,6 @@ const ProductCard = ({ productId, imgURL, name, price }) => {
   const addToCart = () => {
     // Check if there is already a cart in local storage
     const existingCart = localStorage.getItem('cart');
-    const currentTotal = Number(localStorage.getItem('total'));
 
     // Parse the existing cart or create an empty object if it doesn't exist
     const cart = existingCart ? JSON.parse(existingCart) : {};
@@ -15,11 +14,9 @@ const ProductCard = ({ productId, imgURL, name, price }) => {
     } else {
       cart[productId] = { name, price, imgURL, quantity: 1 };
     }
-    const total = currentTotal ? currentTotal + price : price;
 
     // Store the updated cart back in local storage
     localStorage.setItem('cart', JSON.stringify(cart));
-    localStorage.setItem('total', total);
     alert('Added to cart successfully');
   };
 
