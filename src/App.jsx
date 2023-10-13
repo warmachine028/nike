@@ -16,6 +16,8 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Menu from './components/Menu';
 import ShoeDetails from './components/ShoeDetails.jsx';
 import { useState } from 'react';
+import Signin from './sections/Signin';
+import Signup from './sections/Signup';
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
@@ -52,6 +54,8 @@ const App = () => {
             }
           />
           <Route path={'/shoe_details'} element={<ShoeDetails />} />
+          <Route path={'/login'} element={<Signin />} />
+          <Route path={'/register'} element={<Signup />} />
         </Routes>
         <Footer />
       </main>
