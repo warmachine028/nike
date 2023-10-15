@@ -38,7 +38,7 @@ const Footer = () => {
                 <ul className="relative">
                   {section.links.map((link) => (
                     <li key={link.name} className="mt-3 text-white-400 font-montserrat text-base leading-normal">
-                      <a className="hoverUnderline" href="">
+                      <a className="hoverUnderline" href={link.link}>
                         {link.name}
                       </a>
                     </li>
