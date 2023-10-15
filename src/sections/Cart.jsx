@@ -47,11 +47,13 @@ const Cart = () => {
     <>
       <Menu />
       <section className="py-12 sm:py-16 lg:py-20 mb-5">
-        <div className="mx-auto pt-16 px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-center">
+
+        <div className="mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-center mt-4 md:mt-20 pt-4 md:pt-8">
+
             <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-300">Your Cart</h1>
           </div>
-          <div className="mx-auto mt-8 max-w-xl md:mt-12 rounded-3xl bg-white dark:text-gray-400 dark:bg-gray-900 overflow-hidden shadow-lg">
+          <div className="mx-auto mt-4 max-w-xl md:mt-6 rounded-3xl bg-white dark:text-gray-400 dark:bg-gray-900 overflow-hidden shadow-lg">
             <div className="px-4 py-6 sm:px-8 sm:py-10">
               {cartItems && Object.keys(cartItems).length > 0 ? (
                 // Render the cart content when there are items
@@ -136,7 +138,7 @@ const Cart = () => {
                 </ul>
               ) : (
                 // Render a message when the cart is empty
-                <div className="text-center py-8">
+                <div className="text-center">
                   <p className="text-gray-500 dark:text-gray-400">Your cart is empty. Add some items to your cart!</p>
                 </div>
               )}
