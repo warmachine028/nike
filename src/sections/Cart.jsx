@@ -47,7 +47,7 @@ const Cart = () => {
     <>
       <Menu />
       <section className="py-12 sm:py-16 lg:py-20 mb-5">
-        <div className="mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto pt-16 px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center">
             <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-300">Your Cart</h1>
           </div>
