@@ -22,12 +22,15 @@ import Signup from './sections/Signup';
 const App = () => {
   const [showCart, setShowCart] = useState(false);
   function handleShowCart() {
-    setShowCart(!showCart);
+    setShowCart(true);
+  }
+  function handleHideCart() {
+    setShowCart(false);
   }
   return (
     <Router>
       <main className={'scroll-smooth z-40 h-fit overflow-hidden relative'}>
-        <Navbar handleClick={handleShowCart} />
+        <Navbar handleClick2={handleHideCart} handleClick={handleShowCart} />
         <Routes>
           <Route
             path={'/'}
