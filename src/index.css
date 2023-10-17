@@ -82,7 +82,7 @@ html {
 
   .carousel {
     overflow: hidden;
-    width: 700px;
+    width: 70vw;
     display: flex;
     flex-direction: column;
     justify-content: center;                          
@@ -103,9 +103,8 @@ html {
   
   .carousel-item-text {
     font-size: 1.15rem;
-    padding: 0 20px 0 20px;
+    padding: 0 30px 0 30px;
     white-space: normal;
-    color: #617d98;
   }
   
   .carousel-img {
@@ -115,8 +114,9 @@ html {
   
   .carousel-buttons {
     display: flex;
-    justify-content: space-between;
-  }
+    justify-content: space-around;
+    align-items: center;
+  } 
   
   .button-arrow {
     background: none;
