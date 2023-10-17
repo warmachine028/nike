@@ -44,3 +44,10 @@ filters:
       - /.*/
     events: [pull_request]
     targets: [title]
+
+  - label: "github_actions"
+    regex:
+      - /Bump\s/i
+    events: [pull_request]
+    targets: [title]
+    
