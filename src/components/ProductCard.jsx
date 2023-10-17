@@ -34,12 +34,15 @@ const ProductCard = ({ productId, imgURL, name, price }) => {
 
       <h3 className="mt-2 text-xl sm:text-2xl leading-normal font-semibold font-palanquin">{name}</h3>
 
-      <p className="mt-2 sm:text-xl leading-normal font-semibold font-montserrat text-coral-red">${price.toFixed(2)}</p>
-
-      <ShoppingCartIcon
-        onClick={addToCart}
-        className="mr-3 h-11 w-11 absolute bottom-10 right-5 transition duration-300 cursor-pointer text-slate-gray dark:text-coral-red hover:scale-125"
-      />
+      <div className="flex justify-between items-center">
+        <p className="mt-2 sm:text-xl leading-normal font-semibold font-montserrat text-coral-red">
+          ${price.toFixed(2)}
+        </p>
+        <ShoppingCartIcon
+          onClick={addToCart}
+          className="h-8 w-8 md:h-10 md:w-10 transition duration-300 cursor-pointer text-slate-gray dark:text-coral-red hover:scale-125"
+        />
+      </div>
     </div>
   );
 };
