@@ -48,7 +48,7 @@ filters:
   # For Dependabots
   - label: "github_actions"
     regex:
-      - /Bump/i
+      - /bump/i
     events: [pull_request]
     targets: [title]
-    
+
