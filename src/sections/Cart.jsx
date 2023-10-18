@@ -46,11 +46,9 @@ const Cart = () => {
   return (
     <>
       <Menu />
-      <section className="py-12 sm:py-16 lg:py-20 mb-5">
-
+      <section className="py-12 sm:py-16 lg:py-20 mb-5 mt-8">
         <div className="mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center mt-4 md:mt-20 pt-4 md:pt-8">
-
             <h1 className="text-2xl font-semibold text-gray-900 dark:text-gray-300">Your Cart</h1>
           </div>
           <div className="mx-auto mt-4 max-w-xl md:mt-6 rounded-3xl bg-white dark:text-gray-400 dark:bg-gray-900 overflow-hidden shadow-lg">
