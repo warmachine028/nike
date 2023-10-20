@@ -16,9 +16,9 @@ const Cart = () => {
     setShipping(shippingCost);
   };
 
-  const removeItem = (itemId) => {
+  const increaseQuantity = (itemId) => {
     const updatedCartItems = { ...cartItems };
-    delete updatedCartItems[itemId];
+    updatedCartItems[itemId].quantity += 1;
     setCartItems(updatedCartItems);
     updateCartTotals(updatedCartItems);
     localStorage.setItem('cart', JSON.stringify(updatedCartItems));
@@ -109,24 +109,18 @@ const Cart = () => {
                             </svg>
                           </button>
                           <button
-                            onClick={() => removeItem(item)}
+                            onClick={() => increaseQuantity(item)}
                             type="button"
                             className="flex rounded p-2 text-center text-gray-500 transition-all duration-200 ease-in-out focus:shadow hover:text-gray-900 dark:hover:text-gray-300"
                           >
                             <svg
-                              className="h-5 w-5"
+                              className="h-4 w-4"
                               xmlns="http://www.w3.org/2000/svg"
                               fill="none"
                               viewBox="0 0 24 24"
                               stroke="currentColor"
                             >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth="2"
-                                d="M6 18L18 6M6 6l12 12"
-                                className=""
-                              ></path>
+                              <path d="M11 11v-11h1v11h11v1h-11v11h-1v-11h-11v-1h11z" />
                             </svg>
                           </button>
                         </div>
