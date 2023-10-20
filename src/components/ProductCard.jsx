@@ -2,7 +2,7 @@ import { star } from '../assets/icons';
 
 const ProductCard = ({ imgURL, name, price }) => {
   return (
-    <div className="flex flex-col w-full max-sm:w-full hover:scale-105 duration-300 ease-in-out rounded-lg p-4 shadow-lg dark:bg-slate-800">
+    <div className="flex flex-col w-full max-sm:w-full hover:scale-110 duration-300 ease-in-out rounded-lg p-4 shadow-lg dark:bg-slate-800">
       <img src={imgURL} alt={`${name}-product`} height={282} className="rounded-lg text-center" />
 
       <div className="mt-4 flex items-center">

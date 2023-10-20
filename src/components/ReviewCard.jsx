@@ -2,7 +2,7 @@ import { star } from '../assets/icons';
 
 const ReviewCard = ({ imgURL, feedback, rating, customerName }) => {
   return (
-    <div className="inline-flex justify-center items-center flex-col">
+    <div className="inline-flex justify-center items-center flex-col hover:scale-110 duration-300 dark:bg-slate-800 transition ease-in-out">
       <img src={imgURL} alt="customer" className="rounded-full object-cover" width={120} height={120} />
       <article className="mt-6 max-w-sm text-center info-text dark:text-gray-300">{feedback}</article>
       <div className="mt-3 flex justify-center items-center gap-2.5">

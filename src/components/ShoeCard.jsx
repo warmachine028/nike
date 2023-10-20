@@ -7,7 +7,7 @@ const ShoeCard = ({ img, change, largeImg }) => {
   const isSelected = largeImg === img.bigShoe;
   return (
     <div
-      className={`border-2 rounded-xl hover:scale-110 duration-300 transition ease-in-out ${
+      className={`border-2 rounded-xl hover:scale-110 duration-200 shadow-lg dark:bg-slate-800 transition ease-in-out ${
         largeImg === img.bigShoe ? 'border-coral-red' : 'border-transparent'
       } cursor-pointer max-sm:flex-1 hover:drop-shadow-[0px_0px_14px_rgba(0,0,0,0.3)] hover:border-2 hover:border-coral-red`}
       onClick={handleClick}
