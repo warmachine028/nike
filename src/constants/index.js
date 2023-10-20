@@ -19,7 +19,7 @@ import {
 export const navLinks = [
   { href: '/#home', label: 'Home' },
   { href: '/#about-us', label: 'About Us' },
-  { href: '/#products', label: 'Products' },
+  { href: '/products', label: 'Products' },
   { href: '/#contact-us', label: 'Contact Us' }
 ];
 
@@ -46,24 +46,28 @@ export const statistics = [
 
 export const products = [
   {
+    productId: 100,
     imgURL: shoe4,
     name: 'Nike Air Jordan-01',
-    price: '$200.20'
+    price: 200.2
   },
   {
+    productId: 101,
     imgURL: shoe5,
     name: 'Nike Air Jordan-10',
-    price: '$210.20'
+    price: 210.2
   },
   {
+    productId: 102,
     imgURL: shoe6,
     name: 'Nike Air Jordan-100',
-    price: '$220.20'
+    price: 220.2
   },
   {
+    productId: 103,
     imgURL: shoe7,
     name: 'Nike Air Jordan-001',
-    price: '$230.20'
+    price: 230.2
   }
 ];
 

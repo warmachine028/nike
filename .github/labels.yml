@@ -41,6 +41,14 @@ filters:
   # For Hacktoberfest only
   - label: "hacktoberfest"
     regexs:
-      - /.*/
+      - /^(?!Bump).*/
     events: [pull_request]
     targets: [title]
+
+  # For Dependabots
+  - label: "github_actions"
+    regexs:
+      - /bump/i
+    events: [pull_request]
+    targets: [title]
+

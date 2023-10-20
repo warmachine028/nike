@@ -1,5 +1,6 @@
 import { useMenuContext, useMenuUpdateContext } from '../contexts/MenuContext';
 import { navLinks } from '../constants';
+import { Link } from 'react-router-dom';
 
 const Menu = () => {
   const showMenu = useMenuContext();
@@ -66,12 +67,18 @@ const Menu = () => {
             <span className="text-black dark:text-white font-bold">Learn more</span>
           </p>
           <div className="actions flex gap-3">
-            <button className="bg-black text-white dark:bg-white dark:text-black font-semibold px-4 py-1 rounded-full">
+            <Link
+              to="/register"
+              className="bg-black text-white dark:bg-white dark:text-black font-semibold px-4 py-1 rounded-full"
+            >
               Join Us
-            </button>
-            <button className="dark:bg-black dark:text-white font-semibold px-4 py-1 rounded-full border border-gray-300">
+            </Link>
+            <Link
+              to="/login"
+              className="dark:bg-black dark:text-white font-semibold px-4 py-1 rounded-full border border-gray-300"
+            >
               Sign In
-            </button>
+            </Link>
           </div>
         </div>
       </div>

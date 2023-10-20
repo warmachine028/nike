@@ -6,7 +6,7 @@ import { useMenuUpdateContext } from '../contexts/MenuContext';
 import { MagnifyingGlassIcon, Bars3Icon } from '@heroicons/react/20/solid';
 import useScroll from '../../helpers/useScroll';
 
-const Navbar = () => {
+const Navbar = ({ handleClick, handleClick2 }) => {
   const toggleShowMenu = useMenuUpdateContext();
 
   const [isScrollingUp, isScrollingDown] = useScroll();
@@ -25,12 +25,14 @@ const Navbar = () => {
         <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
           {navLinks.map((item) => (
             <li key={item.label}>
-              <a
-                href={item.href}
-                className="font-montserrat leading-normal text-lg text-slate-gray dark:text-slate-100 hoverUnderline dark:mix-blend-difference"
-              >
-                {item.label}
-              </a>
+              <button onClick={handleClick2}>
+                <a
+                  href={item.href}
+                  className="font-montserrat leading-normal text-lg text-slate-gray dark:text-slate-100 hoverUnderline dark:mix-blend-difference"
+                >
+                  {item.label}
+                </a>
+              </button>
             </li>
           ))}
         </ul>
@@ -43,7 +45,7 @@ const Navbar = () => {
               className="bg-transparent hidden sm:block text-slate-gray outline-0 focus:outline-0 placeholder:font-semibold dark:placeholder-slate-400"
             />
           </div>
-          <ThemeSwitch />
+          <ThemeSwitch handleClick={handleClick} />
           <div className="lg:hidden dark:invert cursor-pointer" onClick={toggleShowMenu}>
             <Bars3Icon height={25} width={25} className="dark:text-coral-red" />
           </div>
