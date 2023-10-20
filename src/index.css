@@ -149,6 +149,12 @@ html {
   .indicator-symbol-active {
     color: #a3a3a3;
   }
+
+  .buy-now-button{
+    background-color: #ff6452;
+    border-radius: 5px;
+    padding: 5px 10px;
+  }
   
 }
 
