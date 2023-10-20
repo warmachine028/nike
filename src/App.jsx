@@ -14,10 +14,11 @@ import {
 import Navbar from './components/Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Menu from './components/Menu';
-import ShoeDetails from './components/ShoeDetails.jsx';
 import { useState } from 'react';
 import Signin from './sections/Signin';
 import Signup from './sections/Signup';
+import ProductsPage from './sections/ProductsPage';
+import SingleProduct from './components/SingleProduct';
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
@@ -56,9 +57,10 @@ const App = () => {
               </>
             }
           />
-          <Route path={'/shoe_details'} element={<ShoeDetails />} />
+          <Route path={'/single_product/:id'} element={<SingleProduct />} />
           <Route path={'/login'} element={<Signin />} />
           <Route path={'/register'} element={<Signup />} />
+          <Route path={'/products'} element={<ProductsPage />} />
         </Routes>
         <Footer />
       </main>
