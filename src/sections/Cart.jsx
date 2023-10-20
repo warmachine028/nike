@@ -15,24 +15,31 @@ const Cart = () => {
     setItemTotal(total);
     setShipping(shippingCost);
   };
-
-  const increaseQuantity = (itemId) => {
+  const removeItem = (itemId) => {
     const updatedCartItems = { ...cartItems };
-    updatedCartItems[itemId].quantity += 1;
+    delete updatedCartItems[itemId];
     setCartItems(updatedCartItems);
     updateCartTotals(updatedCartItems);
     localStorage.setItem('cart', JSON.stringify(updatedCartItems));
   };
+  const increaseQuantity = (itemId) => {
+    const updatedCartItems = { ...cartItems };
+    if (updatedCartItems[itemId].quantity < 10) {
+      updatedCartItems[itemId].quantity += 1;
+      setCartItems(updatedCartItems);
+      updateCartTotals(updatedCartItems);
+      localStorage.setItem('cart', JSON.stringify(updatedCartItems));
+    }
+  };
 
   const reduceQuantity = (itemId) => {
     const updatedCartItems = { ...cartItems };
-    updatedCartItems[itemId].quantity -= 1;
-    if (updatedCartItems[itemId].quantity <= 0) {
-      delete updatedCartItems[itemId];
+    if (updatedCartItems[itemId].quantity > 1) {
+      updatedCartItems[itemId].quantity -= 1;
+      setCartItems(updatedCartItems);
+      updateCartTotals(updatedCartItems);
+      localStorage.setItem('cart', JSON.stringify(updatedCartItems));
     }
-    setCartItems(updatedCartItems);
-    updateCartTotals(updatedCartItems);
-    localStorage.setItem('cart', JSON.stringify(updatedCartItems));
   };
 
   useEffect(() => {
@@ -121,6 +128,21 @@ const Cart = () => {
                               stroke="currentColor"
                             >
                               <path d="M11 11v-11h1v11h11v1h-11v11h-1v-11h-11v-1h11z" />
+                            </svg>
+                          </button>
+                          <button
+                            onClick={() => removeItem(item)}
+                            type="button"
+                            className="flex rounded p-2 text-center text-gray-500 transition-all duration-200 ease-in-out focus:shadow hover:text-gray-900 dark:hover:text-gray-300"
+                          >
+                            <svg
+                              className="h-4 w-4"
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke="currentColor"
+                            >
+                              <path d="M9 3h6v-1.75c0-.066-.026-.13-.073-.177-.047-.047-.111-.073-.177-.073h-5.5c-.066 0-.13.026-.177.073-.047.047-.073.111-.073.177v1.75zm11 1h-16v18c0 .552.448 1 1 1h14c.552 0 1-.448 1-1v-18zm-10 3.5c0-.276-.224-.5-.5-.5s-.5.224-.5.5v12c0 .276.224.5.5.5s.5-.224.5-.5v-12zm5 0c0-.276-.224-.5-.5-.5s-.5.224-.5.5v12c0 .276.224.5.5.5s.5-.224.5-.5v-12zm8-4.5v1h-2v18c0 1.105-.895 2-2 2h-14c-1.105 0-2-.895-2-2v-18h-2v-1h7v-2c0-.552.448-1 1-1h6c.552 0 1 .448 1 1v2h7z" />
                             </svg>
                           </button>
                         </div>
