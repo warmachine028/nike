@@ -4,7 +4,7 @@ import { useState } from 'react';
 const ReviewCard = ({ review }) => {
   const [viewMoreFeedback, setViewMoreFeedback] = useState(false);
   return (
-    <div className="inline-flex justify-center items-center flex-col mt-6" style={{ width: '100%' }}>
+    <div className="inline-flex justify-center items-center flex-col mt-6 hover:scale-110 duration-300 dark:bg-slate-800 transition ease-in-out" style={{ width: '100%' }}>
       <img src={review.imgURL} alt="customer" className="rounded-full object-cover" width={120} height={120} />
 
       <article

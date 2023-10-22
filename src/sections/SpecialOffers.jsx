@@ -9,7 +9,13 @@ const SpecialOffers = () => {
     <section className="padding">
       <div className="flex flex-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
         <div className="flex-1">
-          <img src={offer} alt="offer" width={773} height={687} className="object-contain w-full" />
+          <img
+            src={offer}
+            alt="offer"
+            width={773}
+            height={687}
+            className="object-contain w-full drop-shadow-xl hover:scale-105 duration-300 ease-in-out"
+          />
         </div>
         <div className="flex flex-1 flex-col">
           <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
