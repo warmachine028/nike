@@ -27,10 +27,10 @@ const Button = ({ children, backgroundColor, borderColor, textColor, fullWidth, 
   return (
     <button
       onClick={handleRedirect}
-      className={`flex justify-center items-center gap-2 px-6 py-3 border font-montserrat text-lg leading-none rounded-full focus:outline-none transform transition-transform hover:scale-105 hover:shadow-md
+      className={`hover:text-white flex justify-center items-center gap-2 px-6 py-3 border font-montserrat text-lg leading-none rounded-full focus:outline-none transform transition-transform hover:scale-105 hover:shadow-md
         ${
           backgroundColor
-            ? `${backgroundColor} ${borderColor} ${textColor} hover:text-white hover:bg-slate-gray hover:border-transparent hover:shadow-lg ease-in-out duration-300 dark:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900 dark:hover:border-gray-100 dark:transition`
+            ? `${backgroundColor} ${borderColor} ${textColor}  hover:bg-slate-gray hover:border-transparent hover:shadow-lg ease-in-out duration-300  dark:text-gray-100 dark:hover:bg-gray-100 dark:hover:text-gray-900 dark:hover:border-gray-100 dark:transition`
             : 'bg-coral-red border-coral-red text-white hover:text-coral-red hover:border-transparent hover:shadow-lg ease-in-out duration-300 dark:text-gray-100 dark:hover:border-gray-100'
         }
         ${fullWidth && 'w-full'}
