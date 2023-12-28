@@ -19,7 +19,7 @@ import {
 export const navLinks = [
   { href: '/#home', label: 'Home' },
   { href: '/#about-us', label: 'About Us' },
-  { href: '/products', label: 'Products' },
+  { href: '/#products', label: 'Products' },
   { href: '/#contact-us', label: 'Contact Us' }
 ];
 
@@ -132,7 +132,7 @@ export const footerLinks = [
   {
     title: 'Help',
     links: [
-      { name: 'About us', link: '/' },
+      { name: 'About us', link: '/#about-us' },
       { name: 'FAQs', link: '/' },
       { name: 'How it works', link: '/' },
       { name: 'Privacy policy', link: '/' },
