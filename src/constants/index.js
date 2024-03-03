@@ -148,10 +148,11 @@ export const footerLinks = [
   }
 ];
 
+// add URL for these links
 export const socialMedia = [
-  { src: facebook, alt: 'facebook logo' },
-  { src: twitter, alt: 'twitter logo' },
-  { src: instagram, alt: 'instagram logo' },
+  { src: facebook, alt: 'facebook logo', link: 'secialMedia-example.com' },
+  { src: twitter, alt: 'twitter logo', link: 'secialMedia-example.com' },
+  { src: instagram, alt: 'instagram logo', link: 'secialMedia-example.com' },
   {
     src: github,
     alt: 'github logo',
