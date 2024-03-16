@@ -4,8 +4,17 @@ import { useState } from 'react';
 const ReviewCard = ({ review }) => {
   const [viewMoreFeedback, setViewMoreFeedback] = useState(false);
   return (
-    <div className="inline-flex justify-center items-center flex-col mt-6 hover:scale-110 duration-300 dark:bg-slate-800 transition ease-in-out" style={{ width: '100%' }}>
-      <img src={review.imgURL} alt="customer" className="rounded-full object-cover" width={120} height={120} />
+    <div
+      className="p-10  rounded-xl inline-flex justify-center items-center flex-col mt-6 hover:scale-110 duration-300 dark:bg-slate-800 transition ease-in-out"
+      style={{ width: '100%' }}
+    >
+      <img
+        src={review.imgURL}
+        alt="customer"
+        className="rounded-full border-4 p-1 border-white-400 object-cover"
+        width={120}
+        height={120}
+      />
 
       <article
         className={`${
