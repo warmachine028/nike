@@ -11,7 +11,7 @@ filters:
       - /feat/i
     events: [pull_request]
     targets: [title]
-    
+
   # For Docs
   - label: "documentation"
     regexs:
@@ -28,29 +28,29 @@ filters:
   # For Bugs/Fixes
   - label: "🛠 goal: fix"
     regexs:
-      - /fix/i
+      - /^fix*/i
       - /bug/i
     events: [pull_request]
     targets: [title]
 
   - label: "🐞 bug"
     regexs:
-      - /fix/i
+      - /^fix*/i
       - /bug/i
     events: [pull_request]
     targets: [title]
 
-  # For Hacktoberfest only
-  - label: "hacktoberfest"
-    regexs:
-      - /^(?!Bump).*/
-    events: [pull_request]
-    targets: [title]
-
-  # For Dependabots
+    # For Dependabots
   - label: "github_actions"
     regexs:
-      - /bump/i
+      - /^chore*/
+      - /^build(deps-dev)*/
     events: [pull_request]
     targets: [title]
 
+    # For Hacktoberfest only
+    # - label: 'hacktoberfest'
+    #   regexs:
+    #       - /.*/
+    #   events: [pull_request]
+    #   targets: [title]
