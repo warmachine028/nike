@@ -43,8 +43,8 @@ filters:
     # For Dependabots
   - label: "github_actions"
     regexs:
-      - /^chore*/
-      - /^build(deps-dev)*/
+      - /^chore*/i
+      - /bump/i
     events: [pull_request]
     targets: [title]
 
