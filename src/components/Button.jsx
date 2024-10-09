@@ -10,7 +10,7 @@ const Button = ({ children, backgroundColor, borderColor, textColor, fullWidth, 
         console.log(children);
         break;
       case 'View Details':
-        history('/shoe_details');
+        // history('/shoe_details');
         console.log(children);
         break;
       case 'Learn More':
