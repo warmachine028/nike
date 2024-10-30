@@ -20,6 +20,7 @@ import Signup from './sections/Signup';
 import ProductsPage from './sections/ProductsPage';
 import SingleProduct from './components/SingleProduct';
 import { SnackbarProvider } from 'notistack';
+import './App.scss';
 
 const App = () => {
   const [showCart, setShowCart] = useState(false);
@@ -30,10 +31,10 @@ const App = () => {
     setShowCart(false);
   }
   return (
-    <>
+    <div id="🔥App">
       <SnackbarProvider autoHideDuration={1500} />
       <Router>
-        <main className={'scroll-smooth z-40 h-fit overflow-hidden relative'}>
+        <main id="🔥App__X" className={''}>
           <Navbar handleClick2={handleHideCart} handleClick={handleShowCart} />
           <Routes>
             <Route
@@ -44,8 +45,8 @@ const App = () => {
                   {showCart ? (
                     <Cart />
                   ) : (
-                    <section>
-                      <div className={`padding-x py-6 lg:py-8 z-10 w-full`} />{' '}
+                    <section id="🔥App__X__X">
+                      <div id="🔥App__X__X__X" />{' '}
                       {/* This is a hack to prevent the navbar from jumping when the user scrolls to the top of the page */}
                       <Hero />
                       <PopularProducts />
@@ -68,7 +69,7 @@ const App = () => {
           <Footer />
         </main>
       </Router>
-    </>
+    </div>
   );
 };
 

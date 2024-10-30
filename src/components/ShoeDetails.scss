@@ -1,0 +1,402 @@
+#🔥ShoeDetails__X {
+  @include ml-5;
+  @include mt-8;
+  @include flex;
+  @include justify-start;
+  @include gap-3;
+  @include text-sm;
+  @include text-gray-400;
+}
+
+#🔥ShoeDetails__X2 {
+  @include mt-10;
+  @include flex;
+  @include h-full;
+  @include w-full;
+  @include flex-row;
+  @include flex-wrap;
+  @include justify-center;
+  @include gap-5;
+}
+
+#🔥ShoeDetails__X2__X {
+  @include m-8;
+  @include mt-0;
+  @include flex;
+  @include w-1\/2;
+  @include flex-col;
+  @include justify-center;
+  @include gap-10;
+
+  @include max-lg {
+    @include w-2\/3;
+  }
+
+  @include max-md {
+    @include w-9\/12;
+  }
+
+  @include max-sm {
+    @include w-10\/12;
+  }
+}
+
+#🔥ShoeDetails__X2__X__X {
+  @include mt-14;
+  @include flex;
+  @include w-full;
+  @include justify-center;
+}
+
+#🔥ShoeDetails__X2__X__X2 {
+  @include flex;
+  @include h-24;
+  @include w-full;
+  @include flex-row;
+  @include justify-center;
+  @include overflow-auto;
+  @include p-1;
+}
+
+#🔥ShoeDetails__X2__X__X2__Img {
+  @include border-solid-grey;
+  @include border;
+}
+
+#🔥ShoeDetails__X2__X2 {
+  @include mt-2;
+  @include flex;
+  @include flex-col;
+  @include justify-center;
+
+  @include max-lg {
+    @include w-1\/2;
+  }
+
+  @include max-md {
+    @include w-9\/12;
+    @include p-0;
+  }
+
+  @include max-sm {
+    @include w-10\/12;
+  }
+
+  @include lg {
+    @include p-4;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X {
+  @include flex;
+  @include flex-col;
+  @include justify-center;
+}
+
+#🔥ShoeDetails__X2__X2__X__X {
+  @include align-start;
+  @include flex;
+  @include flex-col;
+  @include justify-center;
+}
+
+#🔥ShoeDetails__X2__X2__X__X__P {
+  @include text-3xl;
+  @include font-bold;
+
+  @include max-sm {
+    @include w-full;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X__P2 {
+  @include pb-5;
+  @include text-lg;
+  @include font-semibold;
+  @include leading-3;
+
+  @include max-sm {
+    @include w-full;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X__X {
+  @include flex;
+  @include flex-row;
+  @include text-lg;
+
+  @include max-sm {
+    @include w-full;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X2 {
+  @include align-start;
+  @include mb-8;
+  @include flex;
+  @include flex-col;
+  @include justify-center;
+}
+
+#🔥ShoeDetails__X2__X2__X__X2__P {
+  @include mt-5;
+  @include text-lg;
+  @include font-semibold;
+
+  @include max-sm {
+    @include w-full;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X2__P2 {
+  @include mt-2;
+  @include w-96;
+  @include text-left;
+  @include text-base;
+  @include font-medium;
+  @include text-gray-400;
+
+  @include max-sm {
+    @include w-full;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X3 {
+  @include align-start;
+  @include flex;
+  @include flex-row;
+  @include justify-between;
+  @include gap-4;
+
+  @include max-lg {
+    @include gap-10;
+  }
+
+  @include max-md {
+    @include gap-2;
+  }
+
+  @include max-sm {
+    @include flex-col;
+    @include gap-5;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X3__X {
+  @include align-start;
+  @include flex;
+  @include w-full;
+  @include flex-row;
+  @include gap-3;
+
+  @include max-lg {
+    @include w-1\/2;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X3__X__X {
+  @include mt-2;
+  @include h-5;
+  @include w-5;
+  @include bg-blue-600;
+
+  &:hover {
+    @include cursor-pointer;
+    @include bg-blue-500;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X3__X__X2 {
+  @include mt-2;
+  @include h-5;
+  @include w-5;
+  @include bg-lime-400;
+
+  &:hover {
+    @include cursor-pointer;
+    @include bg-lime-300;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X3__X__X3 {
+  @include mt-2;
+  @include h-5;
+  @include w-5;
+  @include bg-pink-400;
+
+  &:hover {
+    @include cursor-pointer;
+    @include bg-pink-300;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X3__X__X4 {
+  @include mt-2;
+  @include h-5;
+  @include w-5;
+  @include bg-orange-400;
+
+  &:hover {
+    @include cursor-pointer;
+    @include bg-orange-300;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X3__X__X5 {
+  @include mt-2;
+  @include h-5;
+  @include w-5;
+  @include bg-yellow-400;
+
+  &:hover {
+    @include cursor-pointer;
+    @include bg-yellow-300;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X3__X2 {
+  @include flex;
+  @include w-full;
+  @include flex-row;
+  @include justify-start;
+  @include gap-2;
+}
+
+#🔥ShoeDetails__X2__X2__X__X3__X2__X {
+  @include flex;
+  @include justify-center;
+  @include rounded-full;
+  @include bg-amber-400;
+  @include p-1;
+
+  &:hover {
+    @include cursor-pointer;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X3__X2__X__Svg {
+  @include h-5;
+  @include w-5;
+}
+
+#🔥ShoeDetails__X2__X2__X__X4 {
+  @include align-start;
+  @include mt-6;
+  @include flex;
+  @include flex-col;
+  @include justify-center;
+}
+
+#🔥ShoeDetails__X2__X2__X__X4__P {
+  @include mb-2;
+  @include font-semibold;
+}
+
+#🔥ShoeDetails__X2__X2__X__X4__X {
+  @include align-start;
+  @include flex;
+  @include flex-row;
+  @include gap-3;
+}
+
+#🔥ShoeDetails__X2__X2__X__X4__X__X {
+  @include flex;
+  @include h-8;
+  @include w-8;
+  @include justify-center;
+  @include rounded-md;
+  @include border-2;
+  @include border-gray-300;
+  @include text-gray-400;
+
+  &:hover {
+    @include cursor-pointer;
+  }
+}
+
+#🔥ShoeDetails__X2__X2__X__X5 {
+  @include align-start;
+  @include flex;
+  @include flex-col;
+  @include justify-center;
+}
+
+#🔥ShoeDetails__X2__X2__X__X5__P {
+  @include mb-6;
+  @include mt-7;
+  @include text-3xl;
+}
+
+#🔥ShoeDetails__X2__X2__X__X6 {
+  @include align-start;
+  @include flex;
+  @include flex-col;
+  @include justify-center;
+}
+
+#🔥ShoeDetails__X2__X2__X__X6__Btn {
+  @include h-12;
+  @include w-64;
+  @include rounded-md;
+  @include border-none;
+  @include bg-orange-500;
+  @include text-xl;
+  @include text-white;
+
+  @include max-md {
+    @include w-full;
+  }
+}
+
+#🔥ShoeDetails__X3 {
+  @include mt-12;
+  @include flex;
+  @include justify-center;
+  @include bg-pale-blue;
+
+  @include dark {
+    @include bg-slate-700;
+  }
+}
+
+#🔥ShoeDetails__X3__X {
+  @include max-container;
+  @include m-12;
+  @include mb-20;
+
+  @include max-sm {
+    @include mt-12;
+  }
+}
+
+#🔥ShoeDetails__X3__X__X {
+  @include flex;
+  @include flex-col;
+  @include justify-start;
+  @include gap-5;
+}
+
+#🔥ShoeDetails__X3__X__X__H2 {
+  @include font-palanquin;
+  @include text-2xl;
+  @include font-bold;
+
+  @include dark {
+    @include text-slate-200;
+  }
+}
+
+#🔥ShoeDetails__X3__X__X2 {
+  @include mt-5;
+  @include grid;
+  @include grid-cols-2;
+  @include gap-4;
+
+  @include md {
+    @include grid-cols-3;
+  }
+
+  @include lg {
+    @include grid-cols-4;
+  }
+}

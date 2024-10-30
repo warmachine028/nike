@@ -1,0 +1,80 @@
+#🔥Subscribe {
+  @include w-full;
+  @include py-16;
+  @include padding-x;
+
+  @include sm {
+    @include py-32;
+  }
+}
+
+#🔥Subscribe__X {
+  @include max-container;
+  @include flex;
+  @include items-center;
+  @include justify-between;
+  @include gap-10;
+
+  @include max-lg {
+    @include flex-col;
+  }
+}
+
+#🔥Subscribe__X__H3 {
+  @include font-palanquin;
+  @include text-4xl;
+  @include font-bold;
+  @include leading-(68px);
+
+  @include lg {
+    @include max-w-md;
+  }
+}
+
+#🔥Subscribe__X__H3__Span {
+  @include text-coral-red;
+}
+
+#🔥Subscribe__X__X {
+  @include flex;
+  @include w-full;
+  @include items-center;
+  @include gap-5;
+  @include rounded-full;
+  @include bg-none;
+  @include p-2\.5;
+
+  @include max-sm {
+    @include flex-col;
+  }
+
+  @include sm {
+    @include border;
+    @include border-slate-gray;
+  }
+
+  @include lg {
+    @include max-w-(40%);
+  }
+}
+
+#🔥Subscribe__X__X__Email {
+  @include bg-inherit;
+  @include bg-none;
+  @include input;
+
+  &:focus {
+    @include border-coral-red;
+    @include outline-none;
+  }
+}
+
+#🔥Subscribe__X__X__X {
+  @include flex;
+  @include items-center;
+
+  @include max-sm {
+    @include w-full;
+    @include justify-end;
+  }
+}

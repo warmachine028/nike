@@ -3,7 +3,7 @@ import ProductCard from '../components/ProductCard';
 import { products } from '../constants';
 import Navbar from '../components/Navbar';
 import Cart from '../sections/Cart';
-
+import './ProductsPage.scss';
 const ProductsPage = () => {
   const [showCart, setShowCart] = useState(false);
   function handleShowCart() {
@@ -14,19 +14,19 @@ const ProductsPage = () => {
   }
 
   return (
-    <main className={'scroll-smooth z-40 h-fit overflow-hidden relative'}>
+    <main id="🔥ProductsPage">
       <Navbar handleClick2={handleHideCart} handleClick={handleShowCart} />
       {showCart ? (
         <Cart />
       ) : (
-        <section className="padding mt-8">
-          <div id="products" className="max-container max-sm:mt-12">
-            <div className="flex flex-col justify-start gap-5">
-              <h2 className="text-4xl font-palanquin font-bold">
-                <span className="text-coral-red"> Jordans </span>
+        <section id="🔥ProductsPage__X">
+          <div id="🔥ProductsPage__X__X">
+            <div id="🔥ProductsPage__X__X__X">
+              <h2 id="🔥ProductsPage__X__X__X__H2">
+                <span id="🔥ProductsPage__X__X__X__H2__Span"> Jordans </span>
               </h2>
             </div>
-            <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
+            <div id="🔥ProductsPage__X__X__X2">
               {products.map((product) => (
                 <ProductCard key={product.name} {...product} />
               ))}

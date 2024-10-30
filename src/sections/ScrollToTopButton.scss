@@ -1,0 +1,14 @@
+#🔥ScrollToTopButton {
+  @include fixed;
+  @include bottom-4;
+  @include right-4;
+  @include rounded-full;
+  @include bg-transparent;
+  @include px-4;
+  @include py-2;
+  @include text-blue-500;
+}
+
+#🔥ScrollToTopButton__Img {
+  background: none;
+}

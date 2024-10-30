@@ -6,6 +6,7 @@ import { shoes, statistics } from '../constants';
 import { bigShoe1 } from '../assets/images';
 import ShoeCard from '../components/ShoeCard';
 import { useState, useEffect } from 'react';
+import './Hero.scss';
 
 const formatNumber = (number) => {
   if (number < 1000) {
@@ -52,42 +53,32 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="xl:padding-l wide:padding-r padding-b">
-      <div id="home" className="w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 max-container">
-        <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x pt-28">
-          <h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[110px] font-bold">
-            <span className=" xl:whitespace-nowrap relative z-10 pr-10 xl:pl-6 dark:xl:bg-slate-gray duration-400 rounded-lg">
-              The New Arrival
-            </span>
+    <section id="🔥Hero">
+      <div id="🔥Hero__X">
+        <div id="🔥Hero__X__X">
+          <h1 id="🔥Hero__X__X__H1">
+            <span id="🔥Hero__X__X__H1__Span">The New Arrival</span>
             <br />
-            <span className="text-coral-red inline-block mt-6">Nike </span> Shoes
+            <span id="🔥Hero__X__X__H1__Span2">Nike </span> Shoes
           </h1>
-          <p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm dark:text-gray-400">
+          <p id="🔥Hero__X__X__P">
             Discover stylish Nike arrivals, quality comfort, and innovation for your active life.
           </p>
           <Button icon={arrowRight}>Shop now</Button>
-          <div className="flex md:justify-start flex-wrap items-start w-full mt-20 gap-16 justify-center">
+          <div id="🔥Hero__X__X__X">
             {statistics.map((stat) => (
-              <div key={stat.label}>
-                <p className="text-4xl font-palanquin font-bold">
-                  {formatNumber(animatedStatistics[stat.label.toLowerCase()])}+
-                </p>
-                <p className="leading-7 font-montserrat text-slate-gray dark:text-gray-400">{stat.label}</p>
+              <div id="🔥Hero__X__X__X__X" key={stat.label}>
+                <p id="🔥Hero__X__X__X__X__P">{formatNumber(animatedStatistics[stat.label.toLowerCase()])}+</p>
+                <p id="🔥Hero__X__X__X__X__P2">{stat.label}</p>
               </div>
             ))}
           </div>
         </div>
-        <div className="relative flex flex-1 justify-center items-center xl: min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
-          <img
-            src={bigShoeImg}
-            alt="shoe"
-            width="610"
-            height="500"
-            className="object-contain relative z-10 hover:scale-95 duration-300 ease-in-out"
-          />
-          <div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+        <div id="🔥Hero__X__X2">
+          <img id="🔥Hero__X__X2__Img" src={bigShoeImg} alt="shoe" width="610" height="500" />
+          <div id="🔥Hero__X__X2__X">
             {shoes.map((shoe) => (
-              <div key={shoe.thumbnail}>
+              <div id="🔥Hero__X__X2__X__X" key={shoe.thumbnail}>
                 <ShoeCard img={shoe} change={(shoe) => setBigShoeImg(shoe)} largeImg={bigShoeImg} />
               </div>
             ))}

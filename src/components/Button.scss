@@ -1,0 +1,43 @@
+#🔥Button {
+  @include flex;
+  @include transform;
+  @include items-center;
+  @include justify-center;
+  @include gap-2;
+  @include rounded-full;
+  @include border;
+  @include px-6;
+  @include py-3;
+  @include font-montserrat;
+  @include text-lg;
+  @include leading-none;
+  @include transition-transform;
+
+  &:hover {
+    @include scale-105;
+    @include text-white;
+    @include shadow-md;
+  }
+
+  &:focus {
+    @include outline-none;
+  }
+}
+
+#🔥Button__Span {
+  @include truncate;
+}
+
+#🔥Button__Span__Img {
+  @include ml-2;
+  @include h-5;
+  @include w-5;
+  @include transform;
+  @include rounded-full;
+  @include transition-transform;
+
+  &:hover {
+    @include translate-x-1;
+    @include scale-110;
+  }
+}

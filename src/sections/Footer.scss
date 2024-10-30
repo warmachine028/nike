@@ -1,0 +1,152 @@
+#🔥Footer {
+  @include bg-black;
+  @include pb-8;
+
+  & {
+    @include padding-t;
+  }
+
+  & {
+    @include padding-x;
+  }
+}
+
+#🔥Footer__X {
+  @include max-container;
+}
+
+#🔥Footer__X__X {
+  @include flex;
+  @include flex-wrap;
+  @include items-start;
+  @include justify-between;
+  @include gap-20;
+
+  @include max-lg {
+    @include flex-col;
+  }
+}
+
+#🔥Footer__X__X__X {
+  @include flex;
+  @include flex-col;
+  @include items-start;
+}
+
+#🔥Footer__X__X__X2 {
+  @include relative;
+  @include flex;
+  @include flex-1;
+  @include flex-wrap;
+  @include justify-between;
+  @include gap-20;
+
+  @include lg {
+    @include gap-10;
+  }
+}
+
+#🔥Footer__X__X__X__P {
+  @include mt-6;
+  @include font-montserrat;
+  @include text-base;
+  @include leading-7;
+  @include text-white-400;
+
+  @include sm {
+    @include max-w-sm;
+  }
+}
+
+#🔥Footer__X__X__X__P__Span {
+  @include cursor-pointer;
+  @include hoverUnderline;
+
+  &:hover {
+    @include no-underline;
+  }
+}
+
+#🔥Footer__X__X__X__X {
+  @include mt-8;
+  @include flex;
+  @include items-center;
+  @include gap-5;
+}
+
+#🔥Footer__X__X__X__X__A {
+  @include flex;
+  @include h-12;
+  @include w-12;
+  @include cursor-pointer;
+  @include items-center;
+  @include justify-center;
+  @include rounded-full;
+  @include bg-white;
+  @include duration-300;
+  @include ease-in-out;
+
+  &:hover {
+    @include scale-110;
+    @include border-(1px);
+    @include border-black;
+    @include invert;
+  }
+}
+
+#🔥Footer__X__X__X2__X__H4 {
+  @include mb-6;
+  @include font-montserrat;
+  @include text-2xl;
+  @include font-bold;
+  @include leading-normal;
+  @include text-white;
+}
+
+#🔥Footer__X__X__X2__X__Ul {
+  @include relative;
+}
+
+#🔥Footer__X__X__X2__X__Ul__Li {
+  @include mt-3;
+  @include font-montserrat;
+  @include text-base;
+  @include leading-normal;
+  @include text-white-400;
+}
+
+#🔥Footer__X__X__X2__X__Ul__Li__A {
+  @include hoverUnderline;
+}
+
+#🔥Footer__X__X2 {
+  @include mt-24;
+  @include flex;
+  @include justify-between;
+  @include text-white-400;
+
+  @include max-sm {
+    @include flex-col;
+    @include items-center;
+  }
+}
+
+#🔥Footer__X__X2__X {
+  @include flex;
+  @include flex-1;
+  @include cursor-pointer;
+  @include items-center;
+  @include justify-start;
+  @include gap-2;
+  @include font-montserrat;
+}
+
+#🔥Footer__X__X2__X__Img {
+  @include m-0;
+  @include rounded-full;
+}
+
+#🔥Footer__X__X2__P {
+  @include cursor-pointer;
+  @include font-montserrat;
+}

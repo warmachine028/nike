@@ -3,6 +3,7 @@ import ProductCard from './ProductCard.jsx';
 import SingleProductCard from './SingleProductCard.jsx';
 import { useLocation } from 'react-router-dom';
 import { useEffect } from 'react';
+import './SingleProduct.scss';
 
 const SingleProduct = () => {
   const currentURL = useLocation();
@@ -14,15 +15,11 @@ const SingleProduct = () => {
   useEffect(() => {}, [urlProductId]);
 
   return (
-    <>
-      <div className={'w-full h-full flex justify-center flex-row flex-wrap gap-5 mt-20'}>
-        <div
-          className={
-            'flex justify-center flex-col align-center mt-2 lg:p-4 max-lg:w-1/2 max-md:p-0 max-md:w-9/12 max-sm:w-10/12'
-          }
-        >
-          <section className="padding mt-8">
-            <div className="max-container max-sm:mt-12">
+    <div id="🔥SingleProduct">
+      <div id="🔥SingleProduct__X">
+        <div id="🔥SingleProduct__X__X">
+          <section id="🔥SingleProduct__X__X__X">
+            <div id="🔥SingleProduct__X__X__X__X">
               {/* <div className="mt-16"> */}
               {products.map(
                 (product) => product.productId == urlProductId && <SingleProductCard key={product.name} {...product} />
@@ -33,19 +30,19 @@ const SingleProduct = () => {
         </div>
       </div>
 
-      <div className={'flex justify-center align-center mt-12 bg-pale-blue dark:bg-slate-700'}>
-        <div id="products" className=" m-12 mb-20 max-container max-sm:mt-12">
-          <div className="flex flex-col justify-start gap-5">
-            <h2 className="text-2xl font-palanquin font-bold dark:text-slate-200">Similar Products You Might Enjoy</h2>
+      <div id="🔥SingleProduct__X2">
+        <div id="🔥SingleProduct__X2__X">
+          <div id="🔥SingleProduct__X2__X__X">
+            <h2 id="🔥SingleProduct__X2__X__X__H2">Similar Products You Might Enjoy</h2>
           </div>
-          <div className="mt-5 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
+          <div id="🔥SingleProduct__X2__X__X2">
             {products.map((product) => (
               <ProductCard key={product.name} {...product} />
             ))}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

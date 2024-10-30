@@ -2,79 +2,72 @@
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 import Menu from '../components/Menu';
-
+import './Signin.scss';
 const Signin = () => {
   return (
-    <>
+    <div id="🔥Signin">
       <Menu />
-      <section className="bg-gray-50 dark:bg-[#1C1C1C] mt-20 lg:mt-5">
-        <div className="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
-          <div className=" w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-[#2d2c2c] dark:border-gray-700">
-            <div className="p-6 space-y-4 md:space-y-6 sm:p-8">
-              <h1 className="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
-                Sign in to your account
-              </h1>
-              <form className="space-y-4 md:space-y-6" action="#">
-                <div>
-                  <label htmlFor="email" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+      <section id="🔥Signin__X">
+        <div id="🔥Signin__X__X">
+          <div id="🔥Signin__X__X__X">
+            <div id="🔥Signin__X__X__X__X">
+              <h1 id="🔥Signin__X__X__X__X__H1">Sign in to your account</h1>
+              <form id="🔥Signin__X__X__X__X__Form" action="#">
+                <div id="🔥Signin__X__X__X__X__Form__X">
+                  <label id="🔥Signin__X__X__X__X__Form__X__Label" htmlFor="email">
                     Your email
                   </label>
                   <input
+                    id="🔥Signin__X__X__X__X__Form__X__Input"
                     type="email"
                     name="email"
-                    id="email"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-[#2d2c2c] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="name@company.com"
                     required=""
                   />
                 </div>
-                <div>
-                  <label htmlFor="password" className="block mb-2 text-sm font-medium text-gray-900 dark:text-white">
+                <div id="🔥Signin__X__X__X__X__Form__X">
+                  <label id="🔥Signin__X__X__X__X__Form__X__Label" htmlFor="password">
                     Password
                   </label>
                   <input
+                    id="🔥Signin__X__X__X__X__Form__X2__Input"
                     type="password"
                     name="password"
-                    id="password"
                     placeholder="••••••••"
-                    className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 dark:bg-[#2d2c2c] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     required=""
                   />
                 </div>
-                <div className="flex items-center justify-between">
-                  <div className="flex items-start">
-                    <div className="flex items-center h-5">
+                <div id="🔥Signin__X__X__X__X__Form__X2">
+                  <div id="🔥Signin__X__X__X__X__Form__X2__X">
+                    <div id="🔥Signin__X__X__X__X__Form__X2__X__X">
                       <input
-                        id="remember"
+                        id="🔥Signin__X__X__X__X__Form__X2__X__X__Remember"
                         aria-describedby="remember"
                         type="checkbox"
-                        className="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-[#2d2c2c] dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
                         required=""
                       />
                     </div>
-                    <div className="ml-3 text-sm">
-                      <label htmlFor="remember" className="text-gray-500 dark:text-gray-300">
+                    <div id="🔥Signin__X__X__X__X__Form__X2__X__X2">
+                      <label id="🔥Signin__X__X__X__X__Form__X2__X__X2__Label" htmlFor="remember">
                         Remember me
                       </label>
                     </div>
                   </div>
-                  <a href="#" className="text-sm font-medium text-primary-600 hover:underline dark:text-primary-500">
+                  <a id="🔥Signin__X__X__X__X__Form__X2__A" href="#">
                     Forgot password?
                   </a>
                 </div>
                 <Button fullWidth={true}>Sign in</Button>
-                <p className="text-sm font-light text-gray-500 dark:text-gray-400">
+                <p id="🔥Signin__X__X__X__X__Form__P">
                   Don&apos;t have an account?
-                  <Link to="/register" className="font-medium text-primary-600 hover:underline dark:text-primary-500">
-                    &nbsp;Create now
-                  </Link>
+                  <Link to="/register">&nbsp;Create now</Link>
                 </p>
               </form>
             </div>
           </div>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

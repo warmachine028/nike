@@ -1,0 +1,72 @@
+#🔥CustomerReviews {
+  @include flex;
+  @include flex-col;
+  @include items-center;
+  @include justify-center;
+  @include bg-pale-blue;
+  @include padding;
+
+  @include dark {
+    @include bg-slate-700;
+  }
+}
+
+#🔥CustomerReviews__X {
+  @include max-container;
+}
+
+#🔥CustomerReviews__X__H3 {
+  @include text-center;
+  @include font-palanquin;
+  @include text-4xl;
+  @include font-bold;
+
+  @include dark {
+    @include text-gray-100;
+  }
+}
+
+#🔥CustomerReviews__X__H3__Span {
+  @include text-coral-red;
+}
+
+#🔥CustomerReviews__X__P {
+  @include info-text;
+  @include m-auto;
+  @include mt-4;
+  @include max-w-lg;
+  @include text-center;
+
+  @include dark {
+    @include text-gray-300;
+  }
+}
+
+#🔥CustomerReviews__X2 {
+  @include carousel;
+}
+
+#🔥CustomerReviews__X2__X {
+  @include inner;
+}
+
+#🔥CustomerReviews__X2__X2 {
+  @include carousel-buttons;
+}
+
+#🔥CustomerReviews__X2__X2__Btn {
+  @include button-arrow;
+}
+
+#🔥CustomerReviews__X2__X2__X {
+  @include indicators;
+}
+
+#🔥CustomerReviews__X2__X2__X__Btn {
+  @include indicator-buttons;
+}
+
+#🔥CustomerReviews__X3 {
+  @include flex;
+  @include justify-center;
+}

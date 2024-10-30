@@ -1,0 +1,52 @@
+#🔥PopularProducts {
+  @include padding;
+}
+
+#🔥PopularProducts__X {
+  @include max-container;
+  @include max-sm {
+    @include mt-12;
+  }
+}
+
+#🔥PopularProducts__X__X {
+  @include flex;
+  @include flex-col;
+  @include justify-start;
+  @include gap-5;
+}
+
+#🔥PopularProducts__X__X__H2 {
+  @include font-palanquin;
+  @include text-4xl;
+  @include font-bold;
+}
+
+#🔥PopularProducts__X__X__H2__Span {
+  @include text-coral-red;
+}
+
+#🔥PopularProducts__X__X__P {
+  @include mt-2;
+  @include font-montserrat;
+  @include text-slate-gray;
+  @include dark {
+    @include text-gray-400;
+  }
+  @include lg {
+    @include max-w-lg;
+  }
+}
+
+#🔥PopularProducts__X__X2 {
+  @include mt-16;
+  @include grid;
+  @include grid-cols-2;
+  @include gap-4;
+  @include md {
+    @include grid-cols-3;
+  }
+  @include lg {
+    @include grid-cols-4;
+  }
+}

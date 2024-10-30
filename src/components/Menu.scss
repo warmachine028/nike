@@ -1,0 +1,171 @@
+#🔥Menu {
+  @include fixed;
+  @include z-50;
+  @include cursor-pointer;
+  @include flex;
+  @include h-screen;
+  @include w-full;
+  @include flex-col;
+  @include items-center;
+  @include justify-evenly;
+  @include bg-transparent;
+  @include backdrop-blur-md;
+  @include transition-all;
+  @include duration-500;
+  @include ease-in-out;
+
+  @include dark {
+    @include bg-transparent;
+  }
+}
+
+#🔥Menu__X {
+  @include ml-auto;
+  @include flex;
+  @include h-screen;
+  @include w-10\/12;
+  @include flex-col;
+  @include bg-white;
+
+  @include dark {
+    @include bg-black;
+  }
+}
+
+#🔥Menu__X__Svg {
+  @include my-4;
+  @include ml-auto;
+  @include mr-4;
+  @include h-8;
+  @include w-8;
+}
+
+#🔥Menu__X__Ul {
+  @include mt-0;
+  @include w-full;
+}
+
+#🔥Menu__X__Ul__Li {
+  @include mr-3;
+  @include mt-2;
+  @include flex;
+  @include justify-end;
+  @include text-xl;
+  @include font-bold;
+  @include text-slate-gray;
+}
+
+#🔥Menu__X__Ul__Li__Li {
+  @include px-2;
+  @include font-semibold;
+}
+
+#🔥Menu__X__Ul__Li__Li__A {
+  @include mx-4;
+  @include my-6;
+  @include flex;
+  @include items-center;
+  @include justify-between;
+  @include font-montserrat;
+  @include text-xl;
+  @include leading-normal;
+  @include text-black;
+  @include hoverUnderline;
+
+  @include dark {
+    @include mix-blend-difference;
+  }
+}
+
+#🔥Menu__X__Ul__Li__Li__A__Span {
+  @include text-black;
+
+  @include dark {
+    @include text-white;
+  }
+}
+
+#🔥Menu__X__Ul__Li__Li__A__Svg {
+  @include h-5;
+  @include w-5;
+  @include stroke-black;
+
+  @include dark {
+    @include stroke-white;
+  }
+}
+
+#🔥Menu__X__X {
+  @include flex;
+  @include items-center;
+  @include gap-5;
+  @include py-4;
+}
+
+#🔥Menu__X__X__Svg {
+  @include ml-6;
+  @include fill-black;
+
+  @include dark {
+    @include fill-white;
+  }
+}
+
+#🔥Menu__X__X__Span {
+  @include text-lg;
+  @include font-semibold;
+}
+
+#🔥Menu__X__X2 {
+  @include my-auto;
+  @include px-5;
+}
+
+#🔥Menu__X__X2__P {
+  @include mb-4;
+  @include font-semibold;
+  @include text-gray-500;
+}
+
+#🔥Menu__X__X2__X {
+  @include flex;
+
+  @include gap-3;
+
+  & > *:nth-child(1) {
+    @include rounded-full;
+    @include bg-black;
+    @include px-4;
+    @include py-1;
+    @include font-semibold;
+    @include text-white;
+
+    @include dark {
+      @include bg-white;
+      @include text-black;
+    }
+  }
+
+  & > *:nth-child(2) {
+    @include rounded-full;
+    @include border;
+    @include border-gray-300;
+    @include px-4;
+    @include py-1;
+    @include font-semibold;
+
+    @include dark {
+      @include bg-black;
+      @include text-white;
+    }
+  }
+}
+
+#🔥Menu__X__X2__P__Span {
+  @include font-bold;
+  @include text-black;
+
+  @include dark {
+    @include text-white;
+  }
+}

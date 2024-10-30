@@ -1,0 +1,171 @@
+#🔥Hero {
+  @include padding-b;
+
+  @include xl {
+    @include padding-l;
+  }
+
+  @include wide {
+    @include padding-r;
+  }
+}
+
+#🔥Hero__X {
+  @include max-container;
+  @include flex;
+  @include min-h-screen;
+  @include w-full;
+  @include flex-col;
+  @include justify-center;
+  @include gap-10;
+
+  @include xl {
+    @include flex-row;
+  }
+}
+
+#🔥Hero__X__X {
+  @include relative;
+  @include flex;
+  @include w-full;
+  @include flex-col;
+  @include items-start;
+  @include justify-center;
+  @include pt-28;
+
+  @include max-xl {
+    @include padding-x;
+  }
+
+  @include xl {
+    @include w-2\/5;
+  }
+}
+
+#🔥Hero__X__X__H1 {
+  @include mt-10;
+  @include font-palanquin;
+  @include text-8xl;
+  @include font-bold;
+
+  @include max-sm {
+    @include text-(72px);
+    @include leading-(110px);
+  }
+}
+
+#🔥Hero__X__X__H1__Span {
+  @include relative;
+  @include z-10;
+  @include rounded-lg;
+  @include pr-10;
+
+  @include xl {
+    @include whitespace-nowrap;
+    @include pl-6;
+  }
+
+  @include dark {
+    @include xl {
+      @include bg-slate-gray;
+    }
+  }
+}
+
+#🔥Hero__X__X__H1__Span2 {
+  @include mt-6;
+  @include inline-block;
+  @include text-coral-red;
+}
+
+#🔥Hero__X__X__P {
+  @include mb-14;
+  @include mt-6;
+  @include font-montserrat;
+  @include text-lg;
+  @include leading-8;
+  @include text-slate-gray;
+
+  @include dark {
+    @include text-gray-400;
+  }
+
+  @include sm {
+    @include max-w-sm;
+  }
+}
+
+#🔥Hero__X__X__X {
+  @include mt-20;
+  @include flex;
+  @include w-full;
+  @include flex-wrap;
+  @include items-start;
+  @include justify-center;
+  @include gap-16;
+
+  @include md {
+    @include justify-start;
+  }
+}
+
+#🔥Hero__X__X__X__X__P {
+  @include font-palanquin;
+  @include text-4xl;
+  @include font-bold;
+}
+
+#🔥Hero__X__X__X__X__P2 {
+  @include font-montserrat;
+  @include leading-7;
+  @include text-slate-gray;
+
+  @include dark {
+    @include text-gray-400;
+  }
+}
+
+#🔥Hero__X__X2__Img {
+  @include relative;
+  @include z-10;
+  @include object-contain;
+  @include duration-300;
+  @include ease-in-out;
+
+  &:hover {
+    @include scale-95;
+  }
+}
+
+#🔥Hero__X__X2__X {
+  @include absolute;
+  @include \-bottom-(5%);
+  @include flex;
+  @include gap-4;
+
+  @include max-sm {
+    @include px-6;
+  }
+
+  @include sm {
+    @include left-(10%);
+    @include gap-6;
+  }
+}
+
+#🔥Hero__X__X2 {
+  @include relative;
+  @include flex;
+  @include min-h-screen;
+  @include flex-1;
+  @include items-center;
+  @include justify-center;
+  @include bg-primary;
+  @include bg-hero;
+  @include bg-cover;
+  @include bg-center;
+
+  @include max-xl {
+    @include py-40;
+  }
+}

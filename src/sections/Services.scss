@@ -1,0 +1,12 @@
+#🔥Services {
+  @include py-10;
+  @include padding-x;
+}
+
+#🔥Services__X {
+  @include max-container;
+  @include flex;
+  @include flex-wrap;
+  @include justify-center;
+  @include gap-9;
+}

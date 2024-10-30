@@ -1,0 +1,18 @@
+#🔥App__X {
+  @include relative;
+  @include z-40;
+  @include h-fit;
+  @include overflow-hidden;
+  @include scroll-smooth;
+}
+
+#🔥App__X__X__X {
+  @include z-10;
+  @include w-full;
+  @include py-6;
+  @include padding-x;
+
+  @include lg {
+    @include py-8;
+  }
+}

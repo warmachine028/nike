@@ -3,6 +3,7 @@
 import ReviewCard from '../components/ReviewCard';
 import { reviews } from '../constants';
 import { useEffect, useState } from 'react';
+import './CustomerReviews.scss';
 
 const CustomerReviews = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -34,21 +35,21 @@ const CustomerReviews = () => {
   };
 
   return (
-    <section className="bg-pale-blue padding dark:bg-slate-700 flex justify-center items-center flex-col">
-      <div className="max-container">
-        <h3 className="font-palanquin text-4xl font-bold text-center dark:text-gray-100">
+    <section id="🔥CustomerReviews">
+      <div id="🔥CustomerReviews__X">
+        <h3 id="🔥CustomerReviews__X__H3">
           What Our
-          <span className="text-coral-red"> Customers </span>
+          <span id="🔥CustomerReviews__X__H3__Span"> Customers </span>
           Say?
         </h3>
-        <p className="info-text m-auto mt-4 max-w-lg text-center dark:text-gray-300">
+        <p id="🔥CustomerReviews__X__P">
           Hear Genuine stories from our satisfied customers about their exceptional experiences with us.
         </p>
       </div>
 
-      <div className="carousel">
+      <div id="🔥CustomerReviews__X2">
         <div
-          className="inner"
+          id="🔥CustomerReviews__X2__X"
           style={{
             transform: `translate(-${activeIndex * 100}%)`
           }}
@@ -58,30 +59,31 @@ const CustomerReviews = () => {
           })}
         </div>
 
-        <div className="carousel-buttons">
+        <div id="🔥CustomerReviews__X2__X2">
           <button
-            className="button-arrow"
+            id="🔥CustomerReviews__X2__X2__Btn"
             onClick={() => {
               updateIndex(activeIndex - 1);
             }}
           >
-            <span className="material-symbols-outlined">arrow_back_ios</span>{' '}
+            <span id="🔥CustomerReviews__X2__X2__Btn__Span" className="material-symbols-outlined">
+              arrow_back_ios
+            </span>{' '}
           </button>
 
-          <div className="indicators">
+          <div id="🔥CustomerReviews__X2__X2__X">
             {reviews.map((item, index) => {
               return (
                 <button
-                  className="indicator-buttons"
+                  id="🔥CustomerReviews__X2__X2__X__Btn"
                   key={index}
                   onClick={() => {
                     updateIndex(index);
                   }}
                 >
                   <span
-                    className={`material-symbols-outlined ${
-                      index === activeIndex ? 'indicator-symbol-active' : 'indicator-symbol'
-                    }`}
+                    id="🔥CustomerReviews__X2__X2__Btn__Span"
+                    className={`material-symbols-outlined ${index === activeIndex ? 'indicator-symbol-active' : 'indicator-symbol'}`}
                   >
                     radio_button_checked
                   </span>
@@ -91,19 +93,23 @@ const CustomerReviews = () => {
           </div>
 
           <button
-            className="button-arrow"
+            id="🔥CustomerReviews__X2__X2__Btn"
             onClick={() => {
               updateIndex(activeIndex + 1);
             }}
           >
-            <span className="material-symbols-outlined">arrow_forward_ios</span>
+            <span id="🔥CustomerReviews__X2__X2__Btn__Span" className="material-symbols-outlined">
+              arrow_forward_ios
+            </span>
           </button>
         </div>
       </div>
 
-      <div className="justify-center flex">
-        <button onClick={handlePlayPauseToggle}>
-          <span className="material-symbols-outlined ">{autoplay ? 'pause' : 'play_arrow'}</span>
+      <div id="🔥CustomerReviews__X3">
+        <button id="🔥CustomerReviews__X3__Btn" onClick={handlePlayPauseToggle}>
+          <span id="🔥CustomerReviews__X2__X2__Btn__Span" className="material-symbols-outlined">
+            {autoplay ? 'pause' : 'play_arrow'}
+          </span>
         </button>
       </div>
     </section>

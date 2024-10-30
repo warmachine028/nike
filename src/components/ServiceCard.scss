@@ -1,0 +1,59 @@
+#🔥ServiceCard {
+  @include w-full;
+  @include flex-1;
+  @include rounded-(20px);
+  @include px-10;
+  @include py-16;
+  @include shadow-2xl;
+  // @include shadow-3xl;
+  @include duration-300;
+  @include ease-in-out;
+
+  &:hover {
+    @include scale-105;
+  }
+
+  @include dark {
+    @include bg-gray-800;
+  }
+
+  @include sm {
+    @include w-(350px);
+    @include min-w-(350px);
+  }
+}
+
+#🔥ServiceCard__X {
+  @include flex;
+  @include h-11;
+  @include w-11;
+  @include items-center;
+  @include justify-center;
+  @include rounded-full;
+  @include bg-coral-red;
+}
+
+#🔥ServiceCard__H3 {
+  @include mt-5;
+  @include font-palanquin;
+  @include text-3xl;
+  @include font-bold;
+  @include leading-normal;
+
+  @include dark {
+    @include text-slate-200;
+  }
+}
+
+#🔥ServiceCard__X2 {
+  @include mt-3;
+  @include break-words;
+  @include font-montserrat;
+  @include text-lg;
+  @include leading-normal;
+  @include text-slate-gray;
+
+  @include dark {
+    @include text-slate-300;
+  }
+}

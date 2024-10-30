@@ -17,10 +17,10 @@ import {
 } from '../assets/images';
 
 export const navLinks = [
-  { href: '/#home', label: 'Home' },
-  { href: '/#about-us', label: 'About Us' },
-  { href: '/#products', label: 'Products' },
-  { href: '/#contact-us', label: 'Contact Us' }
+  { href: '/#🔥Hero', label: 'Home' },
+  { href: '/#🔥SuperQuality', label: 'About Us' },
+  { href: '/#🔥PopularProducts', label: 'Products' },
+  { href: '/#🔥Subscribe', label: 'Contact Us' }
 ];
 
 export const shoes = [

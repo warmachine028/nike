@@ -1,0 +1,381 @@
+#🔥Cart__X {
+  @include mb-5;
+  @include mt-8;
+  @include py-12;
+
+  @include sm {
+    @include py-16;
+  }
+
+  @include lg {
+    @include py-20;
+  }
+}
+
+#🔥Cart__X__X {
+  @include mx-auto;
+  @include px-4;
+
+  @include sm {
+    @include px-6;
+  }
+
+  @include lg {
+    @include px-8;
+  }
+}
+
+#🔥Cart__X__X__X {
+  @include mt-4;
+  @include flex;
+  @include items-center;
+  @include justify-center;
+  @include pt-4;
+
+  @include md {
+    @include mt-20;
+  }
+
+  @include md {
+    @include pt-8;
+  }
+}
+
+#🔥Cart__X__X__X__H1 {
+  @include text-2xl;
+  @include font-semibold;
+  @include text-gray-900;
+
+  @include dark {
+    @include text-gray-300;
+  }
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X2__X2__Btn__Svg {
+  @include h-5;
+  @include w-5;
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X2__X2__Btn__Svg2 {
+  @include h-4;
+  @include w-4;
+}
+
+#🔥Cart__X__X__X2 {
+  @include mx-auto;
+  @include mt-4;
+  @include max-w-xl;
+  @include overflow-hidden;
+  @include rounded-3xl;
+  @include bg-white;
+  @include shadow-lg;
+
+  @include dark {
+    @include bg-gray-900;
+    @include text-gray-400;
+  }
+
+  @include md {
+    @include mt-6;
+  }
+}
+
+#🔥Cart__X__X__X2__X {
+  @include px-4;
+  @include py-6;
+
+  @include sm {
+    @include px-8;
+    @include py-10;
+  }
+}
+
+#🔥Cart__X__X__X2__X__Ul {
+  @include \-my-8;
+}
+
+#🔥Cart__X__X__X2__X__Empty {
+  @include text-center;
+}
+
+#🔥Cart__X__X__X2__X__Empty__P {
+  @include text-gray-500;
+
+  @include dark {
+    @include text-gray-400;
+  }
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li {
+  @include flex;
+  @include flex-col;
+  @include py-6;
+  @include text-left;
+  @include space-y-3;
+
+  @include sm {
+    @include flex-row;
+    @include space-x-5;
+    @include space-y-0;
+  }
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X {
+  @include relative;
+  @include shrink-0;
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X__Span {
+  @include absolute;
+  @include left-1;
+  @include top-1;
+  @include flex;
+  @include h-6;
+  @include w-6;
+  @include items-center;
+  @include justify-center;
+  @include rounded-full;
+  @include bg-white;
+  @include text-sm;
+  @include font-medium;
+  @include text-gray-500;
+  @include shadow;
+
+  @include dark {
+    @include bg-gray-700;
+    @include text-gray-300;
+  }
+
+  @include sm {
+    @include \-right-2;
+    @include \-top-2;
+  }
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X__Img {
+  @include h-24;
+  @include w-24;
+  @include max-w-full;
+  @include rounded-lg;
+  @include object-cover;
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X2 {
+  @include relative;
+  @include flex;
+  @include flex-1;
+  @include flex-col;
+  @include justify-between;
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X2__X {
+  @include sm {
+    @include grid;
+    @include grid-cols-2;
+  }
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X2__X__X {
+  @include pr-8;
+
+  @include sm {
+    @include pr-5;
+  }
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X2__X__X__P {
+  @include text-base;
+  @include font-semibold;
+  @include text-gray-900;
+
+  @include dark {
+    @include text-gray-300;
+  }
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X2__X__X__P2 {
+  @include mx-0;
+  @include mb-0;
+  @include mt-1;
+  @include text-sm;
+  @include text-gray-400;
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X2__X__X2 {
+  @include mt-4;
+  @include flex;
+  @include items-end;
+  @include justify-between;
+
+  @include sm {
+    @include mt-0;
+    @include items-start;
+    @include justify-end;
+  }
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X2__X__X2__P {
+  @include w-20;
+  @include shrink-0;
+  @include text-base;
+  @include font-semibold;
+  @include text-gray-900;
+
+  @include dark {
+    @include text-gray-300;
+  }
+
+  @include sm {
+    @include text-right;
+  }
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X2__X2 {
+  @include absolute;
+  @include right-0;
+  @include top-0;
+  @include flex;
+
+  @include sm {
+    @include bottom-5;
+    @include top-auto;
+  }
+}
+
+#🔥Cart__X__X__X2__X__Ul__Li__X2__X2__Btn {
+  @include flex;
+  @include rounded;
+  @include p-2;
+  @include text-center;
+  @include text-gray-500;
+  @include transition-all;
+  @include duration-200;
+  @include ease-in-out;
+
+  &:focus {
+    @include shadow;
+  }
+
+  &:hover {
+    @include text-gray-900;
+  }
+
+  @include dark {
+    &:hover {
+      @include text-gray-300;
+    }
+  }
+}
+
+#🔥Cart__X__X__X2__X__X {
+  @include mt-6;
+  @include border-b;
+  @include border-t;
+  @include py-8;
+  @include space-y-3;
+}
+
+#🔥Cart__X__X__X2__X__X__X {
+  @include flex;
+  @include items-center;
+  @include justify-between;
+}
+
+#🔥Cart__X__X__X2__X__X__X__P {
+  @include text-gray-800;
+
+  @include dark {
+    @include text-gray-400;
+  }
+}
+
+#🔥Cart__X__X__X2__X__X__X__P2 {
+  @include text-lg;
+  @include font-semibold;
+  @include text-gray-900;
+
+  @include dark {
+    @include text-gray-300;
+  }
+}
+
+#🔥Cart__X__X__X2__X__X2 {
+  @include mt-6;
+  @include flex;
+  @include items-center;
+  @include justify-between;
+}
+
+#🔥Cart__X__X__X2__X__X2__P {
+  @include text-sm;
+  @include font-medium;
+  @include text-gray-900;
+
+  @include dark {
+    @include text-gray-400;
+  }
+}
+
+#🔥Cart__X__X__X2__X__X2__P2 {
+  @include text-2xl;
+  @include font-semibold;
+  @include text-gray-900;
+
+  @include dark {
+    @include text-gray-300;
+  }
+}
+
+#🔥Cart__X__X__X2__X__X3 {
+  @include mt-6;
+  @include text-center;
+}
+
+#🔥Cart__X__X__X2__X__X3__Btn {
+  @include inline-flex;
+  @include w-full;
+  @include items-center;
+  @include justify-center;
+  @include rounded-md;
+  @include bg-orange-500;
+  @include px-6;
+  @include py-4;
+  @include text-lg;
+  @include font-semibold;
+  @include text-white;
+  @include transition-all;
+  @include duration-200;
+  @include ease-in-out;
+
+  &:hover {
+    @include bg-gray-800;
+
+    & > *:nth-child(1) {
+      @include ml-8;
+    }
+  }
+
+  &:focus {
+    @include shadow;
+  }
+
+  @include dark {
+    &:hover {
+      @include bg-gray-200;
+      @include text-gray-900;
+    }
+  }
+}
+
+#🔥Cart__X__X__X2__X__X3__Btn__Svg {
+  @include ml-4;
+  @include h-6;
+  @include w-6;
+  @include transition-all;
+}
+
+#🔥Cart__X__X__X2__X__X2__P2__Span {
+  @include text-xs;
+  @include font-normal;
+  @include text-gray-400;
+}

@@ -5,40 +5,36 @@ import { useMenuUpdateContext } from '../contexts/MenuContext';
 import { MagnifyingGlassIcon, Bars3Icon, XMarkIcon } from '@heroicons/react/20/solid';
 import useScroll from '../../helpers/useScroll';
 import { useState } from 'react';
+import './Navbar.scss';
 
 const SearchOverlay = ({ isOpen, onClose }) => {
-  const popularSearches = ["Air Force 1", "Jordan", "Air Max", "Blazer"];
-  
+  const popularSearches = ['Air Force 1', 'Jordan', 'Air Max', 'Blazer'];
+
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-white dark:bg-gray-900 z-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <div id="🔥SearchOverlay">
+      <div id="🔥SearchOverlay__X">
         {/* Search Bar */}
-        <div className="flex items-center justify-between py-4">
-          <div className="flex items-center flex-1 bg-gray-200 dark:bg-gray-800 rounded-full p-2">
-            <MagnifyingGlassIcon className="h-6 w-6 text-gray-500 dark:text-gray-400" />
-            <input
-              autoFocus
-              type="text"
-              placeholder="Search"
-              className="w-full ml-4 bg-transparent border-none outline-none text-lg dark:text-white"
-            />
+        <div id="🔥SearchOverlay__X__X">
+          <div id="🔥SearchOverlay__X__X__X">
+            <MagnifyingGlassIcon />
+            <input id="🔥SearchOverlay__X__X__X__Input" autoFocus type="text" placeholder="Search" />
           </div>
-          <button onClick={onClose} className="p-2 text-gray-600 dark:text-gray-400 text-lg font-medium">
+          <button id="🔥SearchOverlay__X__X__Btn" onClick={onClose}>
             Cancel
           </button>
         </div>
-        
+
         {/* Popular Search Terms */}
-        <div className="mt-6">
-          <h3 className="text-lg font-semibold mb-4 dark:text-gray-200">Popular Search Terms</h3>
-          <ul className="space-y-4">
+        <div id="🔥SearchOverlay__X__X2">
+          <h3 id="🔥SearchOverlay__X__X2__H3">Popular Search Terms</h3>
+          <ul id="🔥SearchOverlay__X__X2__Ul">
             {popularSearches.map((term) => (
-              <li key={term}>
-                <a 
-                  href="#" 
-                  className="text-lg text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300 no-underline"
+              <li id="🔥SearchOverlay__X__X2__Ul__Li" key={term}>
+                <a
+                  id="🔥SearchOverlay__X__X2__Ul__Li__A"
+                  href="#"
                   onClick={(e) => {
                     e.preventDefault();
                     console.log(`Searched for: ${term}`);
@@ -61,55 +57,43 @@ const Navbar = ({ handleClick, handleClick2 }) => {
   const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   return (
-    <>
-      <SearchOverlay 
-        isOpen={isSearchOpen} 
-        onClose={() => setIsSearchOpen(false)} 
-      />
-      
+    <div id="🔥Navbar">
+      <SearchOverlay isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+
       <header
-        className={`dark:bg-[#1C1C1C] bg-white padding-x py-6 lg:py-6 z-10 w-full shadow-2xl fixed z-20 transition-transform duration-700 transform ${
-          isScrollingDown ? '-translate-y-full' : ''
-        }${isScrollingUp ? 'translate-y-0' : ''}`}
+        id="🔥Navbar__X"
+        className={` ${isScrollingDown ? '--isScrollingDownTrue' : ''}${isScrollingUp ? '--isScrollingUpTrue' : ''}`}
       >
-        <nav className="flex justify-between items-center max-container">
-          <a href="/">
-            <img src={headerLogo} className="hidden lg:block" alt="logo" width="200" height="29" />
-            <img src={nikeLogo} className="lg:hidden h-[50px]" alt="logo" />
+        <nav id="🔥Navbar__X__X">
+          <a id="🔥Navbar__X__X__A" href="/">
+            <img id="🔥Navbar__X__X__A__Img" src={headerLogo} alt="logo" width="200" height="29" />
+            <img id="🔥Navbar__X__X__A__Img2" src={nikeLogo} alt="logo" />
           </a>
-          <ul className="flex-1 flex justify-center items-center gap-16 max-lg:hidden">
+          <ul id="🔥Navbar__X__X__Ul">
             {navLinks.map((item) => (
-              <li key={item.label}>
-                <button onClick={handleClick2}>
-                  <a
-                    href={item.href}
-                    className="font-montserrat leading-normal text-lg text-slate-gray dark:text-slate-100 hoverUnderline dark:mix-blend-difference"
-                  >
+              <li id="🔥Navbar__X__X__Ul__Li" key={item.label}>
+                <button id="🔥Navbar__X__X__Ul__Li__Btn" onClick={handleClick2}>
+                  <a id="🔥Navbar__X__X__Ul__Li__Btn__A" href={item.href}>
                     {item.label}
                   </a>
                 </button>
               </li>
             ))}
           </ul>
-          <div className="flex items-center justify-center gap-x-2">
+          <div id="🔥Navbar__X__X__X">
             {/* Search Button */}
-            <div 
-              onClick={() => setIsSearchOpen(true)}
-              className="flex items-center justify-center sm:bg-transparent sm:p-2 rounded-full overflow-hidden sm:border dark:border-gray-500 cursor-pointer"
-            >
-              <MagnifyingGlassIcon className="mr-3 h-6 w-6 transition duration-300 cursor-pointer text-slate-gray dark:text-coral-red" />
-              <span className="hidden sm:block text-slate-gray dark:text-slate-400 font-semibold">
-                Search
-              </span>
+            <div id="🔥Navbar__X__X__X__X" onClick={() => setIsSearchOpen(true)}>
+              <MagnifyingGlassIcon />
+              <span id="🔥Navbar__X__X__X__X__Span">Search</span>
             </div>
             <ThemeSwitch handleClick={handleClick} />
-            <div className="lg:hidden dark:invert cursor-pointer" onClick={toggleShowMenu}>
-              <Bars3Icon height={25} width={25} className="dark:text-coral-red" />
+            <div id="🔥Navbar__X__X__X__X2" onClick={toggleShowMenu}>
+              <Bars3Icon height={25} width={25} />
             </div>
           </div>
         </nav>
       </header>
-    </>
+    </div>
   );
 };
 

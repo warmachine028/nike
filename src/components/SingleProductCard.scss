@@ -1,0 +1,123 @@
+#🔥SingleProductCard {
+  @include relative;
+  @include flex;
+  @include flex-row;
+  @include flex-wrap;
+  @include justify-between;
+  @include w-full;
+  @include gap-10;
+  @include rounded-lg;
+  @include p-4;
+  @include shadow-lg;
+
+  @include dark {
+    @include bg-slate-800;
+  }
+
+  @include max-sm {
+    @include w-full;
+  }
+}
+
+#🔥SingleProductCard__X {
+  @include flex;
+  @include justify-center;
+  @include w-full;
+  @include mt-6;
+}
+
+#🔥SingleProductCard__X__Img {
+  @include rounded-lg;
+  @include text-center;
+}
+
+#🔥SingleProductCard__X2 {
+  @include flex;
+  @include flex-col;
+  @include justify-center;
+  @include w-full;
+}
+
+#🔥SingleProductCard__X2__X {
+  @include mt-4;
+  @include flex;
+  @include items-center;
+}
+
+#🔥SingleProductCard__X2__X__Img {
+  @include mr-2;
+}
+
+#🔥SingleProductCard__X2__X__P {
+  @include font-montserrat;
+  @include leading-normal;
+  @include text-slate-gray;
+
+  @include sm {
+    @include text-lg;
+  }
+
+  @include dark {
+    @include text-gray-300;
+  }
+}
+
+#🔥SingleProductCard__X2__H3 {
+  @include mt-2;
+  @include text-xl;
+  @include leading-normal;
+  @include font-semibold;
+  @include font-palanquin;
+
+  @include sm {
+    @include text-2xl;
+  }
+}
+
+#🔥SingleProductCard__X2__X2 {
+  @include flex;
+  @include justify-between;
+
+  @include items-center;
+
+  & > *:nth-child(2) {
+    @include h-8;
+    @include w-8;
+    @include transition;
+    @include duration-300;
+    @include cursor-pointer;
+    @include text-slate-gray;
+
+    @include md {
+      @include h-10;
+      @include w-10;
+    }
+
+    @include dark {
+      @include text-coral-red;
+    }
+
+    &:hover {
+      @include scale-125;
+    }
+  }
+}
+
+#🔥SingleProductCard__X2__X2__P {
+  @include mt-2;
+  @include leading-normal;
+  @include font-semibold;
+  @include font-montserrat;
+  @include text-coral-red;
+
+  @include sm {
+    @include text-xl;
+  }
+}
+
+#🔥SingleProductCard__X2__Btn {
+  @include buy-now-button;
+  @include mt-10;
+  @include font-semibold;
+  @include font-montserrat;
+}

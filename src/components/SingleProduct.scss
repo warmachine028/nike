@@ -1,0 +1,100 @@
+#🔥SingleProduct__X {
+  @include mt-20;
+  @include flex;
+  @include h-full;
+  @include w-full;
+  @include flex-row;
+  @include flex-wrap;
+  @include justify-center;
+  @include gap-5;
+}
+
+#🔥SingleProduct__X__X {
+  @include mt-2;
+  @include flex;
+  @include flex-col;
+  @include justify-center;
+
+  @include max-lg {
+    @include w-1\/2;
+  }
+
+  @include max-md {
+    @include w-9\/12;
+    @include p-0;
+  }
+
+  @include max-sm {
+    @include w-10\/12;
+  }
+
+  @include lg {
+    @include p-4;
+  }
+}
+
+#🔥SingleProduct__X__X__X {
+  @include mt-8;
+  @include padding;
+}
+
+#🔥SingleProduct__X__X__X__X {
+  @include max-container;
+
+  @include max-sm {
+    @include mt-12;
+  }
+}
+
+#🔥SingleProduct__X2 {
+  @include mt-12;
+  @include flex;
+  @include justify-center;
+  @include bg-pale-blue;
+
+  @include dark {
+    @include bg-slate-700;
+  }
+}
+
+#🔥SingleProduct__X2__X {
+  @include max-container;
+  @include m-12;
+  @include mb-20;
+
+  @include max-sm {
+    @include mt-12;
+  }
+}
+
+#🔥SingleProduct__X2__X__X {
+  @include flex;
+  @include flex-col;
+  @include justify-start;
+  @include gap-5;
+}
+
+#🔥SingleProduct__X2__X__X__H2 {
+  @include font-palanquin;
+  @include text-2xl;
+  @include font-bold;
+
+  @include dark {
+    @include text-slate-200;
+  }
+}
+
+#🔥SingleProduct__X2__X__X2 {
+  @include mt-5;
+  @include grid;
+  @include grid-cols-2;
+  @include gap-4;
+
+  @include md {
+    @include grid-cols-3;
+  }
+
+  @include lg {
+    @include grid-cols-4;
+  }
+}

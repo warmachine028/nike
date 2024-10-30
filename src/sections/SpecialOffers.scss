@@ -1,0 +1,85 @@
+#🔥SpecialOffers {
+  @include padding;
+}
+
+#🔥SpecialOffers__X {
+  @include max-container;
+  @include flex;
+  @include flex-wrap;
+  @include items-center;
+  @include gap-10;
+
+  @include max-xl {
+    @include flex-col-reverse;
+  }
+}
+
+#🔥SpecialOffers__X__X {
+  @include flex-1;
+}
+
+#🔥SpecialOffers__X__X__Img {
+  @include w-full;
+  @include object-contain;
+  @include drop-shadow-xl;
+  @include duration-300;
+  @include ease-in-out;
+
+  &:hover {
+    @include scale-105;
+  }
+}
+
+#🔥SpecialOffers__X__X2 {
+  @include flex;
+  @include flex-1;
+  @include flex-col;
+}
+
+#🔥SpecialOffers__X__X2__H2 {
+  @include font-palanquin;
+  @include text-4xl;
+  @include font-bold;
+  @include capitalize;
+
+  @include lg {
+    @include max-w-lg;
+  }
+}
+
+#🔥SpecialOffers__X__X2__H2__Span {
+  @include text-coral-red;
+}
+
+#🔥SpecialOffers__X__X2__P {
+  @include info-text;
+  @include mt-4;
+
+  @include dark {
+    @include text-gray-400;
+  }
+
+  @include lg {
+    @include max-w-lg;
+  }
+}
+
+#🔥SpecialOffers__X__X2__P2 {
+  @include info-text;
+  @include mt-6;
+
+  @include dark {
+    @include text-gray-400;
+  }
+
+  @include lg {
+    @include max-w-lg;
+  }
+}
+
+#🔥SpecialOffers__X__X2__X {
+  @include mt-11;
+  @include flex;
+  @include flex-wrap;
+  @include gap-4;
+}

@@ -1,7 +1,7 @@
 /** @format */
 import { useFormik } from 'formik';
 import Button from '../components/Button';
-
+import './Subscribe.scss';
 const validate = (values) => {
   const errors = {};
   if (!values.email) {
@@ -24,26 +24,25 @@ const Subscribe = () => {
     }
   });
   return (
-    <section id="contact-us" className="padding-x sm:py-32 py-16 w-full">
-      <div className="max-container flex justify-between items-center max-lg:flex-col gap-10">
-        <h3 className="text-4xl leading-[68px] lg:max-w-md font-palanquin font-bold">
+    <section id="🔥Subscribe">
+      <div id="🔥Subscribe__X">
+        <h3 id="🔥Subscribe__X__H3">
           Sign Up for
           <br />
-          <span className="text-coral-red">Updates</span> & NewsLetters
+          <span id="🔥Subscribe__X__H3__Span">Updates</span> & NewsLetters
         </h3>
-        <div className="lg:max-w-[40%] w-full flex items-center max-sm:flex-col gap-5 p-2.5 sm:border sm:border-slate-gray rounded-full bg-none">
+        <div id="🔥Subscribe__X__X">
           <input
+            id="🔥Subscribe__X__X__Email"
             type="email"
             name="email"
-            id="email"
             placeholder="subscribe@nike.com"
             onChange={formik.handleChange}
             onBlur={formik.handleBlur}
             value={formik.values.email}
-            className="input bg-none bg-inherit focus:outline-none focus:border-coral-red"
           />
           {formik.touched.email && formik.errors.email ? <span>{formik.errors.email}</span> : null}
-          <div className="flex max-sm:justify-end items-center max-sm:w-full">
+          <div id="🔥Subscribe__X__X__X">
             <Button fullWidth onSubmit={formik.handleSubmit}>
               Sign Up
             </Button>

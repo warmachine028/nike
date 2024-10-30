@@ -1,0 +1,31 @@
+#🔥ThemeSwitch {
+  @include inline-flex;
+  @include items-center;
+
+  & > *:nth-child(1) {
+    @include cursor-pointer;
+
+    & > *:nth-child(1) {
+      @include ml-3;
+      @include mr-4;
+      @include h-6;
+      @include w-6;
+      @include text-slate-gray;
+
+      @include dark {
+        @include text-coral-red;
+      }
+    }
+  }
+
+  & > *:nth-child(2) {
+    @include ml-2;
+    @include h-6;
+    @include w-6;
+    @include text-slate-gray;
+
+    @include dark {
+      @include text-coral-red;
+    }
+  }
+}

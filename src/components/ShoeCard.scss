@@ -1,0 +1,45 @@
+#🔥ShoeCard {
+  @include rounded-xl;
+  @include border-2;
+  @include shadow-lg;
+  @include transition;
+  @include duration-200;
+  @include ease-in-out;
+  @include cursor-pointer;
+
+  &:hover {
+    @include scale-110;
+  }
+
+  @include dark {
+    @include bg-slate-800;
+  }
+
+  &:hover {
+    @include border-2;
+    @include border-coral-red;
+    @include drop-shadow-(0px 0px 14px rgba(0, 0, 0, 0.3));
+  }
+
+  @include max-sm {
+    @include flex-1;
+  }
+}
+
+#🔥ShoeCard__X {
+  @include flex;
+  @include items-center;
+  @include justify-center;
+  @include rounded-xl;
+  @include bg-card;
+  @include bg-cover;
+  @include bg-center;
+
+  @include max-sm {
+    @include p-4;
+  }
+}
+
+#🔥ShoeCard__X__Img {
+  @include object-contain;
+}

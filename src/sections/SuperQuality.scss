@@ -1,0 +1,88 @@
+#🔥SuperQuality {
+  @include padding;
+}
+
+#🔥SuperQuality__X {
+  @include max-container;
+  @include flex;
+  @include w-full;
+  @include justify-between;
+  @include gap-10;
+
+  @include max-lg {
+    @include flex-col;
+  }
+
+  @include max-sm {
+    @include mt-12;
+  }
+}
+
+#🔥SuperQuality__X__X {
+  @include flex;
+  @include flex-1;
+  @include flex-col;
+}
+
+#🔥SuperQuality__X__X__H2 {
+  @include font-palanquin;
+  @include text-4xl;
+  @include font-bold;
+  @include capitalize;
+
+  @include lg {
+    @include max-w-lg;
+  }
+}
+
+#🔥SuperQuality__X__X__H2__Span {
+  @include text-coral-red;
+}
+
+#🔥SuperQuality__X__X__P {
+  @include info-text;
+  @include mt-4;
+
+  @include dark {
+    @include text-gray-400;
+  }
+
+  @include lg {
+    @include max-w-lg;
+  }
+}
+
+#🔥SuperQuality__X__X__P2 {
+  @include info-text;
+  @include mt-6;
+
+  @include dark {
+    @include text-gray-400;
+  }
+
+  @include lg {
+    @include max-w-lg;
+  }
+}
+
+#🔥SuperQuality__X__X__X {
+  @include mt-11;
+}
+
+#🔥SuperQuality__X__X2 {
+  @include flex;
+  @include flex-1;
+  @include items-center;
+  @include justify-center;
+}
+
+#🔥SuperQuality__X__X2__Img {
+  @include object-contain;
+  @include drop-shadow-xl;
+  @include duration-500;
+  @include ease-in-out;
+
+  &:hover {
+    @include skew-y-3;
+  }
+}

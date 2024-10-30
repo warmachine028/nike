@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useTheme } from 'next-themes';
 import { useSpring, animated } from 'react-spring';
 import { SunIcon, MoonIcon, ShoppingCartIcon } from '@heroicons/react/24/outline';
+import './ThemeSwitch.scss';
 
 const ThemeSwitch = ({ handleClick }) => {
   const { theme, setTheme } = useTheme();
@@ -18,15 +19,11 @@ const ThemeSwitch = ({ handleClick }) => {
   };
 
   return (
-    <div className="inline-flex items-center">
-      <animated.div style={springProps} className="cursor-pointer" onClick={toggleTheme}>
-        {isDarkMode ? (
-          <MoonIcon className="ml-3 mr-4 h-6 w-6 text-slate-gray dark:text-coral-red" />
-        ) : (
-          <SunIcon className="ml-3 mr-4 h-6 w-6 text-slate-gray dark:text-coral-red" />
-        )}
+    <div id="🔥ThemeSwitch">
+      <animated.div style={springProps} onClick={toggleTheme}>
+        {isDarkMode ? <MoonIcon /> : <SunIcon />}
       </animated.div>
-      <ShoppingCartIcon onClick={handleClick} className="ml-2 h-6 w-6 text-slate-gray dark:text-coral-red" />
+      <ShoppingCartIcon onClick={handleClick} />
     </div>
   );
 };

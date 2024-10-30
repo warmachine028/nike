@@ -1,0 +1,88 @@
+#🔥ReviewCard {
+  @include mt-6;
+  @include inline-flex;
+  @include flex-col;
+  @include items-center;
+  @include justify-center;
+  @include rounded-xl;
+  @include p-10;
+  @include transition;
+  @include duration-300;
+  @include ease-in-out;
+
+  &:hover {
+    @include scale-110;
+  }
+
+  @include dark {
+    @include bg-slate-800;
+  }
+}
+
+#🔥ReviewCard__X {
+  @include carousel-item-text;
+  @include info-text;
+  @include mt-6;
+  @include max-w-(400px);
+  @include text-center;
+
+  @include dark {
+    @include text-gray-300;
+  }
+}
+
+#🔥ReviewCard__P {
+  @include inline-block;
+  @include cursor-pointer;
+  @include text-sm;
+  @include text-blue-600;
+  @include transition-all;
+  @include duration-300;
+
+  &:hover {
+    @include underline;
+  }
+}
+
+#🔥ReviewCard__X2 {
+  @include mt-3;
+  @include flex;
+  @include items-center;
+  @include justify-center;
+  @include gap-2\.5;
+}
+
+#🔥ReviewCard__X2__Img {
+  @include m-0;
+  @include object-contain;
+}
+
+#🔥ReviewCard__X2__P {
+  @include font-montserrat;
+  @include text-xl;
+  @include text-slate-gray;
+
+  @include dark {
+    @include text-gray-300;
+  }
+}
+
+#🔥ReviewCard__H3 {
+  @include mt-1;
+  @include text-center;
+  @include font-palanquin;
+  @include text-3xl;
+  @include font-black;
+
+  @include dark {
+    @include text-gray-200;
+  }
+}
+
+#🔥ReviewCard__Img {
+  @include rounded-full;
+  @include border-4;
+  @include border-white-400;
+  @include object-cover;
+  @include p-1;
+}

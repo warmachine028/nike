@@ -1,0 +1,248 @@
+#🔥SearchOverlay {
+  @include fixed;
+  @include inset-0;
+  @include z-50;
+  @include bg-white;
+
+  @include dark {
+    @include bg-gray-900;
+  }
+}
+
+#🔥SearchOverlay__X {
+  @include mx-auto;
+  @include max-w-7xl;
+  @include px-4;
+}
+
+#🔥SearchOverlay__X__X {
+  @include flex;
+  @include items-center;
+  @include justify-between;
+  @include py-4;
+}
+
+#🔥SearchOverlay__X__X__X {
+  @include flex;
+  @include flex-1;
+  @include items-center;
+  @include rounded-full;
+  @include bg-gray-200;
+  @include p-2;
+
+  @include dark {
+    @include bg-gray-800;
+  }
+
+  & > *:nth-child(1) {
+    @include h-6;
+    @include w-6;
+    @include text-gray-500;
+
+    @include dark {
+      @include text-gray-400;
+    }
+  }
+}
+
+#🔥SearchOverlay__X__X__X__Input {
+  @include ml-4;
+  @include w-full;
+  @include border-none;
+  @include bg-transparent;
+  @include text-lg;
+  @include outline-none;
+
+  @include dark {
+    @include text-white;
+  }
+}
+
+#🔥SearchOverlay__X__X__Btn {
+  @include p-2;
+  @include text-lg;
+  @include font-medium;
+  @include text-gray-600;
+
+  @include dark {
+    @include text-gray-400;
+  }
+}
+
+#🔥SearchOverlay__X__X2 {
+  @include mt-6;
+}
+
+#🔥SearchOverlay__X__X2__H3 {
+  @include mb-4;
+  @include text-lg;
+  @include font-semibold;
+
+  @include dark {
+    @include text-gray-200;
+  }
+}
+
+#🔥SearchOverlay__X__X2__Ul {
+  @include space-y-4;
+}
+
+#🔥SearchOverlay__X__X2__Ul__Li__A {
+  @include text-lg;
+  @include text-gray-900;
+  @include no-underline;
+
+  &:hover {
+    @include text-gray-700;
+  }
+
+  @include dark {
+    @include text-gray-100;
+
+    &:hover {
+      @include text-gray-300;
+    }
+  }
+}
+
+#🔥Navbar__X {
+  @include fixed;
+  @include z-10;
+  @include z-20;
+  @include w-full;
+  @include transform;
+  @include bg-white;
+  @include py-6;
+  @include shadow-2xl;
+  @include transition-transform;
+  @include duration-700;
+  @include padding-x;
+
+  @include dark {
+    @include bg-(#1c1c1c);
+  }
+
+  @include lg {
+    @include py-6;
+  }
+}
+
+#🔥Navbar__X__X {
+  @include max-container;
+  @include flex;
+  @include items-center;
+  @include justify-between;
+}
+
+#🔥Navbar__X__X__A__Img {
+  @include hidden;
+
+  @include lg {
+    @include block;
+  }
+}
+
+#🔥Navbar__X__X__A__Img2 {
+  @include h-(50px);
+
+  @include lg {
+    @include hidden;
+  }
+}
+
+#🔥Navbar__X__X__Ul {
+  @include flex;
+  @include flex-1;
+  @include items-center;
+  @include justify-center;
+  @include gap-16;
+
+  @include max-lg {
+    @include hidden;
+  }
+}
+
+#🔥Navbar__X__X__Ul__Li__Btn__A {
+  @include font-montserrat;
+  @include text-lg;
+  @include leading-normal;
+  @include text-slate-gray;
+  @include hoverUnderline;
+
+  @include dark {
+    @include text-slate-100;
+    @include mix-blend-difference;
+  }
+}
+
+#🔥Navbar__X__X__X {
+  @include flex;
+  @include items-center;
+  @include justify-center;
+  @include gap-x-2;
+}
+
+#🔥Navbar__X__X__X__X {
+  @include flex;
+  @include cursor-pointer;
+  @include items-center;
+  @include justify-center;
+  @include overflow-hidden;
+  @include rounded-full;
+
+  @include dark {
+    @include border-gray-500;
+  }
+
+  @include sm {
+    @include border;
+    @include bg-transparent;
+    @include p-2;
+  }
+
+  & > *:nth-child(1) {
+    @include mr-3;
+    @include h-6;
+    @include w-6;
+    @include cursor-pointer;
+    @include text-slate-gray;
+    @include transition;
+    @include duration-300;
+
+    @include dark {
+      @include text-coral-red;
+    }
+  }
+}
+
+#🔥Navbar__X__X__X__X__Span {
+  @include hidden;
+  @include font-semibold;
+  @include text-slate-gray;
+
+  @include dark {
+    @include text-slate-400;
+  }
+
+  @include sm {
+    @include block;
+  }
+}
+
+#🔥Navbar__X__X__X__X2 {
+  @include cursor-pointer;
+
+  @include dark {
+    @include invert;
+  }
+
+  @include lg {
+    @include hidden;
+  }
+
+  & > *:nth-child(1) {
+    @include dark {
+      @include text-coral-red;
+    }
+  }
+}

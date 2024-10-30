@@ -6,46 +6,39 @@ import Rating from './Rating.jsx';
 import { products } from '../constants/index.js';
 import ProductCard from './ProductCard.jsx';
 import Menu from './Menu';
+import './ShoeDetails.scss';
 
 const ShoeDetails = () => {
   return (
-    <>
+    <div id="🔥ShoeDetails">
       <Menu />
-      <div id={'category'} className={'flex justify-start mt-8 ml-5 gap-3 text-sm text-gray-400 '}>
+      <div id="🔥ShoeDetails__X">
         <div>Men /</div>
         <div>Shoes /</div>
         <div>Sneakers /</div>
         <div>Basketball Shoes </div>
       </div>
-      <div id={'shoe_container'} className={'w-full h-full flex justify-center flex-row flex-wrap gap-5 mt-10'}>
-        <div
-          id={'imageContainer'}
-          className={
-            'flex justify-center align-center flex-col m-8 mt-0 gap-10 w-1/2 max-lg:w-2/3 max-md:w-9/12 max-sm:w-10/12'
-          }
-        >
-          <div id={'mainImage'} className={'flex justify-center w-full mt-14'}>
+      <div id="🔥ShoeDetails__X2">
+        <div id="🔥ShoeDetails__X2__X">
+          <div id="🔥ShoeDetails__X2__X__X">
             <img src={ua3shoe} alt={'ua curry 3'} width={'500'} />
           </div>
-          <div id={'imageSlider'} className={'flex justify-center flex-row overflow-auto w-full h-24 p-1'}>
-            <img src={ua3shoe} alt={'ua curry 3'} className={'border border-solid-grey'} />
-            <img src={ua3shoe2} alt={'ua curry 3'} className={'border border-solid-grey'} />
-            <img src={ua3shoe4} alt={'ua curry 3'} className={'border border-solid-grey'} />
-            <img src={ua3shoe} alt={'ua curry 3'} className={'border border-solid-grey'} />
-            <img src={ua3shoe3} alt={'ua curry 3'} className={'border border-solid-grey'} />
+          <div id="🔥ShoeDetails__X2__X__X2">
+            <img id="🔥ShoeDetails__X2__X__X2__Img" src={ua3shoe} alt={'ua curry 3'} />
+            <img id="🔥ShoeDetails__X2__X__X2__Img" src={ua3shoe2} alt={'ua curry 3'} />
+            <img id="🔥ShoeDetails__X2__X__X2__Img" src={ua3shoe4} alt={'ua curry 3'} />
+            <img id="🔥ShoeDetails__X2__X__X2__Img" src={ua3shoe} alt={'ua curry 3'} />
+            <img id="🔥ShoeDetails__X2__X__X2__Img" src={ua3shoe3} alt={'ua curry 3'} />
           </div>
         </div>
-        <div
-          id={'descriptionContainer'}
-          className={
-            'flex justify-center flex-col align-center mt-2 lg:p-4 max-lg:w-1/2 max-md:p-0 max-md:w-9/12 max-sm:w-10/12'
-          }
-        >
-          <div className={'flex justify-center flex-col align-center'}>
-            <div className={'flex justify-center flex-col align-start'}>
-              <p className={'text-3xl font-bold max-sm:w-full'}>UA CURRY 3</p>
-              <p className={'text-lg font-semibold leading-3 pb-5 max-sm:w-full'}>Mens Basketball Shoes</p>
-              <div className={'flex flex-row text-lg max-sm:w-full'}>
+        <div id="🔥ShoeDetails__X2__X2">
+          <div id="🔥ShoeDetails__X2__X2__X">
+            <div id="🔥ShoeDetails__X2__X2__X__X">
+              <p cid="🔥ShoeDetails__X2__X2__X__X__P" lassName={''}>
+                UA CURRY 3
+              </p>
+              <p id="🔥ShoeDetails__X2__X2__X__X__P2">Mens Basketball Shoes</p>
+              <div id="🔥ShoeDetails__X2__X2__X__X__X">
                 <Rating type={'full'} />
                 <Rating type={'full'} />
                 <Rating type={'full'} />
@@ -53,35 +46,31 @@ const ShoeDetails = () => {
                 <Rating type={'empty'} />
               </div>
             </div>
-            <div className={'flex justify-center align-start flex-col mb-8'}>
-              <p className={'text-lg font-semibold mt-5 max-sm:w-full'}>INFINITE SUPPORT. TOTAL CONTROL.</p>
-              <p className={'text-base font-medium text-gray-400 text-left mt-2 w-96  max-sm:w-full'}>
+            <div id="🔥ShoeDetails__X2__X2__X__X2">
+              <p id="🔥ShoeDetails__X2__X2__X__X2__P">INFINITE SUPPORT. TOTAL CONTROL.</p>
+              <p id="🔥ShoeDetails__X2__X2__X__X2__P2">
                 Threadborne™ upper delivers lightweight directional strength to support the games most brilliant
                 player. Stephen Curry.
               </p>
             </div>
-            <div
-              className={
-                'flex justify-between align-start flex-row gap-4 max-lg:gap-10 max-md:gap-2 max-sm:flex-col max-sm:gap-5'
-              }
-            >
-              <div className={'w-full flex align-start flex-row gap-3 max-lg:w-1/2'}>
-                <div className={'w-5 h-5 bg-blue-600 mt-2 hover:bg-blue-500 hover:cursor-pointer'} />
-                <div className={'w-5 h-5 bg-lime-400 mt-2 hover:bg-lime-300 hover:cursor-pointer'} />
-                <div className={'w-5 h-5 bg-pink-400 mt-2 hover:bg-pink-300 hover:cursor-pointer'} />
-                <div className={'w-5 h-5 bg-orange-400 mt-2 hover:bg-orange-300 hover:cursor-pointer'} />
-                <div className={'w-5 h-5 bg-yellow-400 mt-2 hover:bg-yellow-300 hover:cursor-pointer'} />
+            <div id="🔥ShoeDetails__X2__X2__X__X3">
+              <div id="🔥ShoeDetails__X2__X2__X__X3__X">
+                <div id="🔥ShoeDetails__X2__X2__X__X3__X__X" />
+                <div id="🔥ShoeDetails__X2__X2__X__X3__X__X2" />
+                <div id="🔥ShoeDetails__X2__X2__X__X3__X__X3" />
+                <div id="🔥ShoeDetails__X2__X2__X__X3__X__X4" />
+                <div id="🔥ShoeDetails__X2__X2__X__X3__X__X5" />
               </div>
-              <div className={'flex flex-row justify-start gap-2 w-full '}>
-                <div className={'flex justify-center align-center rounded-full bg-amber-400 p-1 hover:cursor-pointer'}>
+              <div id="🔥ShoeDetails__X2__X2__X__X3__X2">
+                <div id="🔥ShoeDetails__X2__X2__X__X3__X2__X">
                   <svg
+                    id="🔥ShoeDetails__X2__X2__X__X3__X2__X__Svg"
                     xmlns="http://www.w3.org/2000/svg"
                     fill={'rgb(255,255,255)'}
                     color={'white'}
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-5 h-5"
                   >
                     <path
                       strokeLinecap="round"
@@ -90,15 +79,15 @@ const ShoeDetails = () => {
                     />
                   </svg>
                 </div>
-                <div className={'flex justify-center align-center rounded-full bg-amber-400 p-1 hover:cursor-pointer'}>
+                <div id="🔥ShoeDetails__X2__X2__X__X3__X2__X">
                   <svg
+                    id="🔥ShoeDetails__X2__X2__X__X3__X2__X__Svg"
                     xmlns="http://www.w3.org/2000/svg"
                     fill={'rgb(255,255,255)'}
                     color={'white'}
                     viewBox="0 0 24 24"
                     strokeWidth="1.5"
                     stroke="currentColor"
-                    className="w-5 h-5"
                   >
                     <path
                       strokeLinecap="round"
@@ -109,70 +98,38 @@ const ShoeDetails = () => {
                 </div>
               </div>
             </div>
-            <div className={'flex justify-center align-start flex-col mt-6'}>
-              <p className={'font-semibold mb-2'}>Select Size</p>
-              <div className={'flex align-start flex-row gap-3'}>
-                <div
-                  className={
-                    'flex justify-center rounded-md align-center w-8 h-8 border-2 border-gray-300 text-gray-400 hover:cursor-pointer'
-                  }
-                >
-                  7
-                </div>
-                <div
-                  className={
-                    'flex justify-center rounded-md align-center w-8 h-8 border-2 border-gray-300 text-gray-400 hover:cursor-pointer'
-                  }
-                >
-                  8
-                </div>
-                <div
-                  className={
-                    'flex justify-center rounded-md align-center w-8 h-8 border-2 border-gray-300 text-gray-400 hover:cursor-pointer'
-                  }
-                >
-                  9
-                </div>
-                <div
-                  className={
-                    'flex justify-center rounded-md align-center w-8 h-8 border-2 border-gray-300 text-gray-400 hover:cursor-pointer'
-                  }
-                >
-                  10
-                </div>
-                <div
-                  className={
-                    'flex justify-center rounded-md align-center w-8 h-8 border-2 border-gray-300 text-gray-400 hover:cursor-pointer'
-                  }
-                >
-                  11
-                </div>
+            <div id="🔥ShoeDetails__X2__X2__X__X4">
+              <p id="🔥ShoeDetails__X2__X2__X__X4__P">Select Size</p>
+              <div id="🔥ShoeDetails__X2__X2__X__X4__X">
+                <div id="🔥ShoeDetails__X2__X2__X__X4__X__X">7</div>
+                <div id="🔥ShoeDetails__X2__X2__X__X4__X__X">8</div>
+                <div id="🔥ShoeDetails__X2__X2__X__X4__X__X">9</div>
+                <div id="🔥ShoeDetails__X2__X2__X__X4__X__X">10</div>
+                <div id="🔥ShoeDetails__X2__X2__X__X4__X__X">11</div>
               </div>
             </div>
-            <div className={'flex justify-center align-start flex-col'}>
-              <p className={'text-3xl mb-6 mt-7'}>$ 94.59</p>
+            <div id="🔥ShoeDetails__X2__X2__X__X5">
+              <p id="🔥ShoeDetails__X2__X2__X__X5__P">$ 94.59</p>
             </div>
-            <div className={'flex justify-center align-start flex-col'}>
-              <button className={'border-none rounded-md w-64 h-12 bg-orange-500 text-white text-xl max-md:w-full'}>
-                Buy
-              </button>
+            <div id="🔥ShoeDetails__X2__X2__X__X6">
+              <button id="🔥ShoeDetails__X2__X2__X__X6__Btn">Buy</button>
             </div>
           </div>
         </div>
       </div>
-      <div className={'flex justify-center align-center mt-12 bg-pale-blue dark:bg-slate-700'}>
-        <div id="products" className=" m-12 mb-20 max-container max-sm:mt-12">
-          <div className="flex flex-col justify-start gap-5">
-            <h2 className="text-2xl font-palanquin font-bold dark:text-slate-200">Similar Products You Might Enjoy</h2>
+      <div id="🔥ShoeDetails__X3">
+        <div id="🔥ShoeDetails__X3__X">
+          <div id="🔥ShoeDetails__X3__X__X">
+            <h2 id="🔥ShoeDetails__X3__X__X__H2">Similar Products You Might Enjoy</h2>
           </div>
-          <div className="mt-5 grid grid-cols-2 lg:grid-cols-4 md:grid-cols-3 gap-4">
+          <div id="🔥ShoeDetails__X3__X__X2">
             {products.map((product) => (
               <ProductCard key={product.name} {...product} />
             ))}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 

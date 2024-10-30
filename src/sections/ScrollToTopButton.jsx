@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import chevronUpSvg from '../assets/icons/chevron-up.svg';
+import './ScrollToTopButton.scss';
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -29,12 +30,11 @@ const ScrollToTopButton = () => {
 
   return (
     <button
-      className={`fixed right-4 bottom-4 bg-transparent text-blue-500 py-2 px-4 rounded-full  ${
-        isVisible ? 'block' : 'hidden'
-      }`}
+      id="🔥ScrollToTopButton"
+      className={` ${isVisible ? '--isVisibleTrue' : '--isVisibleFalse'}`}
       onClick={scrollToTop}
     >
-      <img src={chevronUpSvg} alt="Move to top" style={{ background: 'none' }} />
+      <img id="🔥ScrollToTopButton__Img" src={chevronUpSvg} alt="Move to top" />
     </button>
   );
 };

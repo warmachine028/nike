@@ -1,0 +1,198 @@
+#🔥Signup__X {
+  @include mt-20;
+  @include bg-gray-50;
+
+  @include dark {
+    @include bg-(#1c1c1c);
+  }
+
+  @include lg {
+    @include mt-5;
+  }
+}
+
+#🔥Signup__X__X {
+  @include mx-auto;
+  @include flex;
+  @include flex-col;
+  @include items-center;
+  @include justify-center;
+  @include px-6;
+  @include py-8;
+
+  @include md {
+    @include h-screen;
+  }
+
+  @include lg {
+    @include py-0;
+  }
+}
+
+#🔥Signup__X__X__X {
+  @include w-full;
+  @include rounded-lg;
+  @include bg-white;
+  @include shadow;
+
+  @include dark {
+    @include border;
+    @include border-gray-700;
+    @include bg-(#2d2c2c);
+  }
+
+  @include sm {
+    @include max-w-md;
+  }
+
+  @include md {
+    @include mt-0;
+  }
+
+  @include xl {
+    @include p-0;
+  }
+}
+
+#🔥Signup__X__X__X__X {
+  @include p-6;
+  @include space-y-4;
+
+  @include sm {
+    @include p-8;
+  }
+
+  @include md {
+    @include space-y-6;
+  }
+}
+
+#🔥Signup__X__X__X__X__H1 {
+  @include text-xl;
+  @include font-bold;
+  @include leading-tight;
+  @include tracking-tight;
+  @include text-gray-900;
+
+  @include dark {
+    @include text-white;
+  }
+
+  @include md {
+    @include text-2xl;
+  }
+}
+
+#🔥Signup__X__X__X__X__Form {
+  @include space-y-4;
+
+  @include md {
+    @include space-y-6;
+  }
+}
+
+#🔥Signup__X__X__X__X__Form__X {
+  @include mb-2;
+  @include block;
+  @include text-sm;
+  @include font-medium;
+  @include text-gray-900;
+
+  @include dark {
+    @include text-white;
+  }
+}
+
+#🔥Signup__X__X__X__X__Form__X__Input {
+  @include block;
+  @include w-full;
+  @include rounded-lg;
+  @include border;
+  @include border-gray-300;
+  @include bg-gray-50;
+  @include p-2\.5;
+  @include text-gray-900;
+
+  @include dark {
+    @include border-gray-600;
+    @include bg-(#2d2c2c);
+    @include text-white;
+
+    &:focus {
+      @include border-blue-500;
+    }
+
+    &:focus {
+      @include ring-blue-500;
+    }
+  }
+
+  @include sm {
+    @include text-sm;
+  }
+}
+
+#🔥Signup__X__X__X__X__Form__X2 {
+  @include flex;
+  @include items-start;
+}
+
+#🔥Signup__X__X__X__X__Form__P {
+  @include text-sm;
+  @include font-light;
+  @include text-gray-500;
+
+  @include dark {
+    @include text-gray-400;
+  }
+
+  & > *:nth-child(1) {
+    @include font-medium;
+    &:hover {
+      @include underline;
+    }
+  }
+}
+
+#🔥Signup__X__X__X__X__Form__X2__X2__Label__A {
+  @include font-medium;
+
+  &:hover {
+    @include underline;
+  }
+}
+
+#🔥Signup__X__X__X__X__Form__X2__X2 {
+  @include ml-3;
+  @include text-sm;
+}
+
+#🔥Signup__X__X__X__X__Form__X2__X {
+  @include flex;
+  @include h-5;
+  @include items-center;
+}
+
+#🔥Signup__X__X__X__X__Form__X2__Terms {
+  @include h-4;
+  @include w-4;
+  @include rounded;
+  @include border;
+  @include border-gray-300;
+  @include bg-gray-50;
+
+  @include dark {
+    @include border-gray-600;
+    @include bg-gray-700;
+    @include ring-offset-gray-800;
+  }
+}
+
+#🔥Signup__X__X__X__X__Form__X2__X2__Label {
+  @include font-light;
+  @include text-gray-500;
+
+  @include dark {
+    @include text-gray-300;
+  }
+}
