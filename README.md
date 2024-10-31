@@ -14,79 +14,44 @@
     </a>
 </div>
 
-# [Nike](https://niike.vercel.app)
+# Purpose
+In the Nike project, fully convert Tailwind classes to the ESCSS version without altering the structure or attributes to enable a baseline comparison.
 
-![line]
+## Live Demo
+- [Original(Tailwind) version](https://niike.vercel.app/)
+- [ESCSS version](https://demo-nike.vercel.app/)
 
-## Table of Contents
+## Comparison 
+### Google Speed:
+![google speed](./src/assets/images/google-spped.png)
+#### Tailwind 
+Same
+#### ESCSS
+Same
 
-- [Introduction](#introduction)
-- [Development](#development)
-- [Tech Stack Used](#tech-stack-used)
-- [Preview](#preview)
-- [Best Contributors](#best-contributors)
-- [License](#license)
+### HTML Structure
+#### Tailwind 
+![tw](./src/assets/images/tw.png) 
+#### ESCSS 
+![escss](./src/assets/images/escss.png)
 
-![line]
+### DevTool
+#### Tailwind
+![tw-debugger](./src/assets/images/tw-debugger.png)
+#### ESCSS
+![escss-debugger](./src/assets/images/escss-debugger.png)
 
-## Introduction
+### VSCode
+#### Tailwind 
+![tw-code](./src/assets/images/tw-code.png) 
+#### ESCSS  
+![escss-code](./src/assets/images/escss-code.png)
 
-- Discover a fully open-sourced React and Tailwind CSS landing page that captures Nike's iconic visual design.
-- Experience a responsive and intuitive user interface that adapts seamlessly to various devices and screen sizes.
-- Contribute effortlessly with modular React components and clear guidelines, fostering a collaborative development environment.
-- Immerse yourself in a stunning UI/UX showcase that mirrors Nike's brand identity while maintaining a contributor-friendly approach.
+### CSS size
+#### Tailwind 
+ 9.21 kB 
+#### ESCSS
+ 11.59 kB 
 
-![line]
-
-## Development
-
-```sh
-> npm install
-> npm run dev
-```
-
-![line]
-
-## Tech Stack Used
-
-- React: Frontend Development
-- TailwindCSS: Styling
-- Vite: Build optimizer
-- Git & Github: Version Control
-- Vercel: Hosting
-
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=blue) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Vercel](https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)
-
-![line]
-
-## Preview
-
-![](https://github.com/warmachine028/nike/assets/75939390/340f4f1b-fe6d-4480-8a7e-59b9994afaff)
-
-![line]
-
-## Best Contributors
-
-<div align="center">
-    <a  href="https://github.com/warmachine028/nike/graphs/contributors">
-        <img src="https://contrib.rocks/image?repo=warmachine028/nike" />
-    </a>
-</div>
-
-![line]
-
-## License
-
--   See [LICENSE]
-
-**Pritam, 2023**
-
-![line]
-
-## Thank you, everyone 💚
-
-[line]: https://user-images.githubusercontent.com/75939390/137615281-3a875960-92cc-407f-97fe-fd2319bdb252.png
-[License]: https://github.com/warmachine028/nike/blob/main/LICENSE
-[badges]: https://github.com/Ileriayo/markdown-badges
-
-<!-- 25/10/24 -->
+## Reference
+[Nike repo](https://github.com/warmachine028/nike)
