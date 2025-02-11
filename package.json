@@ -39,7 +39,7 @@
 		"eslint-plugin-react-refresh": "^0.4.18",
 		"husky": "^9.1.7",
 		"lint-staged": "^15.4.3",
-		"postcss": "^8.5.1",
+		"postcss": "^8.5.2",
 		"prettier": "^3.5.0",
 		"tailwindcss": "^4.0.6",
 		"vite": "^6.1.0"
