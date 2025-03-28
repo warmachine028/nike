@@ -23,7 +23,7 @@
 		"notistack": "^3.0.2",
 		"react": "^19.0.0",
 		"react-dom": "^19.0.0",
-		"react-router-dom": "^7.4.0",
+		"react-router-dom": "^7.4.1",
 		"react-spring": "^9.7.5"
 	},
 	"devDependencies": {
