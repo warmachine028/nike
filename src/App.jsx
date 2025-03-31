@@ -12,7 +12,7 @@ import {
   ScrollToTopButton
 } from './sections';
 import Navbar from './components/Navbar';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import Menu from './components/Menu';
 import { useState } from 'react';
 import Signin from './sections/Signin';

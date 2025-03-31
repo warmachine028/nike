@@ -1,6 +1,6 @@
 import { useMenuContext, useMenuUpdateContext } from '../contexts/MenuContext';
 import { navLinks } from '../constants';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 
 const Menu = () => {
   const showMenu = useMenuContext();

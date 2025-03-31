@@ -1,5 +1,5 @@
 /** @format */
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 
 const Button = ({ children, backgroundColor, borderColor, textColor, fullWidth, icon }) => {
   const history = useNavigate();

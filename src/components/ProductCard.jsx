@@ -1,6 +1,6 @@
 import { star } from '../assets/icons';
 import { ShoppingCartIcon } from '@heroicons/react/24/outline';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router';
 import { enqueueSnackbar } from 'notistack';
 
 const ProductCard = ({ productId, imgURL, name, price }) => {
