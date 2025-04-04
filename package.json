@@ -27,7 +27,6 @@
 		"react-spring": "^9.7.5"
 	},
 	"devDependencies": {
-		"@tailwindcss/postcss": "^4.0.17",
 		"@tailwindcss/vite": "^4.1.2",
 		"@types/react": "^19.0.12",
 		"@types/react-dom": "^19.0.4",
