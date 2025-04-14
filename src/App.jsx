@@ -44,8 +44,8 @@ const App = () => {
                   {showCart ? (
                     <Cart />
                   ) : (
-                    <section>
-                      <div className={`padding-x py-6 lg:py-8 z-10 w-full`} />{' '}
+                    <section className='mx-auto container'>
+                      <div className={`padding-x py-6 lg:py-8  z-10 w-full`} />{' '}
                       {/* This is a hack to prevent the navbar from jumping when the user scrolls to the top of the page */}
                       <Hero />
                       <PopularProducts />

@@ -1,5 +1,3 @@
-/** @format */
-
 import ReviewCard from '../components/ReviewCard';
 import { reviews } from '../constants';
 import { useEffect, useState } from 'react';
@@ -12,7 +10,7 @@ const CustomerReviews = () => {
     if (newIndex < 0) {
       newIndex = reviews.length - 1;
     } else if (newIndex >= reviews.length) {
-      newIndex = newIndex % reviews.length;
+      newIndex = 0;
     }
     setActiveIndex(newIndex);
   };
@@ -21,7 +19,7 @@ const CustomerReviews = () => {
     let intervalFunc;
     if (autoplay) {
       intervalFunc = setInterval(() => {
-        updateIndex((activeIndex + 1) % reviews.length);
+        updateIndex(activeIndex + 1);
       }, 3000);
     }
     return () => {
@@ -46,66 +44,59 @@ const CustomerReviews = () => {
         </p>
       </div>
 
-      <div className="carousel">
+      <div className="w-full max-w-5xl mt-12 relative overflow-hidden">
         <div
-          className="inner"
+          className="flex transition-transform duration-500 ease-in-out"
           style={{
-            transform: `translate(-${activeIndex * 100}%)`
+            transform: `translateX(-${activeIndex * 100}%)`
           }}
         >
-          {reviews.map((review, index) => {
-            return <ReviewCard review={review} key={index} />;
-          })}
+          {reviews.map((review, index) => (
+            <div className="min-w-full flex-shrink-0" key={index}>
+              <ReviewCard review={review} />
+            </div>
+          ))}
         </div>
 
-        <div className="carousel-buttons">
+        <div className="flex justify-between items-center mt-8">
           <button
-            className="button-arrow"
-            onClick={() => {
-              updateIndex(activeIndex - 1);
-            }}
+            className="bg-coral-red text-white p-2 rounded-full hover:bg-opacity-80 focus:outline-none"
+            onClick={() => updateIndex(activeIndex - 1)}
+            aria-label="Previous review"
           >
-            <span className="material-symbols-outlined">arrow_back_ios</span>{' '}
+            <span className="material-symbols-outlined">arrow_back_ios</span>
           </button>
 
-          <div className="indicators">
-            {reviews.map((item, index) => {
-              return (
-                <button
-                  className="indicator-buttons"
-                  key={index}
-                  onClick={() => {
-                    updateIndex(index);
-                  }}
-                >
-                  <span
-                    className={`material-symbols-outlined ${
-                      index === activeIndex ? 'indicator-symbol-active' : 'indicator-symbol'
-                    }`}
-                  >
-                    radio_button_checked
-                  </span>
-                </button>
-              );
-            })}
+          <div className="flex gap-2">
+            {reviews.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => updateIndex(index)}
+                className={`w-3 h-3 rounded-full focus:outline-none ${
+                  index === activeIndex ? 'bg-coral-red' : 'bg-gray-300'
+                }`}
+                aria-label={`Go to review ${index + 1}`}
+              />
+            ))}
           </div>
 
           <button
-            className="button-arrow"
-            onClick={() => {
-              updateIndex(activeIndex + 1);
-            }}
+            className="bg-coral-red text-white p-2 rounded-full hover:bg-opacity-80 focus:outline-none"
+            onClick={() => updateIndex(activeIndex + 1)}
+            aria-label="Next review"
           >
             <span className="material-symbols-outlined">arrow_forward_ios</span>
           </button>
         </div>
       </div>
 
-      <div className="justify-center flex">
-        <button onClick={handlePlayPauseToggle}>
-          <span className="material-symbols-outlined ">{autoplay ? 'pause' : 'play_arrow'}</span>
-        </button>
-      </div>
+      <button
+        onClick={handlePlayPauseToggle}
+        className="mt-6 bg-coral-red text-white p-3 rounded-full hover:bg-opacity-80 focus:outline-none"
+        aria-label={autoplay ? 'Pause carousel' : 'Play carousel'}
+      >
+        <span className="material-symbols-outlined">{autoplay ? 'pause' : 'play_arrow'}</span>
+      </button>
     </section>
   );
 };

@@ -12,10 +12,10 @@ const SearchOverlay = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-white dark:bg-gray-900 z-50">
-      <div className="max-w-7xl mx-auto px-4">
+    <div className="fixed inset-0 bg-white   dark:bg-gray-900 z-50">
+      <div className="max-w-7xl  mx-auto px-4">
         {/* Search Bar */}
-        <div className="flex items-center justify-between py-4">
+        <div className="flex items-center  justify-between">
           <div className="flex items-center flex-1 bg-gray-200 dark:bg-gray-800 rounded-full p-2">
             <MagnifyingGlassIcon className="h-6 w-6 text-gray-500 dark:text-gray-400" />
             <input
@@ -29,15 +29,15 @@ const SearchOverlay = ({ isOpen, onClose }) => {
             Cancel
           </button>
         </div>
-        
+
         {/* Popular Search Terms */}
         <div className="mt-6">
           <h3 className="text-lg font-semibold mb-4 dark:text-gray-200">Popular Search Terms</h3>
           <ul className="space-y-4">
             {popularSearches.map((term) => (
               <li key={term}>
-                <a 
-                  href="#" 
+                <a
+                  href="#"
                   className="text-lg text-gray-900 dark:text-gray-100 hover:text-gray-700 dark:hover:text-gray-300 no-underline"
                   onClick={(e) => {
                     e.preventDefault();
@@ -62,17 +62,14 @@ const Navbar = ({ handleClick, handleClick2 }) => {
 
   return (
     <>
-      <SearchOverlay 
-        isOpen={isSearchOpen} 
-        onClose={() => setIsSearchOpen(false)} 
-      />
-      
+      <SearchOverlay isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
+
       <header
-        className={`dark:bg-[#1C1C1C] bg-white padding-x py-6 lg:py-6 z-10 w-full shadow-2xl fixed z-20 transition-transform duration-700 transform ${
+        className={`dark:bg-[#1C1C1C] bg-white  px-16 py-6 w-full shadow-2xl fixed z-20 transition-transform duration-700 transform ${
           isScrollingDown ? '-translate-y-full' : ''
         }${isScrollingUp ? 'translate-y-0' : ''}`}
       >
-        <nav className="flex justify-between items-center max-container">
+        <nav className="flex justify-between  items-center max-container">
           <a href="/">
             <img src={headerLogo} className="hidden lg:block" alt="logo" width="200" height="29" />
             <img src={nikeLogo} className="lg:hidden h-[50px]" alt="logo" />
@@ -93,14 +90,12 @@ const Navbar = ({ handleClick, handleClick2 }) => {
           </ul>
           <div className="flex items-center justify-center gap-x-2">
             {/* Search Button */}
-            <div 
+            <div
               onClick={() => setIsSearchOpen(true)}
-              className="flex items-center justify-center sm:bg-transparent sm:p-2 rounded-full overflow-hidden sm:border dark:border-gray-500 cursor-pointer"
+              className="flex items-center  justify-center sm:bg-transparent sm:p-4 rounded-full overflow-hidden sm:border dark:border-gray-500 cursor-pointer"
             >
               <MagnifyingGlassIcon className="mr-3 h-6 w-6 transition duration-300 cursor-pointer text-slate-gray dark:text-coral-red" />
-              <span className="hidden sm:block text-slate-gray dark:text-slate-400 font-semibold">
-                Search
-              </span>
+              <span className="hidden sm:block text-slate-gray dark:text-slate-400 font-semibold">Search</span>
             </div>
             <ThemeSwitch handleClick={handleClick} />
             <div className="lg:hidden dark:invert cursor-pointer" onClick={toggleShowMenu}>

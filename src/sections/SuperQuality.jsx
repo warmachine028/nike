@@ -4,7 +4,7 @@ import Button from '../components/Button';
 const SuperQuality = () => {
   return (
     <section className="padding">
-      <div id="about-us" className="max-container max-sm:mt-12 flex justify-between  max-lg:flex-col gap-10 w-full">
+      <div id="about-us" className="max-container mt-12 flex justify-between  max-lg:flex-col gap-10 w-full">
         <div className="flex flex-1 flex-col">
           <h2 className="font-palanquin text-4xl capitalize font-bold lg:max-w-lg">
             We Provide You{' '}

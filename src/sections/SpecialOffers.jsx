@@ -6,7 +6,7 @@ import { arrowRight } from '../assets/icons';
 
 const SpecialOffers = () => {
   return (
-    <section className="padding">
+    <section className="py-16">
       <div className="flex flex-wrap items-center max-xl:flex-col-reverse gap-10 max-container">
         <div className="flex-1">
           <img

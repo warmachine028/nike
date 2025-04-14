@@ -6,8 +6,8 @@ import { footerLinks, socialMedia } from '../constants';
 
 const Footer = () => {
   return (
-    <footer className="padding-x padding-t pb-8 bg-black">
-      <div className="max-container">
+    <footer className="py-8 bg-black">
+      <div className="mx-auto container">
         <div className="flex justify-between items-start gap-20 flex-wrap max-lg:flex-col">
           <div className="flex flex-col items-start">
             <a href="/">
