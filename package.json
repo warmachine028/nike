@@ -27,7 +27,7 @@
 		"react-spring": "^10.0.1"
 	},
 	"devDependencies": {
-		"@tailwindcss/vite": "^4.1.10",
+		"@tailwindcss/vite": "^4.1.11",
 		"@types/react": "^19.1.8",
 		"@types/react-dom": "^19.1.6",
 		"@vitejs/plugin-react": "^4.6.0",
